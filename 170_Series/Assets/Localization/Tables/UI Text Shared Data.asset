@@ -19,6 +19,18 @@ MonoBehaviour:
     m_Key: Hello
     m_Metadata:
       m_Items: []
+  - m_Id: 5457016446853120
+    m_Key: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5459512393277440
+    m_Key: Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5461054160707584
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

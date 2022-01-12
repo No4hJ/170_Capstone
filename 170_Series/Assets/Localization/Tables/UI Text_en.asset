@@ -22,5 +22,17 @@ MonoBehaviour:
     m_Localized: Hello
     m_Metadata:
       m_Items: []
+  - m_Id: 5457016446853120
+    m_Localized: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5459512393277440
+    m_Localized: Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5461054160707584
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

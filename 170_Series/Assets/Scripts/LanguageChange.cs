@@ -21,8 +21,32 @@ public class LanguageChange : MonoBehaviour
         return LocalizationSettings.AvailableLocales.Locales.Count;
     }
 
+    public void swtichLanguageLeft()
+    {
+            if (getLocaleIndex() == 0)
+            {
+                SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleListRange() -1]);
+            }
+            else
+            {
+                SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleIndex() -1]);
+            }
+    }
+
+        public void swtichLanguageRight()
+    {
+            if (getLocaleIndex() == getLocaleListRange() -1)
+            {
+                SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[0]);
+            }
+            else
+            {
+                SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleIndex() +1]);
+            }
+    }
+
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
             if (getLocaleIndex() == 0)
@@ -47,4 +71,5 @@ public class LanguageChange : MonoBehaviour
         }
         Debug.Log(getLocaleIndex());
     }
+    */
 }
