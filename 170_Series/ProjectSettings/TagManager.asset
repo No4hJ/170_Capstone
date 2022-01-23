@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Camera_wardrobe
+  - Camera_table
+  - Camera_clendar
+  - Camera_coffee_table
   layers:
   - Default
   - TransparentFX

@@ -7,12 +7,11 @@ using UnityEngine.UI;
 public class ClockUI : MonoBehaviour {
 
     public GameObject clock;
-    private float REAL_SECONDS_PER_INGAME_DAY = 2000f;
-
+    public float REAL_SECONDS_PER_INGAME_DAY;
     private Transform clockHourHandTransform;
     private Transform clockMinuteHandTransform;
     private Text timeText;
-    public float day;
+    public float day; 
 
     private void Awake() {
         clockHourHandTransform = transform.Find("hourHand");
@@ -21,7 +20,8 @@ public class ClockUI : MonoBehaviour {
     }
 
     private void Update() {
-        day += Time.deltaTime / REAL_SECONDS_PER_INGAME_DAY;
+        REAL_SECONDS_PER_INGAME_DAY = GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY;
+        day = GameObject.Find("Timescript").GetComponent<Timechanging>().Day;
 
         float dayNormalized = day % 1f;
 
@@ -49,14 +49,17 @@ public class ClockUI : MonoBehaviour {
         //Debug.Log(daynumber);
         timeText.text = "day " + daynumber/2 + "   " + hoursString + ":" + minutesString + " " + APM;
 
-        if(Input.GetKey(KeyCode.A)){
-            REAL_SECONDS_PER_INGAME_DAY = 60f;
-        }else 
-        if(Input.GetKey(KeyCode.D)){
-            REAL_SECONDS_PER_INGAME_DAY = -60f;
+        if(day <= 0){
+            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+        }else if(day > 0 && Input.GetKey(KeyCode.A)){
+            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 60f;
+        }else if(day > 0 && Input.GetKey(KeyCode.D)){
+            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
         }else{
-            REAL_SECONDS_PER_INGAME_DAY = 2000f;
+            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
         }
+
+
     }
 
 }
