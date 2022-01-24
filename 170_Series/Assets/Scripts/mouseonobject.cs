@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class mouseonobject : MonoBehaviour
-{   
+{
     public GameObject clock;
     public GameObject CamButtonUI;
+    public float magnify = 1.15f;
+
+    void OnMouseEnter(){
+        effectOn();
+    }
+
     void OnMouseDown (){
         interaction();
     }
 
+    void OnMouseExit(){
+        effectOff();
+    }
+
     private void interaction(){
-        
+
         if(gameObject.name == "item 1"){
             Debug.Log("Desk");
 
@@ -31,6 +41,22 @@ public class mouseonobject : MonoBehaviour
         }else{
 
         }
+    }
+
+    private void effectOn(){
+        //gameObject.GetComponent<Renderer>().sharedMaterial.SetColor("_Color",Color.white);
+        gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",1);
+        //Change Scale
+        Vector3 objScale = gameObject.transform.localScale;
+        gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
+        //Debug.Log("effectOn");
+    }
+
+    private void effectOff(){
+        gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
+        //Change Scale
+        Vector3 objScale = gameObject.transform.localScale;
+        gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
     }
 
     //changecamera

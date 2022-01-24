@@ -201,7 +201,6 @@ GameObject:
   - component: {fileID: 6418409}
   - component: {fileID: 6418411}
   - component: {fileID: 6418412}
-  - component: {fileID: 6418413}
   m_Layer: 0
   m_Name: item 3
   m_TagString: Untagged
@@ -289,6 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   CamButtonUI: {fileID: 1060045200}
+  magnify: 1.3
 --- !u!61 &6418412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -315,18 +315,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6418413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6418408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab37dd24917ba5f42a848c2a391e4e5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &89099143
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +327,6 @@ GameObject:
   - component: {fileID: 89099144}
   - component: {fileID: 89099146}
   - component: {fileID: 89099147}
-  - component: {fileID: 89099148}
   m_Layer: 0
   m_Name: item 1
   m_TagString: Untagged
@@ -427,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   CamButtonUI: {fileID: 1060045200}
+  magnify: 1.3
 --- !u!61 &89099147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -453,18 +441,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &89099148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89099143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d712e232bec277c4da55d386e037a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &100588183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1047,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f1f119eea90b2b5459ae0b5e25807982, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1092,15 +1068,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: bd3d2a0d64e43104dac54292aa820fa3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &525234856
@@ -1111,8 +1087,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525234854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.84, y: -22.84, z: 0}
-  m_LocalScale: {x: 1.31, y: 1.31, z: 1.31}
+  m_LocalPosition: {x: 3.85, y: -22.84, z: 0}
+  m_LocalScale: {x: 0.20202832, y: 0.20202832, z: 0.20202832}
   m_Children:
   - {fileID: 2041869710}
   - {fileID: 2020504680}
@@ -1133,8 +1109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   CamButtonUI: {fileID: 1060045200}
---- !u!61 &525234858
-BoxCollider2D:
+  magnify: 1.3
+--- !u!58 &525234858
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1143,22 +1120,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 10.24}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 5.1199994
 --- !u!1 &554223376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1410,6 @@ GameObject:
   - component: {fileID: 888158855}
   - component: {fileID: 888158854}
   - component: {fileID: 888158853}
-  - component: {fileID: 888158852}
   m_Layer: 0
   m_Name: item 5
   m_TagString: Untagged
@@ -1451,18 +1417,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &888158852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888158851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d712e232bec277c4da55d386e037a53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &888158853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1503,6 +1457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   CamButtonUI: {fileID: 1060045200}
+  magnify: 1.3
 --- !u!212 &888158855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1522,7 +1477,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9e918916a1eb8ba4c83ec54ef296db1a, type: 2}
+  - {fileID: 2100000, guid: 950cac2fa40dff84ea7b35de96acd2a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2193,7 +2148,6 @@ GameObject:
   - component: {fileID: 1125879767}
   - component: {fileID: 1125879769}
   - component: {fileID: 1125879770}
-  - component: {fileID: 1125879771}
   m_Layer: 0
   m_Name: item 2
   m_TagString: Untagged
@@ -2281,6 +2235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   CamButtonUI: {fileID: 1060045200}
+  magnify: 1.3
 --- !u!61 &1125879770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2307,18 +2262,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1125879771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125879766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3ffbdfd302311f42bbe4b04054908a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1127233582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,7 +2925,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2041869710}
   - component: {fileID: 2041869711}
-  - component: {fileID: 2041869713}
   - component: {fileID: 2041869712}
   m_Layer: 0
   m_Name: Square
@@ -2998,8 +2940,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041869709}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.02290129, z: 0}
   m_LocalScale: {x: 0.153785, y: 0.153785, z: 0.153785}
   m_Children: []
   m_Father: {fileID: 525234856}
@@ -3045,7 +2987,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bd3d2a0d64e43104dac54292aa820fa3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3053,7 +2995,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2041869712
@@ -3063,27 +3005,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041869709}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7768b1492aa48a248805ff82e0f7eb71, type: 3}
+  m_Script: {fileID: 11500000, guid: 62474da6d5d261140a727e1c2faa0fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &2041869713
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041869709}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0000076293945}
-  serializedVersion: 2
-  m_Radius: 5.1199994
+  clock: {fileID: 0}
+  CamButtonUI: {fileID: 0}
+  magnify: 1.3
 --- !u!1 &2089899277
 GameObject:
   m_ObjectHideFlags: 0
