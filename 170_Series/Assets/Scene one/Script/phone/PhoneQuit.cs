@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class PhoneQuit : MonoBehaviour
 {
-    public GameObject phone;
+    public GameObject Phone;
+    public GameObject Quit;
+    public GameObject Quit2;
+    public GameObject Ls_folder;
+    public GameObject Ms_floder;
+    public GameObject Chat;
+
     void OnMouseDown (){
         interaction();
     }
@@ -17,10 +23,17 @@ public class PhoneQuit : MonoBehaviour
             Debug.Log("phone");
             turnoffphone();
         }
+
+        if(gameObject.name == "Ls_folder"){
+            Ls_folder.SetActive(false);
+            Ms_floder.SetActive(true);
+        }
     }
 
     private void turnoffphone(){
         GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
-        phone.SetActive(false);
+        Ls_folder.SetActive(true);
+        Ms_floder.SetActive(false);
+        Phone.SetActive(false);
     }
 }
