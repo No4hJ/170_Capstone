@@ -8,20 +8,17 @@ public class mouseonobject : MonoBehaviour
     public GameObject clock;
     public GameObject Phone;
     public GameObject CamButtonUI;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     public float magnify = 1.15f;
     public bool Abletoclick;
-    void Update(){
-        Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
-    }
-=======
-=======
->>>>>>> d9597a32e0b0ad555c9f824a40694da0c5b5c803
+
     public float magnify;
     public Text News;
 
->>>>>>> d9597a32e0b0ad555c9f824a40694da0c5b5c803
+        void Update(){
+        Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
+    }
+
     void OnMouseEnter(){
         effectOn();
     }
@@ -41,7 +38,6 @@ public class mouseonobject : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_wardrobe");
 
-<<<<<<< HEAD
             }else if(gameObject.name == "item 2"){
                 Debug.Log("Coffee table");
                 lock_item_click();
@@ -59,29 +55,6 @@ public class mouseonobject : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_clendar");
             }else{
-=======
-        if(gameObject.name == "item 1"){
-            Debug.Log("Desk");
-
-            changecamera("Camera_wardrobe");
-        }else if(gameObject.name == "item 2"){
-            Debug.Log("Coffee table");
-            changecamera("Camera_coffee_table");
-        }else if(gameObject.name == "item 3"){
-            Debug.Log("Wardrobe");
-            changecamera("Camera_wardrobe");
-        }else if(gameObject.name == "item 4"){
-            Debug.Log("Time");
-            clock.SetActive(true);
-        }else if(gameObject.name == "item 5"){
-            Debug.Log("Calendar");
-            changecamera("Camera_clendar");
-        }else if(gameObject.name == "item 6"){
-                Debug.Log("Newspaper");
-                changecamera("Camera_newspaper");
-                textAppear();
-        }else{
->>>>>>> d9597a32e0b0ad555c9f824a40694da0c5b5c803
 
             }
         }
