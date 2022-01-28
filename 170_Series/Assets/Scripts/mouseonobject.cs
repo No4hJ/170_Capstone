@@ -19,7 +19,9 @@ public class mouseonobject : MonoBehaviour
     }
 
     void OnMouseEnter(){
-        effectOn();
+        if(Abletoclick){
+            effectOn();
+        }
     }
 
     void OnMouseDown (){
@@ -27,7 +29,9 @@ public class mouseonobject : MonoBehaviour
     }
 
     void OnMouseExit(){
-        effectOff();
+        if(Abletoclick){
+            effectOff();
+        }
     }
 
     private void interaction(){
