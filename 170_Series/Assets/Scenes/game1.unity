@@ -268,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6418408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7910623, y: 3.468779, z: 0}
+  m_LocalPosition: {x: -1.36, y: 1.53, z: 0}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1.31}
   m_Children:
   - {fileID: 699928527}
@@ -292,6 +292,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 1060045200}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!61 &6418412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -432,6 +433,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 1060045200}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!61 &89099147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1130,7 +1132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525234854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2089376, y: 6.34878, z: 0}
+  m_LocalPosition: {x: 4.2089376, y: 4.1, z: 0}
   m_LocalScale: {x: 0.12307565, y: 0.12307565, z: 0.12307565}
   m_Children:
   - {fileID: 2041869710}
@@ -1155,6 +1157,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 1060045200}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!58 &525234858
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1682,7 +1685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &831775571
 Transform:
   m_ObjectHideFlags: 0
@@ -1691,7 +1694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831775570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1949568501}
@@ -1817,6 +1820,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 1060045200}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!212 &888158855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1876,7 +1880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888158851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1153376, y: 4.58448, z: 0}
+  m_LocalPosition: {x: 0.44, y: 3.01, z: 0}
   m_LocalScale: {x: 0.19052629, y: 0.18884285, z: 0.17535783}
   m_Children:
   - {fileID: 1240219872}
@@ -1978,10 +1982,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1060045200}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 147583222}
+        m_TargetAssemblyTypeName: cameraswitch, Assembly-CSharp
+        m_MethodName: change
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1990,10 +1994,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 147583222}
-        m_TargetAssemblyTypeName: cameraswitch, Assembly-CSharp
-        m_MethodName: change
-        m_Mode: 1
+      - m_Target: {fileID: 1060045200}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2645,6 +2649,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 1060045200}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!61 &1125879770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3730,6 +3735,7 @@ MonoBehaviour:
   CamButtonUI: {fileID: 0}
   magnify: 1.3
   Abletoclick: 0
+  News: {fileID: 0}
 --- !u!1 &2089899277
 GameObject:
   m_ObjectHideFlags: 0

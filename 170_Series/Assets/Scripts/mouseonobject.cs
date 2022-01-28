@@ -12,10 +12,9 @@ public class mouseonobject : MonoBehaviour
     public float magnify = 1.15f;
     public bool Abletoclick;
 
-    public float magnify;
     public Text News;
 
-        void Update(){
+    void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }
 
