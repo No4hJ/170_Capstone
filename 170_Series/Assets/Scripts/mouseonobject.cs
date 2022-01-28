@@ -26,6 +26,7 @@ public class mouseonobject : MonoBehaviour
 
     void OnMouseDown (){
         interaction();
+        effectOff();
     }
 
     void OnMouseExit(){

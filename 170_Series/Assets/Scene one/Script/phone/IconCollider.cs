@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class IconCollider : MonoBehaviour
+{
+    void OnMouseDown (){
+        interaction();
+    }
+    private void interaction(){
+        if(gameObject.name == "Chat"){
+            Debug.Log("chatopen");
+            GameObject.Find("Quit").GetComponent<PhoneQuit>().ChatOpen();
+        }
+
+        if(gameObject.name == "Web"){
+            Debug.Log("Web");
+        }
+
+        if(gameObject.name == "Video"){
+            Debug.Log("Video");
+        }
+        if(gameObject.name == "Setting"){
+            Debug.Log("Setting");
+        }
+        if(gameObject.name == "Cloud"){
+            Debug.Log("Cloud");
+        }
+
+    }
+}

@@ -16,24 +16,36 @@ public class PhoneQuit : MonoBehaviour
     }
 
     void OnMouseEnter(){
-        Debug.Log("phone");
+        Debug.Log("phone1");
     }
-    private void interaction(){
+    public void interaction(){
         if(gameObject.name == "Quit"){
-            Debug.Log("phone");
+            Debug.Log("phone2");
             turnoffphone();
         }
 
         if(gameObject.name == "Ls_folder"){
             Ls_folder.SetActive(false);
             Ms_floder.SetActive(true);
+            GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
         }
+
     }
 
     private void turnoffphone(){
+        
+        Debug.Log("here");
         GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
         Ls_folder.SetActive(true);
-        Ms_floder.SetActive(false);
+        GameObject.Find("Phone").GetComponent<PhoneReference>().CloseAll();
         Phone.SetActive(false);
     }
+
+    public void ChatOpen(){
+        Debug.Log("chatopen1");
+        Chat.SetActive(true);
+        Ms_floder.SetActive(false);
+        GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
+    }
+
 }
