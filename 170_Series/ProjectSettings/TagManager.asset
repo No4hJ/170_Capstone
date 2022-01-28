@@ -8,6 +8,7 @@ TagManager:
   - Camera_table
   - Camera_clendar
   - Camera_coffee_table
+  - Camera_newspaper
   layers:
   - Default
   - TransparentFX
