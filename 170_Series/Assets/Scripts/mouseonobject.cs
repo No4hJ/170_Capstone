@@ -25,8 +25,10 @@ public class mouseonobject : MonoBehaviour
     }
 
     void OnMouseDown (){
-        interaction();
-        effectOff();
+        if(Abletoclick){
+            interaction();
+            effectOff();
+        }
     }
 
     void OnMouseExit(){
