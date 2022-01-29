@@ -13,6 +13,7 @@ public class mouseonobject : MonoBehaviour
     public bool Abletoclick;
 
     public GameObject NewsText;
+    public GameObject bigNewspaper;
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -62,10 +63,17 @@ public class mouseonobject : MonoBehaviour
                 changecamera("Camera_clendar");
            }else if(gameObject.name == "item 6"){
                 Debug.Log("Newspaper");
+                //changecamera("Camera_newspaper");
+                //lock_item_click();
+                bigNewspaper.SetActive(true);
+                Vector3 objScale = gameObject.transform.localScale;
+                gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
+                //textAppear();
+           }else if(gameObject.name == "bigNewspaper"){
                 lock_item_click();
                 changecamera("Camera_newspaper");
+                bigNewspaper.SetActive(false);
                 NewsText.SetActive(true);
-                //textAppear();
             }else{
 
             }
@@ -80,19 +88,24 @@ public class mouseonobject : MonoBehaviour
     }
 
     private void effectOn(){
-        //gameObject.GetComponent<Renderer>().sharedMaterial.SetColor("_Color",Color.white);
-        gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",1);
-        //Change Scale
-        Vector3 objScale = gameObject.transform.localScale;
-        gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
-        //Debug.Log("effectOn");
+          if (gameObject.name != "bigNewspaper") {
+            //gameObject.GetComponent<Renderer>().sharedMaterial.SetColor("_Color",Color.white);
+            gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",1);
+            //Change Scale
+            Vector3 objScale = gameObject.transform.localScale;
+            gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
+            //Debug.Log("effectOn");
+          }
+
     }
 
     private void effectOff(){
-        gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
-        //Change Scale
-        Vector3 objScale = gameObject.transform.localScale;
-        gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
+        if (gameObject.name != "bigNewspaper") {
+          gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
+          //Change Scale
+          Vector3 objScale = gameObject.transform.localScale;
+          gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
+        }
     }
 
     //changecamera
