@@ -1359,7 +1359,7 @@ GameObject:
   - component: {fileID: 641264125}
   - component: {fileID: 641264124}
   m_Layer: 0
-  m_Name: background
+  m_Name: backgroundRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5338,7 +5338,7 @@ MonoBehaviour:
   magnify: 0
   Abletoclick: 0
   NewsText: {fileID: 536046585}
-  bigNewspaper: {fileID: 347259035}
+  bigNewspaper: {fileID: 2064034319}
   newspaperBackground: {fileID: 723533257}
 --- !u!65 &2064034323
 BoxCollider:
