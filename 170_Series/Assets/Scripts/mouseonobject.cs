@@ -28,8 +28,8 @@ public class mouseonobject : MonoBehaviour
 
     void OnMouseDown (){
         if(Abletoclick){
-            interaction();
             effectOff();
+            interaction();
         }
     }
 
@@ -44,7 +44,7 @@ public class mouseonobject : MonoBehaviour
             if(gameObject.name == "item 1"){
                 Debug.Log("Desk");
                 lock_item_click();
-                changecamera("Camera_wardrobe");
+                changecamera("Camera_table");
 
             }else if(gameObject.name == "item 2"){
                 Debug.Log("Coffee table");
