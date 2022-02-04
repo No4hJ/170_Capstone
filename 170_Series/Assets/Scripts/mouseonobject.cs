@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class mouseonobject : MonoBehaviour
 {
@@ -12,9 +11,7 @@ public class mouseonobject : MonoBehaviour
     public float magnify;
     public bool Abletoclick;
 
-    public GameObject NewsText;
-    public GameObject bigNewspaper;
-    public GameObject newspaperBackground;
+    public GameObject newspaperParent;
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -64,18 +61,18 @@ public class mouseonobject : MonoBehaviour
                 changecamera("Camera_clendar");
            }else if(gameObject.name == "item 6"){
                 Debug.Log("Newspaper");
-                //lock_item_click();
-                changecamera("Camera_newspaper");
-                bigNewspaper.SetActive(true);
-                Vector3 objScale = gameObject.transform.localScale;
-                gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
-                newspaperBackground.SetActive(false);
-           }else if(gameObject.name == "bigNewspaper"){
                 lock_item_click();
-                bigNewspaper.SetActive(false);
                 //changecamera("Camera_newspaper");
-                NewsText.SetActive(true);
-                newspaperBackground.SetActive(true);
+                newspaperParent.SetActive(true);
+                //Vector3 objScale = gameObject.transform.localScale;
+                //gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
+                //newspaperBackground.SetActive(false);
+
+                //lock_item_click();
+                //bigNewspaper.SetActive(false);
+                //changecamera("Camera_newspaper");
+                //NewsText.SetActive(true);
+                //newspaperBackground.SetActive(true);
             }else{
 
             }

@@ -12,7 +12,6 @@ public class Camback : MonoBehaviour
         Camera cam2 = GameObject.Find(cam_name).GetComponent<Camera>();
         //AudioListener aud2 = GameObject.Find(cam_name).GetComponent<AudioListener>();
         cam2.enabled = false;
-        NewsText.SetActive(false);
     }
 
 }
