@@ -115,7 +115,10 @@ public class mouseonobject : MonoBehaviour
         Camera cam2 = GameObject.Find(cam_name).GetComponent<Camera>();
         //AudioListener aud2 = GameObject.Find(cam_name).GetComponent<AudioListener>();
         cam2.enabled = true;
-        CamButtonUI.SetActive(true);
+        //if(gameObject.name != "item 3"){
+            CamButtonUI.SetActive(true);
+        //}
+        //CamButtonUI.SetActive(true);
         //aud2.enabled = true;
     }
 }

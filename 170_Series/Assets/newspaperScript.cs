@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class newspaperScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject newspaperParent;
     public GameObject NewsText;
     public GameObject blackCover;
+
 
     void Start()
     {
@@ -35,4 +37,5 @@ public class newspaperScript : MonoBehaviour
             //Debug.Log(blackCover.activeSelf);
         }
     }
+
 }

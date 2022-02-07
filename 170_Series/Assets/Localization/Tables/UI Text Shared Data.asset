@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: Newspaper
     m_Metadata:
       m_Items: []
+  - m_Id: 14935697286254592
+    m_Key: Ticket
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
