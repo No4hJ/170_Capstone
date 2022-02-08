@@ -49,7 +49,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14935697286254592
-    m_Localized: Ticket
+    m_Localized: "Weimeng Cinema\t\r\nMovie Name: A First Farewell\t\r\nTheater:
+      1\t\r\nSeat: Row 7 Number 12\t\r\nTime\uFF1AOct.25th 20:00\t\r\nPrice\uFF1A30\uFFE5\tService
+      Fee\uFF1A0\uFFE5\r\nTime when sold\uFF1A18/10/24 21:00\t\r\n114514152315451234\n\nWeimeng
+      Cinema\t\r\nMovie Name: A First Farewell\t\r\nTheater: 1\t\r\nSeat: Row 7 Number
+      13\t\r\nTime\uFF1AOct.25th 20:00\t\r\nPrice\uFF1A30\uFFE5\tService Fee\uFF1A0\uFFE5\r\nTime
+      when sold\uFF1A18/10/24 21:00\t\r\n114514152315451234\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15441977446834176
+    m_Localized: "Coupon\r\n114514152\r\n315451234\r\nTheater 1\r\nSeat Row 7 Number
+      12\r\nDate 18.10.25\r\nTime 20:00\r\nPrice\uFF1A30\uFFE5\n\nCoupon\r\n114514152\r\n315451234\r\nTheater
+      1\r\nSeat Row 7 Number 13\r\nDate 18.10.25\r\nTime 20:00\r\nPrice\uFF1A30\uFFE5"
     m_Metadata:
       m_Items: []
   references:
