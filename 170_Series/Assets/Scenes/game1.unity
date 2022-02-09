@@ -392,7 +392,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 8a23c98d61d332a44b4cceb680e8158d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3b93b79f568dd314d9a0a6f4bb57a30f, type: 3}
     m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 316679238}
   - component: {fileID: 316679237}
   m_Layer: 0
-  m_Name: ticket (1)
+  m_Name: ticket2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
-  ticket: {fileID: 730117992}
+  ticket: {fileID: 1946834742}
 --- !u!61 &316679238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689019189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 147583221}
@@ -2265,7 +2265,7 @@ GameObject:
   - component: {fileID: 730117995}
   - component: {fileID: 730117994}
   m_Layer: 0
-  m_Name: ticket
+  m_Name: ticket1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
-  ticket: {fileID: 730117992}
+  ticket: {fileID: 1946834742}
 --- !u!61 &730117995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2608,7 +2608,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ca63717c7a05a864eb07547dd36b3aa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3748,7 +3748,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e6f83e3d863f6f543be08fd925a17f1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4291,7 +4291,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3b93b79f568dd314d9a0a6f4bb57a30f, type: 3}
     m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
@@ -6069,7 +6069,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5e76bb59e8f99894cb562fefcb30c9c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6281,7 +6281,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ae0aa0f9ef4eb5541acd4136836ba960, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6813,7 +6813,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3b93b79f568dd314d9a0a6f4bb57a30f, type: 3}
     m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
@@ -6945,7 +6945,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0785724b7f01d4146b610242996d87ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7004,6 +7004,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946834743}
+  - component: {fileID: 1946834745}
+  - component: {fileID: 1946834744}
   m_Layer: 0
   m_Name: ticket
   m_TagString: Untagged
@@ -7027,6 +7029,48 @@ Transform:
   m_Father: {fileID: 317506868}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1946834744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946834742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigJacket: {fileID: 1131309117}
+  TicketText: {fileID: 1063100375}
+  blackCover: {fileID: 1986461794}
+  ticket: {fileID: 1946834742}
+--- !u!61 &1946834745
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946834742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -9.340849, y: 2.0804625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.1892204, y: 3.1229203}
+  m_EdgeRadius: 0
 --- !u!1 &1949568500
 GameObject:
   m_ObjectHideFlags: 0
