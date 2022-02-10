@@ -12,16 +12,6 @@ public class jacketAndTicketScript : MonoBehaviour
     public GameObject blackCover;
     public GameObject ticket;
 
-    void Start()
-    {
-    
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnMouseDown ()
     {
         if (gameObject.name == "jacket")
