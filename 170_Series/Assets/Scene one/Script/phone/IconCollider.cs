@@ -9,8 +9,7 @@ public class IconCollider : MonoBehaviour
     }
     private void interaction(){
         if(gameObject.name == "Chat"){
-            Debug.Log("chatopen");
-            GameObject.Find("Quit").GetComponent<PhoneQuit>().ChatOpen();
+            Chat();
         }
 
         if(gameObject.name == "Web"){
@@ -27,5 +26,25 @@ public class IconCollider : MonoBehaviour
             Debug.Log("Cloud");
         }
 
+    }
+    public void Chat(){
+        Debug.Log("chatopen");
+        GameObject.Find("Quit").GetComponent<PhoneQuit>().ChatOpen();
+    }
+
+    public void Web(){
+
+    }
+
+    public void Video(){
+        
+    }
+
+    public void Setting(){
+        
+    }
+
+    public void Cloud(){
+        
     }
 }

@@ -6,11 +6,17 @@ public class PhoneQuit : MonoBehaviour
 {
     public GameObject Phone;
     public GameObject Quit;
-    public GameObject Quit2;
+    //public GameObject Quit2;
     public GameObject Ls_folder;
     public GameObject Ms_floder;
     public GameObject Chat;
 
+
+    void Start()
+    {
+    
+    }
+    
     void OnMouseDown (){
         interaction();
     }
@@ -25,20 +31,25 @@ public class PhoneQuit : MonoBehaviour
         }
 
         if(gameObject.name == "Ls_folder"){
-            Ls_folder.SetActive(false);
-            Ms_floder.SetActive(true);
-            GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
+            turnonphone();
         }
 
     }
 
-    private void turnoffphone(){
+    public void turnoffphone(){
         
         Debug.Log("here");
         GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
         Ls_folder.SetActive(true);
         GameObject.Find("Phone").GetComponent<PhoneReference>().CloseAll();
         Phone.SetActive(false);
+    }
+
+    public void turnonphone(){
+        GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
+        Ls_folder.SetActive(false);
+        Ms_floder.SetActive(true);
+        
     }
 
     public void ChatOpen(){
