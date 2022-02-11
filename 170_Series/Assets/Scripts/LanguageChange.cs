@@ -6,6 +6,9 @@ using UnityEngine.Localization;
 
 public class LanguageChange : MonoBehaviour
 {
+    public GameObject menu;
+    public GameObject gameScene;
+    public bool ismenu = false;
     public void SetSelectedLocale(Locale locale)
     {
         LocalizationSettings.SelectedLocale = locale;
@@ -44,11 +47,9 @@ public class LanguageChange : MonoBehaviour
                 SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleIndex() +1]);
             }
     }
-
-    // Update is called once per frame
-    /*void Update()
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)){
+        /*if (Input.GetKeyDown(KeyCode.E)){
             if (getLocaleIndex() == 0)
             {
                 SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleListRange() -1]);
@@ -69,7 +70,21 @@ public class LanguageChange : MonoBehaviour
                 SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[getLocaleIndex() +1]);
             }
         }
-        Debug.Log(getLocaleIndex());
+        Debug.Log(getLocaleIndex());*/
+
+    if (Input.GetKeyDown(KeyCode.Escape)){
+        if(!ismenu){
+            menu.SetActive(true);
+            gameScene.SetActive(false);
+            ismenu = true;
+        }
+        else{
+            menu.SetActive(false);
+            gameScene.SetActive(true);
+            ismenu = false;
+        }
+        
     }
-    */
+    }
+    
 }
