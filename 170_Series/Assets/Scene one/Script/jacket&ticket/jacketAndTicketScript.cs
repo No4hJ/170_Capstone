@@ -11,8 +11,13 @@ public class jacketAndTicketScript : MonoBehaviour
     public GameObject TicketText;
     public GameObject blackCover;
     public GameObject ticket;
+    private bool jacketClicked;
 
     private float magnify = 1.3f;
+
+    void Start(){
+        jacketClicked = false;
+    }
 
      void OnMouseEnter(){
         effectOn();
@@ -28,17 +33,26 @@ public class jacketAndTicketScript : MonoBehaviour
         {
             //GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
             //newspaperParent.SetActive(false);
-            bigJacket.SetActive(true);
-            ticket.SetActive(true);
-            Debug.Log("jacket");
+            if (!jacketClicked){
+                bigJacket.SetActive(true);
+                ticket.SetActive(true);
+                Debug.Log("jacket");
+                jacketClicked = false;
+                gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
+                //Vector3 objScale = gameObject.transform.localScale;
+                //gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);       
+            }
+            ticket.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
         }else if (gameObject.name == "ticket"){
+            jacketClicked = false;
             TicketText.SetActive(true);
             blackCover.SetActive(true);
             Debug.Log("ticket");
             Vector3 objScale = gameObject.transform.localScale;
             gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
-        }else if (gameObject.name == "blackCover"){
+        }else if (gameObject.name == "exitSquare" || gameObject.name == "blackCover" ){
             //GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
+            jacketClicked = false;
             TicketText.SetActive(false);
             blackCover.SetActive(false);
             bigJacket.SetActive(false);
@@ -51,23 +65,31 @@ public class jacketAndTicketScript : MonoBehaviour
     }
 
     private void effectOn(){
-        if (gameObject.name != "bigJacket" && !blackCover.activeSelf){
+        if (gameObject.name != "bigJacket" && !blackCover.activeSelf && gameObject.name != "jacket" && gameObject.name != "exitSquare"){
             //gameObject.GetComponent<Renderer>().sharedMaterial.SetColor("_Color",Color.white);
             gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",1);
             //Change Scale
             Vector3 objScale = gameObject.transform.localScale;
             gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
             //Debug.Log("effectOn");
+        } else if(gameObject.name == "jacket" && !jacketClicked){
+            gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",1);
+            Vector3 objScale = gameObject.transform.localScale;
+            gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
         }
     }
 
     private void effectOff(){
         
-        if (gameObject.name != "bigJacket" && !blackCover.activeSelf){
+        if (gameObject.name != "bigJacket" && !blackCover.activeSelf && gameObject.name != "jacket" && gameObject.name != "exitSquare"){
             gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
             //Change Scale
             Vector3 objScale = gameObject.transform.localScale;
             gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);    
+        } else if(gameObject.name == "jacket" && !jacketClicked){
+            gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_OutlineEnabled",0);
+            Vector3 objScale = gameObject.transform.localScale;
+            gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
         }
     }
 
