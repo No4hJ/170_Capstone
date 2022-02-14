@@ -12,6 +12,7 @@ public class mouseonobject : MonoBehaviour
     public bool Abletoclick;
 
     public GameObject newspaperParent;
+    public GameObject notify;
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -47,6 +48,9 @@ public class mouseonobject : MonoBehaviour
                 Debug.Log("Coffee table");
                 lock_item_click();
                 Phone.SetActive(true);
+                if (notify.GetComponent<Renderer>().enabled == true){
+                    notify.GetComponent<Renderer>().enabled = false;
+                }
             }else if(gameObject.name == "item 3"){
                 Debug.Log("Wardrobe");
                 lock_item_click();
@@ -60,7 +64,7 @@ public class mouseonobject : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_clendar");
            }else if(gameObject.name == "item 6"){
-                Debug.Log("Newspaper");
+                //Debug.Log(Global.newspaperState);
                 lock_item_click();
                 //changecamera("Camera_newspaper");
                 newspaperParent.SetActive(true);

@@ -50,6 +50,10 @@ public class jacketAndTicketScript : MonoBehaviour
             Debug.Log("ticket");
             Vector3 objScale = gameObject.transform.localScale;
             gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
+            
+            if (Global.ticketState == 0){
+                Global.ticketState = 1;
+            }
         }else if (gameObject.name == "exitSquare" || gameObject.name == "blackCover" ){
             //GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
             jacketClicked = false;

@@ -35,6 +35,10 @@ public class newspaperScript : MonoBehaviour
             NewsText.SetActive(true);
             blackCover.SetActive(true);
             //Debug.Log(blackCover.activeSelf);
+            if ( Global.newspaperState == 0){
+                Global.newspaperState = 1;
+            }
+            //Debug.Log(Global.newspaperState);
         }
     }
 
