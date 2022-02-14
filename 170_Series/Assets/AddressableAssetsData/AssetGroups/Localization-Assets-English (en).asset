@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Assets-Chinese (Simplified) (zh-Hans)
+  m_Name: Localization-Assets-English (en)
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-Assets-Chinese (Simplified) (zh-Hans)
+  m_GroupName: Localization-Assets-English (en)
   m_Data:
     m_SerializedData: []
-  m_GUID: 099b6f0458bfb894b8789e953b94395c
+  m_GUID: 8e1026def25737b419b45e8a55afa58a
   m_SerializeEntries:
-  - m_GUID: 0d8e0d8bb8f5e5c409722c59915f05b2
-    m_Address: familychat_chi_1
+  - m_GUID: bb7b0fbac6219be449cc0da63977f97b
+    m_Address: familychat_en_1
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-zh-Hans
-  - m_GUID: dbe7d721b33621f4197f877bcfe3c355
-    m_Address: familychat_chi_2
+    - Locale-en
+  - m_GUID: 673704c399b793e418bf652ff57557e0
+    m_Address: familychat_en_2
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale-zh-Hans
+    - Locale-en
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d4be9b1e29d41b8489eec8be276f25b0, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 2b8652a25447c284f832a142d1809c05, type: 2}
-    - {fileID: 11400000, guid: 5cfe28b1bc4c3e644bec20c01bfebeb7, type: 2}
+    - {fileID: 11400000, guid: daea8c281670708449aa0874b46c3a57, type: 2}
+    - {fileID: 11400000, guid: 55a2c268a44476d4194a4eb4e514e04a, type: 2}

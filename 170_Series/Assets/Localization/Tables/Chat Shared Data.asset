@@ -16,7 +16,11 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: a60388cdbac2790479771d9aa1958f27
   m_Entries:
   - m_Id: 7979212800
-    m_Key: family_chat
+    m_Key: family_chat_before
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1028967303290880
+    m_Key: family_chat_after
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -33,6 +37,11 @@ MonoBehaviour:
         - m_KeyId: 7979212800
           m_TableCodes:
           - zh-Hans
+          - en
+        - m_KeyId: 1028967303290880
+          m_TableCodes:
+          - zh-Hans
+          - en
         m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
     00000001:
