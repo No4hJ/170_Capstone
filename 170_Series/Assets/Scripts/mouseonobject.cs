@@ -14,6 +14,8 @@ public class mouseonobject : MonoBehaviour
     public GameObject newspaperParent;
     public GameObject notify;
 
+    public AudioSource newspaper_open;
+
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }
@@ -68,6 +70,7 @@ public class mouseonobject : MonoBehaviour
                 lock_item_click();
                 //changecamera("Camera_newspaper");
                 newspaperParent.SetActive(true);
+                newspaper_open.Play();
                 //Vector3 objScale = gameObject.transform.localScale;
                 //gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
                 //newspaperBackground.SetActive(false);

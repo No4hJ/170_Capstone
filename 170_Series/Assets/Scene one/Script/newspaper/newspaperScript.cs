@@ -12,6 +12,7 @@ public class newspaperScript : MonoBehaviour
     public GameObject blackCover;
 
 
+
     void Start()
     {
         
@@ -38,7 +39,7 @@ public class newspaperScript : MonoBehaviour
             if ( Global.newspaperState == 0){
                 Global.newspaperState = 1;
             }
-            //Debug.Log(Global.newspaperState);
+            Debug.Log(Global.newspaperState);
         }
     }
 
