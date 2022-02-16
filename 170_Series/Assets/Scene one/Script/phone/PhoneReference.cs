@@ -20,7 +20,7 @@ public class PhoneReference : MonoBehaviour
         Referenceobject();
 
         CloseAll();
-        Phone.SetActive(false);
+        //Phone.SetActive(false);
         
     }
     public void Referenceobject(){

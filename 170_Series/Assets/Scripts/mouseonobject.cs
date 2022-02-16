@@ -47,7 +47,7 @@ public class mouseonobject : MonoBehaviour
                 changecamera("Camera_table");
 
             }else if(gameObject.name == "item 2"){
-                Debug.Log("Coffee table");
+                Debug.Log("Phone");
                 lock_item_click();
                 Phone.SetActive(true);
                 if (notify.GetComponent<Renderer>().enabled == true){
