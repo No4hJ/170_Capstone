@@ -55,5 +55,9 @@ MonoBehaviour:
       20:00\r\n\u7968\u4EF7\uFF1A30\u5143"
     m_Metadata:
       m_Items: []
+  - m_Id: 18745654144212992
+    m_Localized: "\u8BED\u8A00"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

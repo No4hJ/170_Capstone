@@ -15,6 +15,14 @@ public class Timechanging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Day += Time.deltaTime / REAL_SECONDS_PER_INGAME_DAY;
+        if(!MenuControl.isPaused){
+            Time.timeScale = 1f;
+            Day += Time.deltaTime / REAL_SECONDS_PER_INGAME_DAY;
+        } else {
+            Day += 0;
+            Time.timeScale = 0f;
+        }
+        Debug.Log(Day);
+        Debug.Log(MenuControl.isPaused);
     }
 }

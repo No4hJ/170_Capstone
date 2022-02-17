@@ -15,7 +15,7 @@ public class clock_sound : MonoBehaviour
             clock_ticking.spatialBlend = 0.3f;
         }
         else{
-            clock_ticking.volume = 0.2f;
+            clock_ticking.volume = 0.4f;
             clock_ticking.spatialBlend = 0.8f;
         }
     }

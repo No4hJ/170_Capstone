@@ -63,5 +63,9 @@ MonoBehaviour:
       1\r\nSeat Row 7 Number 13\r\nDate 18.10.25\r\nTime 20:00\r\nPrice\uFF1A30\uFFE5"
     m_Metadata:
       m_Items: []
+  - m_Id: 18745654144212992
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
