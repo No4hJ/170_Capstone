@@ -13,6 +13,9 @@ public class ClockUI : MonoBehaviour {
     private Text timeText;
     public float day; 
 
+    public bool autoclocktrigger = false;
+
+    private bool autotrigger = false;
     private void Awake() {
         clockHourHandTransform = transform.Find("hourHand");
         clockMinuteHandTransform = transform.Find("minuteHand");
@@ -49,17 +52,31 @@ public class ClockUI : MonoBehaviour {
         //Debug.Log(daynumber);
         timeText.text = "day " + daynumber/2 + "   " + hoursString + ":" + minutesString + " " + APM;
 
-        if(day <= 0){
-            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
-        }else if(day > 0 && Input.GetKey(KeyCode.D)){
-            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 60f;
-        }else if(day > 0 && Input.GetKey(KeyCode.A)){
-            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
-        }else{
-            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+        if(autoclocktrigger == false){
+                if(day <= 0){
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+            }else if(day > 0 && Input.GetKey(KeyCode.D)){
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 60f;
+            }else if(day > 0 && Input.GetKey(KeyCode.A)){
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
+            }else{
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+            }
         }
-
-
+        
+        if(GameObject.Find("Clock") && autoclocktrigger){
+            Debug.Log("aaa");
+            GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = Mathf.Lerp(
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY, 3f, 10* Time.deltaTime);
+            
+            
+        }
     }
 
+    public void autoclock(){
+        autoclocktrigger = true;
+    }
+    private void changespeed(){
+        GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = Mathf.Lerp(1000f, 60f, 5* Time.deltaTime);
+    }
 }

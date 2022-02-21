@@ -4670,6 +4670,7 @@ MonoBehaviour:
   clock: {fileID: 865693396}
   REAL_SECONDS_PER_INGAME_DAY: 0
   day: 0
+  autoclocktrigger: 0
 --- !u!1 &885821719
 GameObject:
   m_ObjectHideFlags: 0
@@ -6597,8 +6598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a62f92e55be72d41a160b2862463721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Day: 0
+  Day: 10
   REAL_SECONDS_PER_INGAME_DAY: 2000
+  clock: {fileID: 865693396}
 --- !u!1 &1125879766
 GameObject:
   m_ObjectHideFlags: 0
