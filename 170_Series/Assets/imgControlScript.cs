@@ -28,6 +28,7 @@ public class imgControlScript : MonoBehaviour
                 imgActive = 1;
                 img1.SetActive(true);
                 room.SetActive(false);
+                waitTime = waitTimeSet;
             }else if (imgActive == 1){
                 imgActive = 0;
                 room.SetActive(true);
