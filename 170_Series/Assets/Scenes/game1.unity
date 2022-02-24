@@ -5342,7 +5342,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 158.5, y: -254}
-  m_SizeDelta: {x: 317, y: 508}
+  m_SizeDelta: {x: 317, y: 738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &988915567
 MonoBehaviour:
@@ -5364,7 +5364,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 286fd456fb9780f4da24ebe578f85bc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81fca5c4e36239946b08434ea0bb7573, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6367,15 +6367,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 848f4204f2661c840a38b14e5b6deb49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6a9615bf2cdc5644bfc7bd1306f1645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 2.81}
+  m_Size: {x: 2.65, y: 1.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1105867584
@@ -6386,8 +6386,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105867582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.26, y: -45.907, z: 0}
-  m_LocalScale: {x: 27.015465, y: 27.015465, z: 27.015465}
+  m_LocalPosition: {x: 2.04, y: -44.59, z: 0}
+  m_LocalScale: {x: 10.478624, y: 10.478624, z: 10.478624}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -6750,15 +6750,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 665870890f6f97043956cf3979d97f3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79949dd5d82db6441be827f169e0af03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 2.81}
+  m_Size: {x: 4.85, y: 6.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1127233584
@@ -6769,8 +6769,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127233582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.1, y: -22.93, z: 0}
-  m_LocalScale: {x: 11.035525, y: 11.035525, z: 11.035525}
+  m_LocalPosition: {x: 0.74, y: -20.76, z: 0}
+  m_LocalScale: {x: 2.3188677, y: 2.3188677, z: 2.3188677}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
