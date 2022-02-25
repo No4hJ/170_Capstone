@@ -16,6 +16,8 @@ public class mouseonobjectScene2 : MonoBehaviour
 
     public AudioSource newspaper_open;
 
+    public GameObject safe;
+
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }
@@ -81,9 +83,10 @@ public class mouseonobjectScene2 : MonoBehaviour
                 //NewsText.SetActive(true);
                 //newspaperBackground.SetActive(true);
             }else if(gameObject.name == "Drawer"){
-                Debug.Log("Desk");
+                Debug.Log("Drawer");
                 lock_item_click();
-                changecamera("Camera_table");
+                changecamera("Camera_drawer");
+                safe.SetActive(true);
             }else{
 
             }
