@@ -38,5 +38,9 @@ MonoBehaviour:
     m_Localized: "\u65E5\u672C\u8A9E\u7248"
     m_Metadata:
       m_Items: []
+  - m_Id: 23179531942121472
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

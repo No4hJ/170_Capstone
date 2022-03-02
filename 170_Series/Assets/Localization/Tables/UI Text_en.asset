@@ -59,21 +59,41 @@ MonoBehaviour:
   - m_Id: 14935697286254592
     m_Localized: "\n Weimeng Cinema\t\r\n Movie Name: A First Farewell\t\r\n Theater:
       1\t\r\n Seat: Row 7 Number 12\t\r\n Time\uFF1AOct.25th 20:00\t\r\n Price\uFF1A30RMB\tService 
-      Fee\uFF1A0RMB\r\n Time when sold\uFF1A18/10/24 21:00\t\r\n 114514152315451234\n\n
-      Weimeng Cinema\t\r\n Movie Name: A First Farewell\t\r\n Theater: 1\t\r\n Seat:
-      Row 7 Number 13\t\r\n Time\uFF1AOct.25th 20:00\t\r\n Price\uFF1A30RMB\tService   
+      Fee\uFF1A0RMB\r\n Time when sold\uFF1A18/10/24 21:00\t\r\n 114514152315451234\n\nWeimeng
+      Cinema\t\r\n Movie Name: A First Farewell\t\r\n Theater: 1\t\r\n Seat: Row
+      7 Number 13\t\r\n Time\uFF1AOct.25th 20:00\t\r\n Price\uFF1A30RMB\tService   
       Fee\uFF1A0RMB\r\n Time when sold\uFF1A18/10/24 21:00\t\r\n114514152315451234\t"
     m_Metadata:
       m_Items: []
   - m_Id: 15441977446834176
     m_Localized: "\n Coupon\r\n 114514152\r\n 315451234\r\n Theater 1\r\n Seat Row
-      7 Number 12\r\n Date 18.10.25\r\n Time 20:00\r\n Price\uFF1A30RMB\n\n Coupon\r\n
-      114514152\r\n 315451234\r\n Theater 1\r\n Seat Row 7 Number 13\r\n Date 18.10.25\r\n
-      Time 20:00\r\n Price\uFF1A30RMB"
+      7 Number 12\r\n Date 18.10.25\r\n Time 20:00\r\n Price\uFF1A30RMB\n\n Coupon\r\n114514152\r\n
+      315451234\r\n Theater 1\r\n Seat Row 7 Number 13\r\n Date 18.10.25\r\nTime
+      20:00\r\n Price\uFF1A30RMB"
     m_Metadata:
       m_Items: []
   - m_Id: 18745654144212992
     m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23178750253879296
+    m_Localized: Game Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23178861604261888
+    m_Localized: Game Begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179120455733248
+    m_Localized: Option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179334801444864
+    m_Localized: Credit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179531942121472
+    m_Localized: Exit
     m_Metadata:
       m_Items: []
   references:

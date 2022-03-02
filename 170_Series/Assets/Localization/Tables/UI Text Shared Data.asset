@@ -47,6 +47,26 @@ MonoBehaviour:
     m_Key: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 23178750253879296
+    m_Key: Start_Scene_Game_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23178861604261888
+    m_Key: Start_Scene_Begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179120455733248
+    m_Key: Start_Scene_Option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179334801444864
+    m_Key: Start_Scene_Credit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23179531942121472
+    m_Key: Start_Scene_Exit
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
