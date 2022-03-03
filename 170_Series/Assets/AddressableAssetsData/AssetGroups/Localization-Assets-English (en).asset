@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 8e1026def25737b419b45e8a55afa58a
   m_SerializeEntries:
-  - m_GUID: bb7b0fbac6219be449cc0da63977f97b
-    m_Address: familychat_en_1
+  - m_GUID: 8a4e01ac22267f0468df7b5c2988debd
+    m_Address: familychat_en1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

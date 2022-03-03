@@ -27,6 +27,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans
+  - m_GUID: 81fca5c4e36239946b08434ea0bb7573
+    m_Address: wife_chat_before
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  - m_GUID: ed7716aa31ce87e44baa2fae667b33f6
+    m_Address: wife_chat_after
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d4be9b1e29d41b8489eec8be276f25b0, type: 2}
   m_SchemaSet:

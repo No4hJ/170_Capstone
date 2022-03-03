@@ -23,6 +23,14 @@ MonoBehaviour:
     m_Key: family_chat_after
     m_Metadata:
       m_Items: []
+  - m_Id: 7467983171035136
+    m_Key: wife_chat_before
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7467985356267520
+    m_Key: wife_chat_after
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - id: 0
@@ -42,6 +50,12 @@ MonoBehaviour:
           m_TableCodes:
           - zh-Hans
           - en
+        - m_KeyId: 7467983171035136
+          m_TableCodes:
+          - zh-Hans
+        - m_KeyId: 7467985356267520
+          m_TableCodes:
+          - zh-Hans
         m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
     00000001:
