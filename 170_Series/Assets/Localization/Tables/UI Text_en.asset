@@ -67,9 +67,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 15441977446834176
     m_Localized: "\n Coupon\r\n 114514152\r\n 315451234\r\n Theater 1\r\n Seat Row
-      7 Number 12\r\n Date 18.10.25\r\n Time 20:00\r\n Price\uFF1A30RMB\n\n Coupon\r\n114514152\r\n
-      315451234\r\n Theater 1\r\n Seat Row 7 Number 13\r\n Date 18.10.25\r\nTime
-      20:00\r\n Price\uFF1A30RMB"
+      7 Number 12\r\n Date 18.10.25\r\n Time 20:00\r\n Price\uFF1A30RMB\n\n Coupon\r\n114514152\r\n315451234\r\nTheater
+      1\r\n Seat Row 7 Number 13\r\n Date 18.10.25\r\nTime 20:00\r\n Price\uFF1A30RMB"
     m_Metadata:
       m_Items: []
   - m_Id: 18745654144212992
@@ -81,7 +80,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23178861604261888
-    m_Localized: Game Begin
+    m_Localized: Start
     m_Metadata:
       m_Items: []
   - m_Id: 23179120455733248
@@ -89,11 +88,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23179334801444864
-    m_Localized: Credit
+    m_Localized: Credits
     m_Metadata:
       m_Items: []
   - m_Id: 23179531942121472
     m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23780092846612480
+    m_Localized: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23781742407655424
+    m_Localized: Main Menu
     m_Metadata:
       m_Items: []
   references:
