@@ -44,4 +44,5 @@ public class Timechanging : MonoBehaviour
     private void autoclock(){
         clock.GetComponent<ClockUI>().autoclocktrigger = true;
     }
+
 }

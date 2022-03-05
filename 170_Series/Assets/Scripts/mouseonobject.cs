@@ -59,7 +59,10 @@ public class mouseonobject : MonoBehaviour
                 changecamera("Camera_wardrobe");
             }else if(gameObject.name == "item 4"){
                 Debug.Log("Time");
-                Global.clockState = 1;
+                
+                if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 0){
+                    Global.clockState = 1;
+                }
                 lock_item_click();
                 clock.SetActive(true);
             }else if(gameObject.name == "item 5"){
