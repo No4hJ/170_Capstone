@@ -7,6 +7,9 @@ public class Timechanging : MonoBehaviour
     public float Day;
     public float REAL_SECONDS_PER_INGAME_DAY = 1000f;
 
+    private static float timeSet = 2.0f; // Set Wait Time Here!
+    private float moveTime = timeSet;
+
     public GameObject clock;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,15 @@ public class Timechanging : MonoBehaviour
         }
         if(Input.GetKeyDown("u")){
             autoclock();
+        }
+
+        if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 1){
+            autoclock();
+            moveTime -= Time.deltaTime;
+            if (moveTime <= 0){
+                Global.clockState = 2;
+                clock.GetComponent<ClockUI>().autoclocktrigger = false;
+            }
         }
     }
 

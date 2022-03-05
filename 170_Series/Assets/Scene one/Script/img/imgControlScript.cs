@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class imgControlScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class imgControlScript : MonoBehaviour
     public GameObject img2;
     public GameObject img3;
     public GameObject img4;
+    public GameObject imgText;
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
@@ -23,12 +25,14 @@ public class imgControlScript : MonoBehaviour
     {
       waitTime -= Time.deltaTime;
       //Debug.Log(Time.deltaTime);
-        if (Input.GetKeyDown (KeyCode.W)){
+        if (Input.GetKeyDown (KeyCode.W) || Global.clockState == 2){
             if (imgActive == 0){
                 imgActive = 1;
                 img1.SetActive(true);
                 room.SetActive(false);
                 waitTime = waitTimeSet;
+                imgText.SetActive(true);
+                Global.clockState = 3;
             }else if (imgActive == 1){
                 imgActive = 0;
                 room.SetActive(true);
@@ -36,7 +40,10 @@ public class imgControlScript : MonoBehaviour
                 img2.SetActive(false);
                 img3.SetActive(false);
                 img4.SetActive(false);
+                imgText.SetActive(false);
             }
+
+
         }
 
         if (imgActive == 1){
@@ -57,6 +64,7 @@ public class imgControlScript : MonoBehaviour
              }else if (img4.activeSelf){
                img4.SetActive(false);
                room.SetActive(true);
+               SceneManager.LoadScene("game2", LoadSceneMode.Single);
              }
 		    }
         }

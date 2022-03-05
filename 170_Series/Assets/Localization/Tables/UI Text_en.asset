@@ -103,5 +103,9 @@ MonoBehaviour:
     m_Localized: Main Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 24187195199344640
+    m_Localized: Click to Continue...
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

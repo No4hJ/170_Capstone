@@ -23,9 +23,11 @@ public class Chat_script : MonoBehaviour
 
     public void person1_chat(){
         Chat_text_active(1);
+        Global.person1ChatState = 1;
     }
     public void person2_chat(){
         Chat_text_active(2);
+        Global.person2ChatState = 1;
     }
 
     private void Chat_text_active(int n){
