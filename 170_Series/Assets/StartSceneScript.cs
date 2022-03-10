@@ -7,6 +7,8 @@ public class StartSceneScript : MonoBehaviour
 {
     public GameObject creditImg;
     public GameObject ButtonExitCredit;
+
+    public GameObject optionMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,8 @@ public class StartSceneScript : MonoBehaviour
 
     public void Option(){
         Debug.Log("Option");
+        optionMenu.SetActive(true);
+
     }
 
     public void Credit(){

@@ -19,10 +19,12 @@ public class Global
     public static int person1ChatState = 0;
     // 0: nothing
     // 1: person1 chat clicked
+    // 2: quit person1 chat
 
     public static int person2ChatState = 0;
     // 0: nothing
     // 1: person2 chat clicked
+    // 2: quit person2 chat
 
     public static int clockState = 0;
     // 0: nothing

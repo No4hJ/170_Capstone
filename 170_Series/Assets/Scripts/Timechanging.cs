@@ -7,9 +7,10 @@ public class Timechanging : MonoBehaviour
     public float Day;
     public float REAL_SECONDS_PER_INGAME_DAY = 1000f;
 
-    private static float timeSet = 2.0f; // Set Wait Time Here!
+    private static float timeSet = 3.0f; // Set Wait Time Here!
     private float moveTime = timeSet;
 
+    public AudioSource clock_sound;
     public GameObject clock;
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class Timechanging : MonoBehaviour
         }
 
         if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 1){
+            clock_sound.Stop();
             autoclock();
             moveTime -= Time.deltaTime;
             if (moveTime <= 0){
