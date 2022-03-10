@@ -12,13 +12,12 @@ public class imgControlScript : MonoBehaviour
     public GameObject img3;
     public GameObject img4;
     public GameObject imgText;
-    public GameObject filter;
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -27,7 +26,6 @@ public class imgControlScript : MonoBehaviour
       waitTime -= Time.deltaTime;
       //Debug.Log(Time.deltaTime);
         if (Input.GetKeyDown (KeyCode.W) || Global.clockState == 2){
-            filter.SetActive(false);
             if (imgActive == 0){
                 imgActive = 1;
                 img1.SetActive(true);
@@ -66,7 +64,7 @@ public class imgControlScript : MonoBehaviour
              }else if (img4.activeSelf){
                img4.SetActive(false);
                room.SetActive(true);
-               SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
+               SceneManager.LoadScene("game2", LoadSceneMode.Single);
              }
 		    }
         }
