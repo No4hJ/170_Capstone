@@ -3273,7 +3273,7 @@ MonoBehaviour:
   img3: {fileID: 237965474}
   img4: {fileID: 1970755170}
   imgText: {fileID: 1809969128}
-  filter: {fileID: 1916677132}
+  filter: {fileID: 0}
 --- !u!1 &581331988
 GameObject:
   m_ObjectHideFlags: 0
