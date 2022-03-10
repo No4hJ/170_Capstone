@@ -7,7 +7,7 @@ public class Timechanging : MonoBehaviour
     public float Day;
     public float REAL_SECONDS_PER_INGAME_DAY = 1000f;
 
-    private static float timeSet = 2.0f; // Set Wait Time Here!
+    private static float timeSet = 5.0f; // Set Wait Time Here! Now 5s.
     private float moveTime = timeSet;
 
     public GameObject clock;
