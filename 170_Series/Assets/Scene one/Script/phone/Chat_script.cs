@@ -26,14 +26,14 @@ public class Chat_script : MonoBehaviour
         if(Global.ticketState == 3){
             Global.person1ChatState = 1;
         }
-        Debug.Log(Global.person1ChatState);
+        //Debug.Log("p1: " + Global.person1ChatState);
     }
     public void person2_chat(){
         Chat_text_active(2);
         if(Global.newspaperState == 3){
             Global.person2ChatState = 1;
         }
-        Debug.Log(Global.person2ChatState);
+        //Debug.Log("p2: " + Global.person2ChatState);
     }
 
     private void Chat_text_active(int n){

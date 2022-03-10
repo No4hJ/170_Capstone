@@ -10,7 +10,7 @@ public class newspaperScript : MonoBehaviour
     public GameObject newspaperParent;
     public GameObject NewsText;
     public GameObject blackCover;
-
+    public GameObject filter;
 
 
     void Start()
@@ -32,6 +32,7 @@ public class newspaperScript : MonoBehaviour
             newspaperParent.SetActive(false);
             NewsText.SetActive(false);
             blackCover.SetActive(false);
+            filter.SetActive(true);
         }else if (gameObject.name == "bigNewspaper"){
             NewsText.SetActive(true);
             blackCover.SetActive(true);
@@ -39,7 +40,8 @@ public class newspaperScript : MonoBehaviour
             if ( Global.newspaperState == 0){
                 Global.newspaperState = 1;
             }
-            Debug.Log(Global.newspaperState);
+            //Debug.Log(Global.newspaperState);
+            filter.SetActive(false);
         }
     }
 

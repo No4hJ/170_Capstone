@@ -13,6 +13,7 @@ public class imgControlScript : MonoBehaviour
     public GameObject img4;
     public GameObject imgText;
     public GameObject filter;
+    public GameObject clock;
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
@@ -32,12 +33,14 @@ public class imgControlScript : MonoBehaviour
                 imgActive = 1;
                 img1.SetActive(true);
                 room.SetActive(false);
+                clock.SetActive(false);
                 waitTime = waitTimeSet;
                 imgText.SetActive(true);
                 Global.clockState = 3;
             }else if (imgActive == 1){
                 imgActive = 0;
                 room.SetActive(true);
+                clock.SetActive(true);
                 img1.SetActive(false);
                 img2.SetActive(false);
                 img3.SetActive(false);

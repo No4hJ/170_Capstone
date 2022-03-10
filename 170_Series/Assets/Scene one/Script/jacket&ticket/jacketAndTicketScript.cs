@@ -11,6 +11,7 @@ public class jacketAndTicketScript : MonoBehaviour
     public GameObject TicketText;
     public GameObject blackCover;
     public GameObject ticket;
+    public GameObject filter;
     private bool jacketClicked;
 
     private float magnify = 1.3f;
@@ -50,7 +51,7 @@ public class jacketAndTicketScript : MonoBehaviour
             Debug.Log("ticket");
             Vector3 objScale = gameObject.transform.localScale;
             gameObject.transform.localScale = new Vector3(objScale.x/magnify,  objScale.y/magnify, objScale.z/magnify);
-            
+            filter.SetActive(false);
             if (Global.ticketState == 0){
                 Global.ticketState = 1;
             }
@@ -61,7 +62,8 @@ public class jacketAndTicketScript : MonoBehaviour
             blackCover.SetActive(false);
             bigJacket.SetActive(false);
             ticket.SetActive(false);
-            Debug.Log("BGC");
+            filter.SetActive(true);
+            //Debug.Log("BGC");
             //Camera cam2 = GameObject.Find("Camera_wardrobe").GetComponent<Camera>();
             //AudioListener aud2 = GameObject.Find(cam_name).GetComponent<AudioListener>();
             //cam2.enabled = false;
