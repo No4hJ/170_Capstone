@@ -50,8 +50,7 @@ public class ClockUI : MonoBehaviour {
         }
 
         //Debug.Log(daynumber);
-        //timeText.text = "day " + daynumber/2 + "   " + hoursString + ":" + minutesString + " " + APM;
-        timeText.text = " " + hoursString + ":" + minutesString + " " + APM;
+        timeText.text = "day " + daynumber/2 + "   " + hoursString + ":" + minutesString + " " + APM;
 
         if(autoclocktrigger == false){
                 if(day <= 0){
