@@ -12,6 +12,8 @@ public class Timechanging : MonoBehaviour
 
     public AudioSource clock_sound;
     public GameObject clock;
+
+    public bool isplay = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,16 +30,22 @@ public class Timechanging : MonoBehaviour
             Day += 0;
             Time.timeScale = 0f;
         }
-        if(Input.GetKeyDown("u")){
-            autoclock();
-        }
+        //if(Input.GetKeyDown("u")){
+        //    autoclock();
+        //}
 
         if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 1){
             autoclock();
+            if(!isplay)
+            {
+                clock_sound.Play();
+                isplay = true;
+            }
             moveTime -= Time.deltaTime;
             if (moveTime <= 0){
                 Global.clockState = 2;
                 clock.GetComponent<ClockUI>().autoclocktrigger = false;
+                clock_sound.Stop();
             }
         }
     }

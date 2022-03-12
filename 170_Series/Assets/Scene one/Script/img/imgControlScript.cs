@@ -27,7 +27,7 @@ public class imgControlScript : MonoBehaviour
     {
       waitTime -= Time.deltaTime;
       //Debug.Log(Time.deltaTime);
-        if (Input.GetKeyDown (KeyCode.W) || Global.clockState == 2){
+        if (Global.clockState == 2){
             filter.SetActive(false);
             if (imgActive == 0){
                 imgActive = 1;
