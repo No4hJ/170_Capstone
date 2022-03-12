@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: Group_chat
     m_Metadata:
       m_Items: []
+  - m_Id: 26802712546451456
+    m_Key: Credit_Content
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

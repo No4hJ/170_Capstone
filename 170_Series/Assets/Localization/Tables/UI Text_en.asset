@@ -115,5 +115,12 @@ MonoBehaviour:
     m_Localized: We are a Family (4)
     m_Metadata:
       m_Items: []
+  - m_Id: 26802712546451456
+    m_Localized: "Producer: Noah Jiang\nDesign Team: Xingwei Christopher Zhang +
+      Noah Jiang\r\nWriting Team: Noah Jiang\r\n\rProgramming Team: Longyu Li, Yuwei
+      Mao, Noah Jiang\n\rArt Team: Xingwei Christopher Zhang, Tszho Mak, Bianca Hsieh,
+      Zeyu Zhang\r\n\rSound Team: Noah Jiang\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
