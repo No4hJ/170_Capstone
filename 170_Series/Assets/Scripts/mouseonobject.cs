@@ -53,13 +53,13 @@ public class mouseonobject : MonoBehaviour
                 if (notify.GetComponent<Renderer>().enabled == true){
                     notify.GetComponent<Renderer>().enabled = false;
                 }
-                if (Global.ticketState == 2){
-                    Global.ticketState = 3;
-                }
+                //if (Global.ticketState == 2){
+                //    Global.ticketState = 3;
+                //}
 
-                if (Global.newspaperState == 2){
-                    Global.newspaperState = 3;
-                }
+                //if (Global.newspaperState == 2){
+                //    Global.newspaperState = 3;
+                //}
             }else if(gameObject.name == "item 3"){
                 Debug.Log("Wardrobe");
                 lock_item_click();
