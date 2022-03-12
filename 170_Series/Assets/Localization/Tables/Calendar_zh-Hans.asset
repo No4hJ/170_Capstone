@@ -10,21 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
-  m_Name: Chat_en
+  m_Name: Calendar_zh-Hans
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
-  m_SharedData: {fileID: 11400000, guid: a60388cdbac2790479771d9aa1958f27, type: 2}
+    m_Code: zh-Hans
+  m_SharedData: {fileID: 11400000, guid: e4f6ef7922d21eb49b6b859fbcac4677, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData:
-  - m_Id: 7979212800
-    m_Localized: 8a4e01ac22267f0468df7b5c2988debd
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1028967303290880
-    m_Localized: 673704c399b793e418bf652ff57557e0
-    m_Metadata:
-      m_Items: []
+  m_TableData: []
   references:
     version: 1

@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 9b6c863deac473c42a70cee9bb263864
   m_SerializeEntries:
-  - m_GUID: c60b87943b7d0d64fa425d9f1bb23f25
-    m_Address: Chat_zh-Hans
+  - m_GUID: ae2fce379d5f9fd43b70c33f4da502de
+    m_Address: Calendar_zh-Hans
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans

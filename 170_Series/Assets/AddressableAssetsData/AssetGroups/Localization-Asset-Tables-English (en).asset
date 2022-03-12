@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2edc8ee4df07a6c46af395ac0c5423dc
   m_SerializeEntries:
-  - m_GUID: 649f00d713543444cb0fe3ddc3ef06d2
-    m_Address: Chat_en
+  - m_GUID: db8315ece069ea241a1ce5652dadd5a1
+    m_Address: Calendar_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

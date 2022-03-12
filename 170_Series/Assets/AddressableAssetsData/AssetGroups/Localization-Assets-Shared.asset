@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/UI Text Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: a60388cdbac2790479771d9aa1958f27
-    m_Address: Assets/Localization/Tables/Chat Shared Data.asset
+  - m_GUID: e4f6ef7922d21eb49b6b859fbcac4677
+    m_Address: Assets/Localization/Tables/Calendar Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
   m_ReadOnly: 1

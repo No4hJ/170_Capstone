@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
-  m_Name: Chat
+  m_Name: Calendar
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: a60388cdbac2790479771d9aa1958f27, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: e4f6ef7922d21eb49b6b859fbcac4677, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 649f00d713543444cb0fe3ddc3ef06d2, type: 2}
-  - {fileID: 11400000, guid: c60b87943b7d0d64fa425d9f1bb23f25, type: 2}
+  - {fileID: 11400000, guid: db8315ece069ea241a1ce5652dadd5a1, type: 2}
+  - {fileID: 11400000, guid: ae2fce379d5f9fd43b70c33f4da502de, type: 2}
   m_Extensions: []
   m_Group: Asset Table
   references:

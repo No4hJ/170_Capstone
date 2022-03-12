@@ -10,25 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Chat Shared Data
+  m_Name: Calendar Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Chat
-  m_TableCollectionNameGuidString: a60388cdbac2790479771d9aa1958f27
+  m_TableCollectionName: Calendar
+  m_TableCollectionNameGuidString: e4f6ef7922d21eb49b6b859fbcac4677
   m_Entries:
-  - m_Id: 7979212800
-    m_Key: family_chat_before
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1028967303290880
-    m_Key: family_chat_after
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7467983171035136
-    m_Key: wife_chat_before
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7467985356267520
-    m_Key: wife_chat_after
+  - m_Id: 347696865280
+    m_Key: 26th
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -42,23 +30,12 @@ MonoBehaviour:
       type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries:
-        - m_KeyId: 7979212800
+        - m_KeyId: 347696865280
           m_TableCodes:
-          - zh-Hans
           - en
-        - m_KeyId: 1028967303290880
-          m_TableCodes:
-          - zh-Hans
-          - en
-        - m_KeyId: 7467983171035136
-          m_TableCodes:
-          - zh-Hans
-        - m_KeyId: 7467985356267520
-          m_TableCodes:
-          - zh-Hans
         m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
     00000001:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1644563760963
+        m_CustomEpoch: 1647055497362

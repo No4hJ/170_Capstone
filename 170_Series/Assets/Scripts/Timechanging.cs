@@ -33,7 +33,6 @@ public class Timechanging : MonoBehaviour
         }
 
         if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 1){
-            clock_sound.Stop();
             autoclock();
             moveTime -= Time.deltaTime;
             if (moveTime <= 0){
