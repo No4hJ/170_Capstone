@@ -87,6 +87,10 @@ public class mouseonobjectScene2 : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_drawer");
                 safe.SetActive(true);
+            }else if(gameObject.name == "Puzzle"){
+                Debug.Log("Puzzle");
+                lock_item_click();
+                changecamera("Camera_puzzle");
             }else{
 
             }
