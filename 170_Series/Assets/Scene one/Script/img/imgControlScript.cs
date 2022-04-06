@@ -31,6 +31,9 @@ public class imgControlScript : MonoBehaviour
             filter.SetActive(false);
             if (imgActive == 0){
                 imgActive = 1;
+                img4.SetActive(true);
+                img3.SetActive(true);
+                img2.SetActive(true);
                 img1.SetActive(true);
                 room.SetActive(false);
                 clock.SetActive(false);
@@ -56,15 +59,15 @@ public class imgControlScript : MonoBehaviour
 			       //Debug.Log("Pressed primary button.");
              if (img1.activeSelf){
                img1.SetActive(false);
-               img2.SetActive(true);
+               img2.GetComponent<spriteFade>().FadeImgIn();
                waitTime = waitTimeSet;
              }else if (img2.activeSelf){
                img2.SetActive(false);
-               img3.SetActive(true);
+               img3.GetComponent<spriteFade>().FadeImgIn();
                waitTime = waitTimeSet;
              }else if (img3.activeSelf){
                img3.SetActive(false);
-               img4.SetActive(true);
+               img4.GetComponent<spriteFade>().FadeImgIn();
                waitTime = waitTimeSet;
              }else if (img4.activeSelf){
                img4.SetActive(false);
@@ -74,4 +77,5 @@ public class imgControlScript : MonoBehaviour
 		    }
         }
     }
+
 }
