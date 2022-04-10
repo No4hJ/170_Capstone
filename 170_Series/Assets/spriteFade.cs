@@ -45,7 +45,7 @@ public class spriteFade : MonoBehaviour
     }
 
     IEnumerator FadeIn(){
-        for (float i = 0; i<= 1;i +=Time.deltaTime){
+        for (float i = 0.7f; i<= 1;i +=Time.deltaTime){
             image.color = new Color(1, 1, 1, i);
             yield return null;
         }

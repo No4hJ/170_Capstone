@@ -30,9 +30,9 @@ public class Timechanging : MonoBehaviour
             Day += 0;
             Time.timeScale = 0f;
         }
-        //if(Input.GetKeyDown("u")){
-        //    autoclock();
-        //}
+        if(Input.GetKeyDown("u")){
+            autoclock();
+        }
 
         if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 1){
             autoclock();

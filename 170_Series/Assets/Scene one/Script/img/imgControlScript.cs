@@ -27,7 +27,7 @@ public class imgControlScript : MonoBehaviour
     {
       waitTime -= Time.deltaTime;
       //Debug.Log(Time.deltaTime);
-        if (Global.clockState == 2){
+        if ((Global.clockState == 2)||(Input.GetKeyDown("w"))){
             filter.SetActive(false);
             if (imgActive == 0){
                 imgActive = 1;
@@ -50,9 +50,8 @@ public class imgControlScript : MonoBehaviour
                 img4.SetActive(false);
                 imgText.SetActive(false);
             }
-
-
         }
+
 
         if (imgActive == 1){
             if (Input.GetMouseButtonDown(0) && waitTime <=0){
