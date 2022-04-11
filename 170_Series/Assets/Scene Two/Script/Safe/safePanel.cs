@@ -10,7 +10,7 @@ public class safePanel : MonoBehaviour
     public GameObject safe;
     public GameObject inside;
     string currentValue = "";
-    private static float waitTimeSet = 1.0f; // Set Wait Time Here!
+    private static float waitTimeSet = 0.5f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
     private bool editable = true;
     private string correctPassword = "1234"; // Set Password Here!
