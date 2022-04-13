@@ -71,7 +71,7 @@ public class imgControlScript : MonoBehaviour
              }else if (img4.activeSelf){
                img4.SetActive(false);
                room.SetActive(true);
-               SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
+               SceneManager.LoadScene("game2", LoadSceneMode.Single);
              }
 		    }
         }
