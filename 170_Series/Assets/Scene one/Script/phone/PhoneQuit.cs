@@ -37,7 +37,7 @@ public class PhoneQuit : MonoBehaviour
     }
 
     public void turnoffphone(){
-        
+        turnonphone();
         Debug.Log("here");
         GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
         Ls_folder.SetActive(true);
