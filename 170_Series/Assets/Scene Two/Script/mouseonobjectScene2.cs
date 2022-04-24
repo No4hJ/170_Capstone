@@ -17,6 +17,8 @@ public class mouseonobjectScene2 : MonoBehaviour
     public AudioSource newspaper_open;
 
     public GameObject safe;
+    public GameObject FragmentsOnWall;
+    public GameObject PuzzleImgs;
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -92,7 +94,10 @@ public class mouseonobjectScene2 : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_puzzle");
             }else{
-
+                if (transform.parent.name == "imageFragments")
+                {
+                    fragmentInteract();
+                }
             }
         }
 
@@ -138,5 +143,42 @@ public class mouseonobjectScene2 : MonoBehaviour
         //}
         //CamButtonUI.SetActive(true);
         //aud2.enabled = true;
+    }
+
+    private void fragmentInteract()
+    {
+        gameObject.SetActive(false);
+
+        if (gameObject.name == "Fragment1")
+        {
+            Debug.Log("Frgmt1");
+            FragmentsOnWall.transform.GetChild(0).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(0).gameObject.SetActive(true);
+        }
+        else if (gameObject.name == "Fragment2"){
+            Debug.Log("Frgmt2");
+            FragmentsOnWall.transform.GetChild(1).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(1).gameObject.SetActive(true);
+        }
+        else if (gameObject.name == "Fragment3"){
+            Debug.Log("Frgmt3");
+            FragmentsOnWall.transform.GetChild(2).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(2).gameObject.SetActive(true);
+        }
+        else if (gameObject.name == "Fragment4"){
+            Debug.Log("Frgmt4");
+            FragmentsOnWall.transform.GetChild(3).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(3).gameObject.SetActive(true);
+        }
+        else if (gameObject.name == "Fragment5"){
+            Debug.Log("Frgmt5");
+            FragmentsOnWall.transform.GetChild(4).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(4).gameObject.SetActive(true);
+        }
+        else if (gameObject.name == "Fragment6"){
+            Debug.Log("Frgmt6");
+            FragmentsOnWall.transform.GetChild(5).gameObject.SetActive(true);
+            PuzzleImgs.transform.GetChild(5).gameObject.SetActive(true);
+        }
     }
 }
