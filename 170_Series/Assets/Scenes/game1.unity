@@ -8409,7 +8409,7 @@ MonoBehaviour:
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
-  filter: {fileID: 0}
+  filter: {fileID: 1385818645}
 --- !u!212 &1131309121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8837,7 +8837,7 @@ MonoBehaviour:
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
-  filter: {fileID: 0}
+  filter: {fileID: 1385818645}
 --- !u!61 &1205640426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9435,7 +9435,7 @@ MonoBehaviour:
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
-  filter: {fileID: 0}
+  filter: {fileID: 1385818645}
 --- !u!212 &1294087928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11340,7 +11340,7 @@ MonoBehaviour:
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
-  filter: {fileID: 0}
+  filter: {fileID: 1385818645}
 --- !u!1 &1572514035
 GameObject:
   m_ObjectHideFlags: 0
@@ -14356,7 +14356,7 @@ MonoBehaviour:
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
-  filter: {fileID: 0}
+  filter: {fileID: 1385818645}
 --- !u!61 &1986461797
 BoxCollider2D:
   m_ObjectHideFlags: 0
