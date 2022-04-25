@@ -2479,15 +2479,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 379363458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdfc072c109e6164c888dbe99050c5d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 54b662f646c77384c9f1b30d3519d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  before_en: {fileID: 0}
-  before_chi: {fileID: 0}
-  after_en: {fileID: 0}
-  after_eng: {fileID: 0}
-  after_ch: {fileID: 0}
-  after_chi: {fileID: 0}
+  before_en: {fileID: 1454967554}
+  before_chi: {fileID: 2102512069}
+  after_en: {fileID: 881464853}
+  after_eng: {fileID: 871389399}
+  after_ch: {fileID: 1330943139}
+  after_chi: {fileID: 401602711}
 --- !u!1 &399175373
 GameObject:
   m_ObjectHideFlags: 0
