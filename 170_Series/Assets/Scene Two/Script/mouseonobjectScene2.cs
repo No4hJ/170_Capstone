@@ -67,7 +67,7 @@ public class mouseonobjectScene2 : MonoBehaviour
                 Debug.Log("Time");
                 lock_item_click();
                 clock.SetActive(true);
-            }else if(gameObject.name == "Calendar"){
+            }else if(gameObject.name == "item5"){
                 Debug.Log("Calendar");
                 lock_item_click();
                 CalendarUI.SetActive(true);
