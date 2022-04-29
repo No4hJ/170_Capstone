@@ -13,8 +13,10 @@ public class mouseonobject : MonoBehaviour
 
     public GameObject newspaperParent;
     public GameObject notify;
+    
 
     public AudioSource newspaper_open;
+
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -91,7 +93,43 @@ public class mouseonobject : MonoBehaviour
                 //changecamera("Camera_newspaper");
                 //NewsText.SetActive(true);
                 //newspaperBackground.SetActive(true);
-            }else{
+            }else if (gameObject.name == "notes"){
+                Debug.Log("notes");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("Notes").gameObject.SetActive(true);
+                t.transform.Find("Notes").gameObject.SetActive(true);
+            }
+            else if (gameObject.name == "boxes")
+            {
+                Debug.Log("boxes");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("Boxes").gameObject.SetActive(true);
+                t.transform.Find("Boxes").gameObject.SetActive(true);
+            }
+            else if (gameObject.name == "trashcan")
+            {
+                Debug.Log("trashcan");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("TrashCan").gameObject.SetActive(true);
+                t.transform.Find("TrashCan").gameObject.SetActive(true);
+            }
+            else
+            {
 
             }
         }

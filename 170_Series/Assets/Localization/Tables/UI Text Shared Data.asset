@@ -91,6 +91,18 @@ MonoBehaviour:
     m_Key: Credit_Content
     m_Metadata:
       m_Items: []
+  - m_Id: 44253812525182976
+    m_Key: Notes_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44254421756227584
+    m_Key: Boxes_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44254451867136000
+    m_Key: TrashCan_Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

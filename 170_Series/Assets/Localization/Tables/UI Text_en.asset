@@ -122,5 +122,17 @@ MonoBehaviour:
       Zeyu Zhang\r\n\rSound Team: Noah Jiang\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 44253812525182976
+    m_Localized: notes text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44254421756227584
+    m_Localized: boxes text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44254451867136000
+    m_Localized: trash can text
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
