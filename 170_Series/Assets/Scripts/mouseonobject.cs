@@ -62,7 +62,8 @@ public class mouseonobject : MonoBehaviour
                 //if (Global.newspaperState == 2){
                 //    Global.newspaperState = 3;
                 //}
-            }else if(gameObject.name == "item 3"){
+            }else if(gameObject.name == "clothes")
+            {
                 Debug.Log("Wardrobe");
                 lock_item_click();
                 changecamera("Camera_wardrobe");
@@ -127,6 +128,30 @@ public class mouseonobject : MonoBehaviour
                 SIO.transform.Find("SIOControl").gameObject.SetActive(true);
                 i.transform.Find("TrashCan").gameObject.SetActive(true);
                 t.transform.Find("TrashCan").gameObject.SetActive(true);
+            }
+            else if (gameObject.name == "drinks")
+            {
+                Debug.Log("drinks");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("Drinks").gameObject.SetActive(true);
+                t.transform.Find("Drinks").gameObject.SetActive(true);
+            }
+            else if (gameObject.name == "bottomboxes")
+            {
+                Debug.Log("bottomboxes");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("BottomBoxes").gameObject.SetActive(true);
+                t.transform.Find("BottomBoxes").gameObject.SetActive(true);
             }
             else
             {

@@ -6,7 +6,7 @@ public class SIOControl : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private static float waitTimeSet = 1.0f; // Set Wait Time Here!
+    private static float waitTimeSet = 0.3f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
 
     public GameObject BlackCover;

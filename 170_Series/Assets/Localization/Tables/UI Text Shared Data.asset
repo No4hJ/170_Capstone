@@ -103,6 +103,14 @@ MonoBehaviour:
     m_Key: TrashCan_Text
     m_Metadata:
       m_Items: []
+  - m_Id: 44627987634925568
+    m_Key: Drinks_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44628043247202304
+    m_Key: BottomBoxes_Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

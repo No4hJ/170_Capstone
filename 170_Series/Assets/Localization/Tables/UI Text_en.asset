@@ -134,5 +134,13 @@ MonoBehaviour:
     m_Localized: trash can text
     m_Metadata:
       m_Items: []
+  - m_Id: 44627987634925568
+    m_Localized: drinks text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44628043247202304
+    m_Localized: bottom boxes text
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
