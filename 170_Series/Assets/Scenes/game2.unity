@@ -9807,7 +9807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1069708673
 Transform:
   m_ObjectHideFlags: 0
@@ -10420,11 +10420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!212 &1131309121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10857,11 +10857,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!61 &1205640426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11926,11 +11926,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!212 &1294087928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14450,11 +14450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!1 &1571304278
 GameObject:
   m_ObjectHideFlags: 0
@@ -15715,11 +15715,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!61 &1621940743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18613,12 +18613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdfc072c109e6164c888dbe99050c5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  before_en: {fileID: 0}
-  before_chi: {fileID: 0}
-  after_en: {fileID: 0}
-  after_eng: {fileID: 0}
-  after_ch: {fileID: 0}
-  after_chi: {fileID: 0}
 --- !u!1 &1935079347
 GameObject:
   m_ObjectHideFlags: 0
@@ -19091,11 +19085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbca0b4b8aa6a47bd214c9b8ec8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigJacket: {fileID: 1131309117}
   TicketText: {fileID: 1063100375}
   blackCover: {fileID: 1986461794}
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
+  LargeTicket: {fileID: 0}
 --- !u!61 &1986461797
 BoxCollider2D:
   m_ObjectHideFlags: 0
