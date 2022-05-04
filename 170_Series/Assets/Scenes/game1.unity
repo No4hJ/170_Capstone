@@ -2831,6 +2831,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b662f646c77384c9f1b30d3519d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  before_en: {fileID: 1454967554}
+  before_chi: {fileID: 2102512069}
+  after_en: {fileID: 881464853}
+  after_eng: {fileID: 871389399}
+  after_ch: {fileID: 1330943139}
+  after_chi: {fileID: 401602711}
 --- !u!1 &399175373
 GameObject:
   m_ObjectHideFlags: 0
@@ -14941,7 +14947,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 3b93b79f568dd314d9a0a6f4bb57a30f, type: 3}
+    m_Font: {fileID: 12800000, guid: 29a178617ded9aa469e9a1439859cd50, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
