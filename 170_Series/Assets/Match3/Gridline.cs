@@ -56,8 +56,14 @@ public class Gridline : MonoBehaviour
             }
         }
 
-        Destroy(pieces[3,2].gameObject);
-        SpawnNewPiece(3,2,PieceType.BUBBLE);
+        Destroy(pieces[2,4].gameObject);
+        SpawnNewPiece(2,4,PieceType.BUBBLE);
+        Destroy(pieces[3,4].gameObject);
+        SpawnNewPiece(3,4,PieceType.BUBBLE);
+        Destroy(pieces[4,4].gameObject);
+        SpawnNewPiece(4,4,PieceType.BUBBLE);
+        Destroy(pieces[5,4].gameObject);
+        SpawnNewPiece(5,4,PieceType.BUBBLE);
 
         StartCoroutine(Fill());
     }
@@ -70,11 +76,20 @@ public class Gridline : MonoBehaviour
 
     public IEnumerator Fill(){
         Debug.Log("fill");
-        while(FillStep()){
 
-            inverse = !inverse;
+        bool needsRefil = true;
+        while (needsRefil)
+        {
             yield return new WaitForSeconds(fillTime);
+            while(FillStep()){
+
+                inverse = !inverse;
+                yield return new WaitForSeconds(fillTime);
+            }
+
+            needsRefil = ClearAllValidMatches();
         }
+        
     }
 
     public bool FillStep(){
@@ -169,6 +184,7 @@ public class Gridline : MonoBehaviour
         pieces [x,y] = newPiece.GetComponent<GamePiece>();
         pieces [x,y].Init(x,y, this ,type);
         return pieces [x,y];
+
     }
 
 
@@ -178,6 +194,7 @@ public class Gridline : MonoBehaviour
     }
 
     public void SwapPieces(GamePiece piece1, GamePiece piece2){
+        Debug.Log("aaa");
         if(piece1.IsMovable() && piece2.IsMovable()){
             pieces [piece1.X, piece1.Y] = piece2;
             pieces [piece2.X, piece2.Y] = piece1;
@@ -198,6 +215,9 @@ public class Gridline : MonoBehaviour
             }
             
         }
+        
+
+        
     }
     
     public void PressPiece(GamePiece piece){
@@ -615,11 +635,34 @@ public class Gridline : MonoBehaviour
             pieces[x,y].ClearableComponent.Clear();
 
             SpawnNewPiece(x,y,PieceType.EMPTY);
+            ClearObstacles(x,y);
 
             return true;
         }
 
         return false;
+    }
+
+    public void ClearObstacles(int x, int y){
+        for (int adjacentX = x - 1; adjacentX <= x + 1; adjacentX++)
+        {
+            if (adjacentX == x || adjacentX < 0 || adjacentX >= xDim) continue;
+
+            if (pieces[adjacentX, y].Type != PieceType.BUBBLE || !pieces[adjacentX, y].IsClearable()) continue;
+            
+            pieces[adjacentX, y].ClearableComponent.Clear();
+            SpawnNewPiece(adjacentX, y, PieceType.EMPTY);
+        }
+
+        for (int adjacentY = y - 1; adjacentY <= y + 1; adjacentY++)
+        {
+            if (adjacentY == y || adjacentY < 0 || adjacentY >= yDim) continue;
+
+            if (pieces[x, adjacentY].Type != PieceType.BUBBLE || !pieces[x, adjacentY].IsClearable()) continue;
+            
+            pieces[x, adjacentY].ClearableComponent.Clear();
+            SpawnNewPiece(x, adjacentY, PieceType.EMPTY);
+        }
     }
     
 }

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4715010467289532}
   - component: {fileID: 95282143576963718}
   - component: {fileID: 5903822149171474288}
+  - component: {fileID: 2616372062367327982}
   m_Layer: 0
   m_Name: BubblePiecePrefab
   m_TagString: Untagged
@@ -125,10 +126,10 @@ Animator:
   m_GameObject: {fileID: 1667288452069994}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d9519e0fa534eae4cb16fb101e74f96a, type: 2}
-  m_CullingMode: 0
+  m_Controller: {fileID: 9100000, guid: 269759bd1c3c89c4f8618ee558301daf, type: 2}
+  m_CullingMode: 2
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25aed81e2ba4532468ec24523ba6a090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2616372062367327982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667288452069994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89d9934af7ef9f4cbd474614727f5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearAnimation: {fileID: 7400000, guid: d1a65480dbd24b44d95cdacdf390013c, type: 2}
