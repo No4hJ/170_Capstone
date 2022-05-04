@@ -195,7 +195,8 @@ public class Gridline : MonoBehaviour
 
     public void SwapPieces(GamePiece piece1, GamePiece piece2){
         Debug.Log("aaa");
-        if(piece1.IsMovable() && piece2.IsMovable()){
+        
+        /*if(piece1.IsMovable() && piece2.IsMovable()){
             pieces [piece1.X, piece1.Y] = piece2;
             pieces [piece2.X, piece2.Y] = piece1;
 
@@ -217,6 +218,34 @@ public class Gridline : MonoBehaviour
         }
         
 
+        */
+
+
+        if (!piece1.IsMovable() || !piece2.IsMovable()) return;
+        
+        pieces[piece1.X, piece1.Y] = piece2;
+        pieces[piece2.X, piece2.Y] = piece1;
+
+        if (GetMatch(piece1, piece2.X, piece2.Y) != null || GetMatch(piece2, piece1.X, piece1.Y) != null)
+        {
+            int piece1X = piece1.X;
+            int piece1Y = piece1.Y;
+
+            piece1.MovableComponent.Move(piece2.X, piece2.Y, fillTime);
+            piece2.MovableComponent.Move(piece1X, piece1Y, fillTime);
+
+            ClearAllValidMatches();
+
+
+            StartCoroutine(Fill());
+
+            // TODO consider doing this using delegates
+        }
+        else
+        {
+            pieces[piece1.X, piece1.Y] = piece1;
+            pieces[piece2.X, piece2.Y] = piece2;
+        }
         
     }
     
