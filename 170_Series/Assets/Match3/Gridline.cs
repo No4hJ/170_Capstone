@@ -24,6 +24,8 @@ public class Gridline : MonoBehaviour
     public float fillTime;
     private bool inverse = false;
 
+    public level level;
+
     private GamePiece pressedPiece;
     private GamePiece enteredPiece;
     public PiecePrefab[] piecePrefabs;
@@ -238,6 +240,7 @@ public class Gridline : MonoBehaviour
 
 
             StartCoroutine(Fill());
+            level.OnMove();
 
             // TODO consider doing this using delegates
         }
