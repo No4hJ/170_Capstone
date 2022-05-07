@@ -142,5 +142,13 @@ MonoBehaviour:
     m_Localized: bottom boxes text
     m_Metadata:
       m_Items: []
+  - m_Id: 47359539007533056
+    m_Localized: marriage certificate text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47370780396564480
+    m_Localized: There was a picture fragment that fell out of the trash.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

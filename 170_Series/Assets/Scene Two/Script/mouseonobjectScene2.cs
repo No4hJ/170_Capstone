@@ -8,7 +8,7 @@ public class mouseonobjectScene2 : MonoBehaviour
     public GameObject Phone;
     public GameObject CamButtonUI;
 
-    public float magnify;
+    public float magnify = 1;
     public bool Abletoclick;
 
     public GameObject newspaperParent;
@@ -97,6 +97,24 @@ public class mouseonobjectScene2 : MonoBehaviour
                 Debug.Log("Puzzle");
                 lock_item_click();
                 changecamera("Camera_puzzle");
+            }else if (gameObject.name == "trashcan")
+            {
+                Debug.Log("trashcan");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("TrashCan").gameObject.SetActive(true);
+                t.transform.Find("TrashCan").gameObject.SetActive(true);
+
+                GameObject ifg = GameObject.Find("imageFragments");
+                GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
+                if  (!ifgow.transform.Find("fragmentOnWall1").gameObject.activeSelf){
+                    ifg.transform.Find("Fragment1").gameObject.SetActive(true);
+                }
+            
             }else{
                 if (transform.parent.name == "imageFragments")
                 {

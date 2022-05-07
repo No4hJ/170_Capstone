@@ -30,4 +30,9 @@ public class Global
     // 2: clock opened and moved
     // 3: img opened automatically
 
+    // For Scene 2
+    public static int marriageCertificateState = 0;
+    // 0: nothing
+    // 1: opened
+
 }
