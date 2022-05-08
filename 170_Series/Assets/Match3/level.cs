@@ -46,7 +46,7 @@ public class level : MonoBehaviour
     }
 
     public virtual void OnMove(){
-
+        Debug.Log("onmove");
     }
 
     public virtual void OnPieceCleared(GamePiece piece){

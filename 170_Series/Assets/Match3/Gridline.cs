@@ -77,7 +77,7 @@ public class Gridline : MonoBehaviour
     }
 
     public IEnumerator Fill(){
-        Debug.Log("fill");
+        //Debug.Log("fill");
 
         bool needsRefil = true;
         while (needsRefil)
@@ -179,7 +179,7 @@ public class Gridline : MonoBehaviour
     }
 
     public GamePiece SpawnNewPiece(int x, int y, PieceType type){
-        Debug.Log("spawnNewPiece");
+        
         GameObject newPiece = (GameObject)Instantiate(piecePrefabDict [type], GetWorldPosition(x,y), Quaternion.identity, this.transform);
         newPiece.transform.parent = transform;
 
@@ -196,7 +196,7 @@ public class Gridline : MonoBehaviour
     }
 
     public void SwapPieces(GamePiece piece1, GamePiece piece2){
-        Debug.Log("aaa");
+        
         
         /*if(piece1.IsMovable() && piece2.IsMovable()){
             pieces [piece1.X, piece1.Y] = piece2;
@@ -269,7 +269,7 @@ public class Gridline : MonoBehaviour
     }
 
     public List<GamePiece> GetMatch(GamePiece piece, int newX, int newY){
-        Debug.Log("GetMatch");
+        
         /*
         if(piece.IsColored()){
             ColorPiece.ColorType color = piece.ColorComponent.Color;
@@ -641,7 +641,7 @@ public class Gridline : MonoBehaviour
 
     
     public bool ClearAllValidMatches(){
-        Debug.Log("ClearAllValidMatches");
+        //Debug.Log("ClearAllValidMatches");
         bool needsRefill = false;
 
         for(int y = 0; y < yDim; y++){
@@ -662,7 +662,7 @@ public class Gridline : MonoBehaviour
         return needsRefill;
     }
     public bool ClearPiece(int x, int y){
-        Debug.Log("ClearPiece");
+        //Debug.Log("ClearPiece");
         if(pieces[x,y].IsClearable()&& !pieces[x,y].ClearableComponent.IsBeingCleared){
             pieces[x,y].ClearableComponent.Clear();
 

@@ -29,14 +29,16 @@ public class ClearablePiece : MonoBehaviour
         
     }
 
-    public void Clear(){
-        Debug.Log("Clear");
+    public virtual void Clear(){
+
+        piece.GridRef.level.OnPieceCleared(piece);
+        
         isBeingCleared = true;
         StartCoroutine(ClearCoroutine());
     }
 
     private IEnumerator ClearCoroutine(){
-        Debug.Log("ClearCoroutine");
+        
         Animator animator = GetComponent<Animator>();
 
         if(animator){
