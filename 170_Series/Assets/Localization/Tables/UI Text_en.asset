@@ -150,5 +150,13 @@ MonoBehaviour:
     m_Localized: There was a picture fragment that fell out of the trash.
     m_Metadata:
       m_Items: []
+  - m_Id: 48260222082691072
+    m_Localized: There was a picture fragment that fell out of the box.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48261237238476800
+    m_Localized: There was a picture fragment that fell out of the drawer.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

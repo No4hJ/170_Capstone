@@ -119,6 +119,14 @@ MonoBehaviour:
     m_Key: TrashCan_Text_S2
     m_Metadata:
       m_Items: []
+  - m_Id: 48260222082691072
+    m_Key: BottomBoxes_Text_S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48261237238476800
+    m_Key: Drawer_Text_S2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

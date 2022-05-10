@@ -93,6 +93,16 @@ public class mouseonobjectScene2 : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_drawer");
                 safe.SetActive(true);
+
+                GameObject ifg = GameObject.Find("imageFragments");
+                GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
+                if  (!ifgow.transform.Find("fragmentOnWall6").gameObject.activeSelf){
+                    ifg.transform.Find("Fragment6").gameObject.SetActive(true);
+
+                }else{
+                    safe.transform.Find("Text").gameObject.SetActive(false);
+
+                }
             }else if(gameObject.name == "Puzzle"){
                 Debug.Log("Puzzle");
                 lock_item_click();
@@ -113,6 +123,23 @@ public class mouseonobjectScene2 : MonoBehaviour
                 GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
                 if  (!ifgow.transform.Find("fragmentOnWall1").gameObject.activeSelf){
                     ifg.transform.Find("Fragment1").gameObject.SetActive(true);
+                }
+            }else if (gameObject.name == "bottomboxes")
+            {
+                Debug.Log("trashcan");
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("BottomBoxes").gameObject.SetActive(true);
+                t.transform.Find("BottomBoxes").gameObject.SetActive(true);
+
+                GameObject ifg = GameObject.Find("imageFragments");
+                GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
+                if  (!ifgow.transform.Find("fragmentOnWall4").gameObject.activeSelf){
+                    ifg.transform.Find("Fragment4").gameObject.SetActive(true);
                 }
             
             }else{
