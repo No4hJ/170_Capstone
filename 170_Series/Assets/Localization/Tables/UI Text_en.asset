@@ -123,23 +123,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 44253812525182976
-    m_Localized: notes text
+    m_Localized: The work arrangement for the end of last year is still here. I guess
+      it's about time to rip it off.
     m_Metadata:
       m_Items: []
   - m_Id: 44254421756227584
-    m_Localized: boxes text
+    m_Localized: Too lazy to throw these away, gonna just leave them here for now.
     m_Metadata:
       m_Items: []
   - m_Id: 44254451867136000
-    m_Localized: trash can text
+    m_Localized: Ewww, time to throw the trash away.
     m_Metadata:
       m_Items: []
   - m_Id: 44627987634925568
-    m_Localized: drinks text
+    m_Localized: burble, burble, burble, ahhhhh
     m_Metadata:
       m_Items: []
   - m_Id: 44628043247202304
-    m_Localized: bottom boxes text
+    m_Localized: Messily stored a bunch of things that are not really useful.
     m_Metadata:
       m_Items: []
   - m_Id: 47359539007533056
@@ -147,11 +148,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 47370780396564480
-    m_Localized: There was a picture fragment that fell out of the trash.
+    m_Localized: Something fell out of the trashcan.
     m_Metadata:
       m_Items: []
   - m_Id: 48260222082691072
-    m_Localized: There was a picture fragment that fell out of the box.
+    m_Localized: Something fell out of the box.
     m_Metadata:
       m_Items: []
   - m_Id: 48261237238476800
