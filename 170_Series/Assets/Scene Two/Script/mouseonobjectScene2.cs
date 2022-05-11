@@ -93,16 +93,7 @@ public class mouseonobjectScene2 : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_drawer");
                 safe.SetActive(true);
-
-                GameObject ifg = GameObject.Find("imageFragments");
-                GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
-                if  (!ifgow.transform.Find("fragmentOnWall6").gameObject.activeSelf){
-                    ifg.transform.Find("Fragment6").gameObject.SetActive(true);
-
-                }else{
-                    safe.transform.Find("Text").gameObject.SetActive(false);
-
-                }
+                
             }else if(gameObject.name == "Puzzle"){
                 Debug.Log("Puzzle");
                 lock_item_click();
