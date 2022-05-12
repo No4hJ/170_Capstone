@@ -25,6 +25,10 @@ public class IconCollider : MonoBehaviour
         if(gameObject.name == "Cloud"){
             Debug.Log("Cloud");
         }
+        if(gameObject.name == "music"){
+            Music();
+            Debug.Log("Music");
+        }
 
     }
     public void Chat(){
@@ -46,5 +50,10 @@ public class IconCollider : MonoBehaviour
 
     public void Cloud(){
         
+    }
+
+    public void Music(){
+        Debug.Log("music");
+        GameObject.Find("Quit").GetComponent<PhoneQuit>().MusicOpen();
     }
 }

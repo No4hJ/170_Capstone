@@ -10,7 +10,7 @@ public class PhoneQuit : MonoBehaviour
     public GameObject Ls_folder;
     public GameObject Ms_floder;
     public GameObject Chat;
-
+    public GameObject Music;
 
     void Start()
     {
@@ -34,6 +34,8 @@ public class PhoneQuit : MonoBehaviour
             turnonphone();
         }
 
+        
+
     }
 
     public void turnoffphone(){
@@ -55,6 +57,12 @@ public class PhoneQuit : MonoBehaviour
     public void ChatOpen(){
         Debug.Log("chatopen1");
         Chat.SetActive(true);
+        Ms_floder.SetActive(false);
+        GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
+    }
+
+    public void MusicOpen(){
+        Music.SetActive(true);
         Ms_floder.SetActive(false);
         GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
     }

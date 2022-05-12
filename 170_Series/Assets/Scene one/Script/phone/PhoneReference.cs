@@ -10,6 +10,7 @@ public class PhoneReference : MonoBehaviour
     public GameObject Ls_folder;
     public GameObject Ms_floder;
     public GameObject Chat_floder;
+    public GameObject Music_floder;
     void Start(){
         Phone = this.gameObject;
         Quit = this.gameObject.transform.GetChild(0).gameObject;
@@ -17,6 +18,7 @@ public class PhoneReference : MonoBehaviour
         Ls_folder = this.gameObject.transform.GetChild(1).gameObject;
         Ms_floder = this.gameObject.transform.GetChild(2).gameObject;
         Chat_floder = this.gameObject.transform.GetChild(3).gameObject;
+        Music_floder = this.gameObject.transform.GetChild(4).gameObject;
         Referenceobject();
 
         CloseAll();
@@ -33,6 +35,7 @@ public class PhoneReference : MonoBehaviour
             allphoneobject[i].GetComponent<PhoneQuit>().Ls_folder = this.Ls_folder;
             allphoneobject[i].GetComponent<PhoneQuit>().Ms_floder = this.Ms_floder;
             allphoneobject[i].GetComponent<PhoneQuit>().Chat = this.Chat_floder;
+            allphoneobject[i].GetComponent<PhoneQuit>().Music = this.Music_floder;
             }
     }
 
@@ -43,6 +46,7 @@ public class PhoneReference : MonoBehaviour
         Ls_folder.SetActive(true);
         Ms_floder.SetActive(false);
         Chat_floder.SetActive(false);
+        Music_floder.SetActive(false);
     }
 }
 
