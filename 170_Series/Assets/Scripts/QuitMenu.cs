@@ -5,10 +5,10 @@ using UnityEngine;
 public class QuitMenu : MonoBehaviour
 {
     public GameObject optionMenu;
-    void Update()
+
+    public void LeaveMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)){
-            optionMenu.SetActive(false);
-        }
+        optionMenu.SetActive(false);
     }
+            
 }

@@ -21,13 +21,13 @@ public class MenuControl : MonoBehaviour
         }
     }
 
-    void Resume(){
+    public void Resume(){
         OptionMenu.SetActive(false);
         isPaused = false;
         room.SetActive(true);
     }
 
-    void Pause(){
+    public void Pause(){
         OptionMenu.SetActive(true);
         isPaused = true;
         room.SetActive(false);

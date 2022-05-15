@@ -29,7 +29,6 @@ public class StartSceneScript : MonoBehaviour
     public void Option(){
         Debug.Log("Option");
         optionMenu.SetActive(true);
-
     }
 
     public void Credit(){

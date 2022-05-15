@@ -13,7 +13,7 @@ public class safePanel : MonoBehaviour
     private static float waitTimeSet = 0.5f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
     private bool editable = true;
-    private string correctPassword = "1234"; // Set Password Here!
+    private string correctPassword = "0818"; // Set Password Here!
     void Start()
     {
         
