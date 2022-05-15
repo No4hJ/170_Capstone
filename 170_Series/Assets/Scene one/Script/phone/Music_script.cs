@@ -6,6 +6,10 @@ public class Music_script : MonoBehaviour
 {
 
     public GameObject Music_list;
+
+    public AudioSource music1;
+    public AudioSource music2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +25,13 @@ public class Music_script : MonoBehaviour
     public void Music1(){
         
         Debug.Log("music1 on");
+        music1.Play();
+        music2.Stop();
     }
 
     public void Music2(){
         Debug.Log("music2 on");
+        music2.Play();
+        music1.Stop();
     }
 }
