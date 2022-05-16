@@ -20,7 +20,8 @@ public class touchJudgment : MonoBehaviour
         // }else{
         //     GetComponent<SpriteRenderer>().color = originalColor;
         // }
-    }
+    }  
+
 
     void OnCollisionStay2D(Collision2D collision)
     {
