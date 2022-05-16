@@ -35,4 +35,10 @@ public class Global
     // 0: nothing
     // 1: opened
 
+    public static int clockStateS2 = 0;
+    // 0: nothing
+    // 1: after move to the right time
+    // 2: img opened automatically
+
+
 }
