@@ -108,13 +108,17 @@ public class mouseonobjectScene2 : MonoBehaviour
                 SIO.transform.Find("BlackCover").gameObject.SetActive(true);
                 SIO.transform.Find("SIOControl").gameObject.SetActive(true);
                 i.transform.Find("TrashCan").gameObject.SetActive(true);
-                t.transform.Find("TrashCan").gameObject.SetActive(true);
+                //t.transform.Find("TrashCan").gameObject.SetActive(true);
 
                 GameObject ifg = GameObject.Find("imageFragments");
                 GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
                 if  (!ifgow.transform.Find("fragmentOnWall1").gameObject.activeSelf){
                     ifg.transform.Find("Fragment1").gameObject.SetActive(true);
+                    t.transform.Find("TrashCan").gameObject.SetActive(true);
+                }else{
+                    t.transform.Find("TrashCanS1").gameObject.SetActive(true);
                 }
+
             }else if (gameObject.name == "bottomboxes")
             {
                 Debug.Log("trashcan");
@@ -125,12 +129,15 @@ public class mouseonobjectScene2 : MonoBehaviour
                 SIO.transform.Find("BlackCover").gameObject.SetActive(true);
                 SIO.transform.Find("SIOControl").gameObject.SetActive(true);
                 i.transform.Find("BottomBoxes").gameObject.SetActive(true);
-                t.transform.Find("BottomBoxes").gameObject.SetActive(true);
+                //t.transform.Find("BottomBoxes").gameObject.SetActive(true);
 
                 GameObject ifg = GameObject.Find("imageFragments");
                 GameObject ifgow = GameObject.Find("imageFragmentsOnWall");
                 if  (!ifgow.transform.Find("fragmentOnWall4").gameObject.activeSelf){
                     ifg.transform.Find("Fragment4").gameObject.SetActive(true);
+                    t.transform.Find("BottomBoxes").gameObject.SetActive(true);
+                }else{
+                    t.transform.Find("BottomBoxesS1").gameObject.SetActive(true);
                 }
             
             }else{
