@@ -31,6 +31,8 @@ public class Gridline : MonoBehaviour
     public PiecePrefab[] piecePrefabs;
     public GameObject background;
 
+    private bool gameOver = false;
+
     private Dictionary<PieceType, GameObject> piecePrefabDict;
 
     private GamePiece [,] pieces;
@@ -197,7 +199,9 @@ public class Gridline : MonoBehaviour
 
     public void SwapPieces(GamePiece piece1, GamePiece piece2){
         
-        
+        if(gameOver){
+            return;
+        }
         /*if(piece1.IsMovable() && piece2.IsMovable()){
             pieces [piece1.X, piece1.Y] = piece2;
             pieces [piece2.X, piece2.Y] = piece1;
@@ -695,6 +699,9 @@ public class Gridline : MonoBehaviour
             pieces[x, adjacentY].ClearableComponent.Clear();
             SpawnNewPiece(x, adjacentY, PieceType.EMPTY);
         }
+    }
+    public void GameOver(){
+        gameOver = true;
     }
     
 }

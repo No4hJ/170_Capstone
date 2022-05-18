@@ -38,11 +38,13 @@ public class level : MonoBehaviour
     }
 
     public virtual void GameWin(){
-
+        Debug.Log("win");
+        grid.GameOver();
     }
 
     public virtual void GameLose(){
-
+        Debug.Log("Lose");
+        grid.GameOver();
     }
 
     public virtual void OnMove(){

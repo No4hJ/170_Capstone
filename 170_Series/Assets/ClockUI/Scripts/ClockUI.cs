@@ -14,8 +14,8 @@ public class ClockUI : MonoBehaviour {
     public float day; 
 
     public bool autoclocktrigger = false;
-
-    private bool autotrigger = false;
+    public bool clockchange = false;
+    
     private void Awake() {
         clockHourHandTransform = transform.Find("hourHand");
         clockMinuteHandTransform = transform.Find("minuteHand");
@@ -56,9 +56,9 @@ public class ClockUI : MonoBehaviour {
         if(autoclocktrigger == false){
                 if(day <= 0){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
-            }else if(day > 0 && Input.GetKey(KeyCode.D)){
+            }else if(day > 0 && Input.GetKey(KeyCode.D) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 60f;
-            }else if(day > 0 && Input.GetKey(KeyCode.A)){
+            }else if(day > 0 && Input.GetKey(KeyCode.A) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
             }else{
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;

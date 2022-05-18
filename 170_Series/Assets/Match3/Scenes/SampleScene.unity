@@ -232,13 +232,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313526818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eabe4003d0f6b114f898f81acf59a92c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cafd35d74156f344be159eae9883376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   score1Star: 0
   score2Star: 0
   score3Star: 0
+  timeInseconds: 5
+  targetScore: 30000
 --- !u!4 &1313526820
 Transform:
   m_ObjectHideFlags: 0
