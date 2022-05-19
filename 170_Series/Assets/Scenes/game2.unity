@@ -7539,6 +7539,7 @@ MonoBehaviour:
   REAL_SECONDS_PER_INGAME_DAY: 0
   day: 0
   autoclocktrigger: 0
+  clockchange: 1
 --- !u!114 &865693399
 MonoBehaviour:
   m_ObjectHideFlags: 0
