@@ -8,7 +8,7 @@ public class LaptopPassword : MonoBehaviour
     public Text passwordText;
     //string currentValue = "";
     private bool editable = true;
-    public string correctPassword = "12345"; // Set Password Here!】
+    public string correctPassword = "03110814"; // Set Password Here!】
     public static float waitTimeSet = 0.5f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
     // Start is called before the first frame update
