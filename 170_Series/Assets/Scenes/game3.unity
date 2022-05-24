@@ -3045,7 +3045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395639603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0021, y: 0.0036, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0.02, z: 0}
   m_LocalScale: {x: 4.0289803, y: 4.0272512, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3350,7 +3350,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 433292573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 672715823}
+        m_TargetAssemblyTypeName: LaptopController, Assembly-CSharp
+        m_MethodName: EnterGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &433292573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18643,7 +18655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: XXL
 --- !u!222 &1884015980
 CanvasRenderer:
   m_ObjectHideFlags: 0

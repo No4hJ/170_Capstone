@@ -6,6 +6,11 @@ public class CheckPlace : MonoBehaviour
 {
     private bool allPlaced = false;
     [SerializeField] GameObject finalImg;
+    [SerializeField] GameObject finalImg2;
+
+    public GameObject button;
+
+    public GameObject button1;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +33,7 @@ public class CheckPlace : MonoBehaviour
         {
             //OpenImg();
             Invoke("OpenImg", 3.0f);
+            gameObject.SetActive(false);
         }
 
         
@@ -36,5 +42,11 @@ public class CheckPlace : MonoBehaviour
     void OpenImg()
         {
             finalImg.SetActive(true);
+            finalImg2.SetActive(true);
+            button.SetActive(false);
+            button1.SetActive(true);
+            if (Global.PuzzleState ==0){
+                Global.PuzzleState = 1;
+            }
         }
 }

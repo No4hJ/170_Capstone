@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LaptopController : MonoBehaviour
 {
@@ -19,4 +20,10 @@ public class LaptopController : MonoBehaviour
     public void ShutDown(){
         gameObject.SetActive(false);
     }
+
+    public void EnterGame(){
+        gameObject.SetActive(false);
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+    }
+
 }

@@ -40,5 +40,8 @@ public class Global
     // 1: after move to the right time
     // 2: img opened automatically
 
+    public static int PuzzleState = 0;
+    // 0: nothing
+    // 1: done
 
 }
