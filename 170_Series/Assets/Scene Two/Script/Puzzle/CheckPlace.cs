@@ -18,7 +18,7 @@ public class CheckPlace : MonoBehaviour
         allPlaced = true;
         for(int i=0; i<6; i++){
             GameObject objFC = transform.GetChild(i).gameObject;
-            if (objFC.GetComponent<SpriteRenderer>().color != Color.green){
+            if (objFC.GetComponent<SpriteRenderer>().color != new Color(0f, 0f, 0f, 0f)){
                  allPlaced = false;
              }
             //Debug.Log(objFC.gameObject.name);
@@ -26,12 +26,15 @@ public class CheckPlace : MonoBehaviour
 
         if (allPlaced)
         {
-            OpenImg();
+            //OpenImg();
+            Invoke("OpenImg", 0.9f);
         }
 
-        void OpenImg()
+        
+    }
+
+    void OpenImg()
         {
             finalImg.SetActive(true);
         }
-    }
 }

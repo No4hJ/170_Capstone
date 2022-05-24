@@ -1733,6 +1733,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 1146658470}
   notify: {fileID: 1037562676}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &218480160
 SpriteRenderer:
@@ -4087,7 +4088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493055804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.47, y: -0.75, z: 0}
+  m_LocalPosition: {x: 4.05, y: -6.01, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 877883794}
@@ -4126,7 +4127,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493055804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2febf202aacf4854cad31428e1de7ec9, type: 3}
   m_Name: 
@@ -4449,7 +4450,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5104,7 +5105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &590161026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6683,7 +6684,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9043,6 +9044,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &994020800
 SpriteRenderer:
@@ -9368,6 +9370,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &1029373859
 SpriteRenderer:
@@ -10290,6 +10293,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &1127251331
 SpriteRenderer:
@@ -11534,7 +11538,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12489,6 +12493,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &1322599676
 SpriteRenderer:
@@ -15051,7 +15056,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15079,7 +15084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1616956040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16756,6 +16761,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &1828534556
 SpriteRenderer:
@@ -17010,7 +17016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1839193400
 Transform:
   m_ObjectHideFlags: 0
@@ -17500,7 +17506,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19528,6 +19534,7 @@ MonoBehaviour:
   Abletoclick: 0
   newspaperParent: {fileID: 1146658470}
   notify: {fileID: 0}
+  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!65 &2064034323
 BoxCollider:
@@ -20153,7 +20160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114654129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -3.4400024, z: 0}
+  m_LocalPosition: {x: 1.01, y: -3.4400024, z: 0}
   m_LocalScale: {x: 2.8817155, y: 2.8817155, z: 2.8817155}
   m_Children: []
   m_Father: {fileID: 1453112385}
@@ -20238,7 +20245,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

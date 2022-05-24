@@ -14,6 +14,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
     public GameObject newspaperParent;
     public GameObject notify;
     public GameObject laptop;
+    public GameObject calimg;
 
     public AudioSource newspaper_open;
 
@@ -79,6 +80,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 Debug.Log("Calendar");
                 lock_item_click();
                 changecamera("Camera_clendar");
+                calimg.SetActive(true);
            }else if(gameObject.name == "item 6"){
                 //Debug.Log(Global.newspaperState);
                 lock_item_click();

@@ -27,22 +27,22 @@ public class touchJudgment : MonoBehaviour
     {
         if (gameObject.name == "ImgBase1" && collision.gameObject.name == "puzzleImg1")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }else if (gameObject.name == "ImgBase2" && collision.gameObject.name == "puzzleImg2")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }else if (gameObject.name == "ImgBase3" && collision.gameObject.name == "puzzleImg3")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }else if (gameObject.name == "ImgBase4" && collision.gameObject.name == "puzzleImg4")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }else if (gameObject.name == "ImgBase5" && collision.gameObject.name == "puzzleImg5")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }else if (gameObject.name == "ImgBase6" && collision.gameObject.name == "puzzleImg6")
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
         }
     }
 
