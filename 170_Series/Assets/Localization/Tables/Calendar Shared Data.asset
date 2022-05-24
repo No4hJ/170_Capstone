@@ -16,7 +16,15 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: e4f6ef7922d21eb49b6b859fbcac4677
   m_Entries:
   - m_Id: 347696865280
-    m_Key: 26th
+    m_Key: Aug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26469776215318528
+    m_Key: Sep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26469821790625792
+    m_Key: Oct
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -33,6 +41,15 @@ MonoBehaviour:
         - m_KeyId: 347696865280
           m_TableCodes:
           - en
+          - zh-Hans
+        - m_KeyId: 26469821790625792
+          m_TableCodes:
+          - en
+          - zh-Hans
+        - m_KeyId: 26469776215318528
+          m_TableCodes:
+          - en
+          - zh-Hans
         m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
     00000001:
