@@ -22,7 +22,7 @@ public class Music_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Music1(){
@@ -66,5 +66,13 @@ public class Music_script : MonoBehaviour
         music2.Stop();
         music3.Stop();
         music4.Stop();
+    }
+    public void MusicStop(){
+        Debug.Log("music Stop");
+        music1.Stop();
+        music2.Stop();
+        music3.Stop();
+        music4.Stop();
+        music5.Stop();
     }
 }

@@ -66,7 +66,7 @@ public class ClockUI : MonoBehaviour {
         }
         
         if(GameObject.Find("Clock") && autoclocktrigger){
-            Debug.Log("aaa");
+            //Debug.Log("aaa");
             GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = Mathf.Lerp(
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY, 3f, 10* Time.deltaTime);
             

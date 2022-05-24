@@ -127,6 +127,10 @@ MonoBehaviour:
     m_Key: Drawer_Text_S2
     m_Metadata:
       m_Items: []
+  - m_Id: 53533373579730944
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
