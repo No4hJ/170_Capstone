@@ -24,7 +24,13 @@ public class CheckPlace : MonoBehaviour
             //Debug.Log(objFC.gameObject.name);
         }
 
-        if (allPlaced){
+        if (allPlaced)
+        {
+            OpenImg();
+        }
+
+        void OpenImg()
+        {
             finalImg.SetActive(true);
         }
     }

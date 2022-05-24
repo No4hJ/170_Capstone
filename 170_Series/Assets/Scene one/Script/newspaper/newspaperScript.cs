@@ -15,7 +15,8 @@ public class newspaperScript : MonoBehaviour
 
     void Start()
     {
-        
+        NewsText.SetActive(true);
+        blackCover.SetActive(false);
     }
 
     // Update is called once per frame

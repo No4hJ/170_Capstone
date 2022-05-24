@@ -83,7 +83,7 @@ public class mouseonobject : MonoBehaviour
                 //Debug.Log(Global.newspaperState);
                 lock_item_click();
                 //changecamera("Camera_newspaper");
-                newspaperParent.SetActive(true);
+                //newspaperParent.SetActive(true);
                 newspaper_open.Play();
                 //Vector3 objScale = gameObject.transform.localScale;
                 //gameObject.transform.localScale = new Vector3(objScale.x*magnify,  objScale.y*magnify, objScale.z*magnify);
@@ -94,6 +94,13 @@ public class mouseonobject : MonoBehaviour
                 //changecamera("Camera_newspaper");
                 //NewsText.SetActive(true);
                 //newspaperBackground.SetActive(true);
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("NewsPaper").gameObject.SetActive(true);
+                t.transform.Find("NewsPaper").gameObject.SetActive(true);
             }else if (gameObject.name == "notes"){
                 Debug.Log("notes");
                 lock_item_click();
