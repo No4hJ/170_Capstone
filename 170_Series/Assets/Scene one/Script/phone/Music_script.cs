@@ -30,26 +30,41 @@ public class Music_script : MonoBehaviour
         Debug.Log("music1 on");
         music1.Play();
         music2.Stop();
+        music3.Stop();
+        music4.Stop();
+        music5.Stop();
     }
 
     public void Music2(){
         Debug.Log("music2 on");
         music2.Play();
         music1.Stop();
+        music3.Stop();
+        music4.Stop();
+        music5.Stop();
     }
     public void Music3(){
         Debug.Log("music3 on");
-        music2.Play();
+        music3.Play();
         music1.Stop();
+        music2.Stop();
+        music4.Stop();
+        music5.Stop();
     }
     public void Music4(){
         Debug.Log("music4 on");
-        music2.Play();
+        music4.Play();
         music1.Stop();
+        music2.Stop();
+        music3.Stop();
+        music5.Stop();
     }
     public void Music5(){
         Debug.Log("music5 on");
-        music2.Play();
+        music5.Play();
         music1.Stop();
+        music2.Stop();
+        music3.Stop();
+        music4.Stop();
     }
 }

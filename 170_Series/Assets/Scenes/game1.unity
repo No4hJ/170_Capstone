@@ -8978,7 +8978,7 @@ PrefabInstance:
     - target: {fileID: 782424450176857294, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2066957812}
+      objectReference: {fileID: 2066957814}
     - target: {fileID: 782424450176857294, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Music1
@@ -8990,7 +8990,7 @@ PrefabInstance:
     - target: {fileID: 2439660845472738040, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2066957812}
+      objectReference: {fileID: 2066957814}
     - target: {fileID: 2439660845472738040, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Music2
@@ -8999,6 +8999,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Music_script, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: music1
+      value: 
+      objectReference: {fileID: 998580100}
+    - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: music2
+      value: 
+      objectReference: {fileID: 1890707994}
+    - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: music3
+      value: 
+      objectReference: {fileID: 2124733811}
+    - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: music4
+      value: 
+      objectReference: {fileID: 2012112805}
+    - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: music5
+      value: 
+      objectReference: {fileID: 1005345617}
     - target: {fileID: 9040740482044652835, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14016,29 +14036,17 @@ MonoBehaviour:
   NewsText: {fileID: 536046585}
   blackCover: {fileID: 623976965}
   filter: {fileID: 1385818645}
---- !u!1 &2066957811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 11666699048594086, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+--- !u!114 &2066957814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
   m_PrefabInstance: {fileID: 1316387146}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2066957812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066957811}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f882fbd72ab5cef4989653025ad5d114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Music_list: {fileID: 0}
-  music1: {fileID: 998580100}
-  music2: {fileID: 1890707994}
-  music3: {fileID: 0}
-  music4: {fileID: 0}
-  music5: {fileID: 0}
 --- !u!1 &2069160304
 GameObject:
   m_ObjectHideFlags: 0

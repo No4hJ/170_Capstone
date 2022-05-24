@@ -27,7 +27,7 @@ public class CheckPlace : MonoBehaviour
         if (allPlaced)
         {
             //OpenImg();
-            Invoke("OpenImg", 0.9f);
+            Invoke("OpenImg", 3.0f);
         }
 
         

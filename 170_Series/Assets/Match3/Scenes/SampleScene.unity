@@ -239,7 +239,7 @@ MonoBehaviour:
   score1Star: 0
   score2Star: 0
   score3Star: 0
-  timeInseconds: 5
+  timeInseconds: 180
   targetScore: 30000
 --- !u!4 &1313526820
 Transform:
