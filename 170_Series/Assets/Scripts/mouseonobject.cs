@@ -103,6 +103,10 @@ public class mouseonobject : MonoBehaviour
                 SIO.transform.Find("SIOControl").gameObject.SetActive(true);
                 i.transform.Find("NewsPaper").gameObject.SetActive(true);
                 t.transform.Find("NewsPaper").gameObject.SetActive(true);
+
+                if ( Global.newspaperState == 0){
+                    Global.newspaperState = 1;
+                }
             }else if (gameObject.name == "notes"){
                 Debug.Log("notes");
                 lock_item_click();
