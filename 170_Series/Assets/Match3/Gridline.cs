@@ -60,14 +60,6 @@ public class Gridline : MonoBehaviour
             }
         }
 
-        Destroy(pieces[2,4].gameObject);
-        SpawnNewPiece(2,4,PieceType.BUBBLE);
-        Destroy(pieces[3,4].gameObject);
-        SpawnNewPiece(3,4,PieceType.BUBBLE);
-        Destroy(pieces[4,4].gameObject);
-        SpawnNewPiece(4,4,PieceType.BUBBLE);
-        Destroy(pieces[5,4].gameObject);
-        SpawnNewPiece(5,4,PieceType.BUBBLE);
 
         StartCoroutine(Fill());
     }
