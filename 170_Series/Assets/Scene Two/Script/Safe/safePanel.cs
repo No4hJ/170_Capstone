@@ -10,7 +10,7 @@ public class safePanel : MonoBehaviour
     public GameObject safe;
     public GameObject inside;
     string currentValue = "";
-    private static float waitTimeSet = 0.5f; // Set Wait Time Here!
+    private static float waitTimeSet = 0.6f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
     private bool editable = true;
     private string correctPassword = "0818"; // Set Password Here!
@@ -59,9 +59,13 @@ public class safePanel : MonoBehaviour
                 currentValue += "9";
             }
         }
-
         if (!editable){
             waitTime -= Time.deltaTime;
+
+            if(currentValue != correctPassword && waitTime <= waitTimeSet/2f){
+                currentValue = "Wrong";
+            }
+
             if (waitTime <=0){
                 editable = true;
                 waitTime = waitTimeSet;
@@ -69,6 +73,7 @@ public class safePanel : MonoBehaviour
                     unlock();
                 }
                 currentValue = "";
+
             }
         }
         
@@ -77,6 +82,13 @@ public class safePanel : MonoBehaviour
     public void AddWord(string digit){
         if (editable){
             currentValue += digit;
+        }
+
+        //Debug.Log(digit);
+    }
+    public void DelWord(string digit){
+        if (editable && currentValue.Length>=1){
+            currentValue = currentValue.Remove(currentValue.Length - 1, 1);
         }
         //Debug.Log(digit);
     }
