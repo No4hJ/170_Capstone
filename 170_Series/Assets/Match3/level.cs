@@ -16,7 +16,7 @@ public class level : MonoBehaviour
     public int score1Star;
     public int score2Star;
     public int score3Star;
-
+    public UI UI;
     protected LevelType type;
 
     public LevelType Type{
@@ -28,7 +28,7 @@ public class level : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UI.SetScore(currentScore);
     }
 
     // Update is called once per frame
@@ -39,11 +39,14 @@ public class level : MonoBehaviour
 
     public virtual void GameWin(){
         Debug.Log("win");
+        UI.OnGameWin(currentScore);
         grid.GameOver();
+
     }
 
     public virtual void GameLose(){
         Debug.Log("Lose");
+        UI.OnGameLose();
         grid.GameOver();
     }
 
@@ -53,6 +56,7 @@ public class level : MonoBehaviour
 
     public virtual void OnPieceCleared(GamePiece piece){
         currentScore += piece.score;
+        UI.SetScore(currentScore);
         Debug.Log("Score: " + currentScore);
     }
 }
