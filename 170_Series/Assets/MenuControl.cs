@@ -7,7 +7,6 @@ public class MenuControl : MonoBehaviour
     public static bool isPaused = false;
 
     public GameObject OptionMenu;
-    public GameObject room;
     // Update is called once per frame
     void Update()
     {
@@ -24,12 +23,12 @@ public class MenuControl : MonoBehaviour
     public void Resume(){
         OptionMenu.SetActive(false);
         isPaused = false;
-        room.SetActive(true);
+        GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
     }
 
     public void Pause(){
         OptionMenu.SetActive(true);
         isPaused = true;
-        room.SetActive(false);
+        GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = false;
     }
 }
