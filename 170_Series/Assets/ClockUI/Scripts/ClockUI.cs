@@ -72,6 +72,10 @@ public class ClockUI : MonoBehaviour {
             
             
         }
+
+        if (Global.person1ChatStateS2 ==1 && !clockchange){
+            clockchange = true;
+        }
     }
 
     public void autoclock(){

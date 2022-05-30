@@ -30,7 +30,8 @@ public class Global
     // 2: clock opened and moved
     // 3: img opened automatically
 
-    // For Scene 2
+    // For Scene 2 !!!!!!!
+
     public static int marriageCertificateState = 0;
     // 0: nothing
     // 1: opened
@@ -43,5 +44,9 @@ public class Global
     public static int PuzzleState = 0;
     // 0: nothing
     // 1: done
+
+    public static int person1ChatStateS2 = 0;
+    // 0: nothing
+    // 1: person1 chat clicked
 
 }

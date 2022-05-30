@@ -26,6 +26,10 @@ public class Chat_script : MonoBehaviour
         if(Global.ticketState == 3){
             Global.person1ChatState = 1;
         }
+        if (Global.person1ChatStateS2 ==0){
+            Global.person1ChatStateS2 =1;
+        }
+
         //Debug.Log("p1: " + Global.person1ChatState);
     }
     public void person2_chat(){
