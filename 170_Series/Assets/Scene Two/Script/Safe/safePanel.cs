@@ -63,7 +63,7 @@ public class safePanel : MonoBehaviour
             waitTime -= Time.deltaTime;
 
             if(currentValue != correctPassword && waitTime <= waitTimeSet/2f){
-                currentValue = "Wrong";
+                currentValue = "Error";
             }
 
             if (waitTime <=0){
