@@ -26,14 +26,14 @@ public class UI : MonoBehaviour
     }
 
     public void SetScore(int score){
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
     public void SetTarget(int target){
-        targetText.text = target.ToString();
+        targetText.text = "Highest Score:" + target.ToString();
     }
 
     public void SetRemaining(string remaining){
-        timeText.text = remaining;
+        timeText.text = "Time: " + remaining;
     }
 
     public void OnGameWin(int score){
