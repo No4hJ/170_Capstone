@@ -289,7 +289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7821143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3931,7 +3931,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Month2
+  m_Text: 09
 --- !u!222 &372875594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5482,7 +5482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &590161026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12542,7 +12542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Month1
+  m_Text: 08
 --- !u!222 &1261216125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14092,7 +14092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Month3
+  m_Text: 10
 --- !u!222 &1347601439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14463,7 +14463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1419334589
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16305,7 +16305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1616956040
 RectTransform:
   m_ObjectHideFlags: 0
