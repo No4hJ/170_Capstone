@@ -33,6 +33,7 @@ public class LaptopPassword : MonoBehaviour
         transform.Find("Password Input").gameObject.SetActive(false);
         transform.Find("OK Button").gameObject.SetActive(false);
         transform.Find("Wrong Text").gameObject.SetActive(false);
+        transform.Find("Lockscreen").gameObject.SetActive(false);
 
         transform.Find("Desktop Img").gameObject.SetActive(true);
         transform.Find("Icons").gameObject.SetActive(true);
