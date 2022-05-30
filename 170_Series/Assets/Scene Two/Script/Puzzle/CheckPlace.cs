@@ -11,6 +11,9 @@ public class CheckPlace : MonoBehaviour
     public GameObject button;
 
     public GameObject button1;
+
+    public GameObject final_pic;
+    public GameObject frags;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +51,7 @@ public class CheckPlace : MonoBehaviour
             if (Global.PuzzleState ==0){
                 Global.PuzzleState = 1;
             }
+            final_pic.SetActive(true);
+            frags.SetActive(false);
         }
 }
