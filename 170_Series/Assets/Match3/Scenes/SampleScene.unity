@@ -391,8 +391,8 @@ MonoBehaviour:
   score2Star: 0
   score3Star: 0
   UI: {fileID: 1914504205}
-  timeInseconds: 180
-  targetScore: 30000
+  timeInseconds: 100
+  targetScore: 70000
 --- !u!4 &1313526820
 Transform:
   m_ObjectHideFlags: 0
