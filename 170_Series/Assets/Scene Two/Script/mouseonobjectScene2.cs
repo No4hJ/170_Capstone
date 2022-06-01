@@ -53,8 +53,12 @@ public class mouseonobjectScene2 : MonoBehaviour
                 changecamera("Camera_table");
 
             }else if(gameObject.name == "item 2"){
-                Debug.Log("Phone");
+                //Debug.Log(Global.marriageCertificateState);
                 lock_item_click();
+                if (Global.marriageCertificateState == 1){
+                    //Debug.Log("P2");
+                    Global.marriageCertificateState =2; 
+                }
                 Phone.SetActive(true);
                 if (notify.GetComponent<Renderer>().enabled == true){
                     notify.GetComponent<Renderer>().enabled = false;

@@ -39,6 +39,10 @@ public class mouseOnMC : MonoBehaviour
             i.transform.Find("MarriageCertificate").gameObject.SetActive(true);
             t.transform.Find("MarriageCertificate").gameObject.SetActive(true);
             //GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
+
+            if (Global.marriageCertificateState ==0){
+                Global.marriageCertificateState = 1;
+            }
         }
     }
 
@@ -65,6 +69,5 @@ public class mouseOnMC : MonoBehaviour
 
     public void SetCamera(){
         GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change = true;
-        Global.marriageCertificateState = 1;
     }
 }

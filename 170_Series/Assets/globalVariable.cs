@@ -35,6 +35,7 @@ public class Global
     public static int marriageCertificateState = 0;
     // 0: nothing
     // 1: opened
+    // 2: phone opened
 
     public static int clockStateS2 = 0;
     // 0: nothing
