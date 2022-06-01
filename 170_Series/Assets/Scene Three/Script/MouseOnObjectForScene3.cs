@@ -53,9 +53,9 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 Debug.Log("Phone");
                 lock_item_click();
                 Phone.SetActive(true);
-                if (notify.GetComponent<Renderer>().enabled == true){
-                    notify.GetComponent<Renderer>().enabled = false;
-                }
+                // if (notify.GetComponent<Renderer>().enabled == true){
+                //     notify.GetComponent<Renderer>().enabled = false;
+                // }
                 //if (Global.ticketState == 2){
                 //    Global.ticketState = 3;
                 //}
@@ -63,6 +63,10 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 //if (Global.newspaperState == 2){
                 //    Global.newspaperState = 3;
                 //}
+
+                if (Global.clockStateS3 ==1){
+                    Global.clockStateS3 =2;
+                }
             }else if(gameObject.name == "clothes")
             {
                 Debug.Log("Wardrobe");

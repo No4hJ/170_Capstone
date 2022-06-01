@@ -1936,6 +1936,7 @@ GameObject:
   - component: {fileID: 328125310}
   - component: {fileID: 328125313}
   - component: {fileID: 328125311}
+  - component: {fileID: 328125314}
   - component: {fileID: 328125312}
   m_Layer: 0
   m_Name: item 2
@@ -1994,16 +1995,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 328125309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62474da6d5d261140a727e1c2faa0fe8, type: 3}
+  m_Script: {fileID: 11500000, guid: c3330f84494f5ca4fbf0be56ff42a97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clock: {fileID: 865693396}
+  clock: {fileID: 0}
   Phone: {fileID: 1813437959}
   CamButtonUI: {fileID: 1060045200}
-  magnify: 1.1
+  magnify: 1
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
+  laptop: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
 --- !u!212 &328125313
@@ -2057,6 +2059,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &328125314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328125309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea8cb40f14f2d408afade649ce22a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &336525411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,6 +6603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865693397}
   - component: {fileID: 865693398}
+  - component: {fileID: 865693399}
   m_Layer: 0
   m_Name: Clock
   m_TagString: Untagged
@@ -6639,6 +6654,18 @@ MonoBehaviour:
   day: 0
   autoclocktrigger: 0
   clockchange: 0
+--- !u!114 &865693399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865693396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b3ae91b28d14643897dd83075cc9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877883793
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PhoneLayerControl : MonoBehaviour
+public class PhoneLayerControlS3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class PhoneLayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Global.newspaperState ==2||Global.ticketState ==2){
+        if(Global.clockStateS3 ==1){
             GetComponent<SpriteRenderer>().sortingOrder = 50;
         }else{
             GetComponent<SpriteRenderer>().sortingOrder = 4;

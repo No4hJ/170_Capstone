@@ -1992,7 +1992,7 @@ MonoBehaviour:
   magnify: 1
   Abletoclick: 0
   newspaperParent: {fileID: 0}
-  notify: {fileID: 0}
+  notify: {fileID: 1037562676}
   newspaper_open: {fileID: 0}
   safe: {fileID: 0}
   FragmentsOnWall: {fileID: 0}

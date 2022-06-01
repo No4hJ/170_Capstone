@@ -50,4 +50,15 @@ public class Global
     // 0: nothing
     // 1: person1 chat clicked
 
+    // For Scene 3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+    public static int person1ChatStateS3 = 0;
+    // 0: nothing
+    // 1: person1 chat clicked
+
+    public static int clockStateS3 = 0;
+    // 0: nothing
+    // 1: after move to the right time
+    // 2: phone opened
+
 }
