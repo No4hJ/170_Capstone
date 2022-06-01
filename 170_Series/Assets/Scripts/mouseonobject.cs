@@ -18,7 +18,7 @@ public class mouseonobject : MonoBehaviour
 
     public AudioSource newspaper_open;
 
-
+    
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }
