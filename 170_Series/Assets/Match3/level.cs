@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class level : MonoBehaviour
 {
     public enum LevelType
@@ -23,8 +23,9 @@ public class level : MonoBehaviour
         get { return type;}
     }
 
-    protected int currentScore;
-
+    //protected int currentScore;
+    public int currentScore;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class level : MonoBehaviour
 
     public virtual void GameWin(){
         Debug.Log("win");
+        SceneManager.LoadScene("game1");
         UI.OnGameWin(currentScore);
         grid.GameOver();
 
@@ -46,6 +48,7 @@ public class level : MonoBehaviour
 
     public virtual void GameLose(){
         Debug.Log("Lose");
+
         UI.OnGameLose();
         grid.GameOver();
     }

@@ -36,5 +36,9 @@ public class LevelTimer : level
                 GameLose();
             }
         }
+
+        if(currentScore >= targetScore){
+                GameWin();
+        }
     }
 }
