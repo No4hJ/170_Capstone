@@ -19,6 +19,8 @@ public class level : MonoBehaviour
     public UI UI;
     protected LevelType type;
 
+    public GameObject Lose;
+
     public LevelType Type{
         get { return type;}
     }
@@ -49,8 +51,10 @@ public class level : MonoBehaviour
     public virtual void GameLose(){
         Debug.Log("Lose");
 
-        UI.OnGameLose();
-        grid.GameOver();
+        Lose.SetActive(true);
+
+        //UI.OnGameLose();
+        //grid.GameOver();
     }
 
     public virtual void OnMove(){
@@ -61,5 +65,9 @@ public class level : MonoBehaviour
         currentScore += piece.score;
         UI.SetScore(currentScore);
         Debug.Log("Score: " + currentScore);
+    }
+
+    public virtual void PlayAgain(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 }

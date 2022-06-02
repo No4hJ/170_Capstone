@@ -7,7 +7,7 @@ public class LevelTimer : level
     public int timeInseconds;
     public int targetScore;
     
-    private float timer;
+    public float timer;
 
     // Start is called before the first frame update
     void Start()
