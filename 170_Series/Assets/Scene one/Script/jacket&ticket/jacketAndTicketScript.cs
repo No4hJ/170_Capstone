@@ -13,6 +13,9 @@ public class jacketAndTicketScript : MonoBehaviour
     public GameObject ticket;
     public GameObject filter;
     public GameObject LargeTicket;
+
+    public Texture2D cursor1;
+    public Texture2D cursor2;
     
 
     private float magnify = 1.3f;
@@ -23,10 +26,12 @@ public class jacketAndTicketScript : MonoBehaviour
 
      void OnMouseEnter(){
         effectOn();
+        Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void OnMouseExit(){
         effectOff();
+        Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void OnMouseDown ()
@@ -57,6 +62,7 @@ public class jacketAndTicketScript : MonoBehaviour
             //AudioListener aud2 = GameObject.Find(cam_name).GetComponent<AudioListener>();
             //cam2.enabled = false;
         }
+        Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     private void effectOn(){

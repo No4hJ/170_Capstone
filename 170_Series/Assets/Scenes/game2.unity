@@ -1207,6 +1207,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &105564866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1998,6 +2000,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &218480160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4824,6 +4828,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &504212391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8349,6 +8355,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 1688342299}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &862175271
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9895,6 +9903,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &994020800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10086,7 +10096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 958.65546, y: 537.6571}
+  m_AnchoredPosition: {x: 958.72, y: 537.78}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1023730847
@@ -10221,6 +10231,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1029373859
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11219,6 +11231,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1127251331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11319,6 +11333,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1131309121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11784,6 +11800,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1205640426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13111,6 +13129,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1294087928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13568,6 +13588,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &1322599676
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13662,6 +13684,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &1330742020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15355,6 +15379,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!1 &1571304278
 GameObject:
   m_ObjectHideFlags: 0
@@ -16542,6 +16568,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1621940743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17030,6 +17058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8884b3b29dc0c5c4580f6b0b2630a865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &1702620976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17106,11 +17136,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.22188517, y: 0.9094632}
-      - {x: -1.1568246, y: -0.07576305}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.7426107, y: -1.3774221}
-      - {x: 1.4941125, y: -0.18439186}
+    - - {x: 0.25047165, y: 0.54773307}
+      - {x: -0.2101698, y: 0.24202703}
+      - {x: -0.19852115, y: 0.19375716}
+      - {x: -0.21947923, y: 0.20471977}
+      - {x: -0.3010824, y: 0.27445143}
+      - {x: -0.6844879, y: -0.08595843}
+      - {x: -0.12873095, y: -0.59786963}
+      - {x: 0.05455347, y: -0.41380534}
+      - {x: 0.6315987, y: -0.16060643}
 --- !u!1 &1707391064
 GameObject:
   m_ObjectHideFlags: 0
@@ -17663,6 +17697,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &1785661358
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18458,6 +18494,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1828534556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18905,6 +18943,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1847082727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19280,6 +19320,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1860721668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20374,6 +20416,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1986461797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21628,6 +21672,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!65 &2064034323
 BoxCollider:
   m_ObjectHideFlags: 0

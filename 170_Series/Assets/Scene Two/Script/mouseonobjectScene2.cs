@@ -21,6 +21,8 @@ public class mouseonobjectScene2 : MonoBehaviour
     public GameObject PuzzleImgs;
 
     public GameObject CalendarUI;
+    public Texture2D cursor1;
+    public Texture2D cursor2;
 
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
@@ -29,6 +31,7 @@ public class mouseonobjectScene2 : MonoBehaviour
     void OnMouseEnter(){
         if(Abletoclick){
             effectOn();
+            Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 
@@ -36,12 +39,14 @@ public class mouseonobjectScene2 : MonoBehaviour
         if(Abletoclick){
             effectOff();
             interaction();
+            Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 
     void OnMouseExit(){
         if(Abletoclick){
             effectOff();
+            Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 

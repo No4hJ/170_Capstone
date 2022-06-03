@@ -17,6 +17,8 @@ public class MouseOnObjectForScene3 : MonoBehaviour
     public GameObject calimg;
 
     public AudioSource newspaper_open;
+    public Texture2D cursor1;
+    public Texture2D cursor2;
 
 
     void Update(){
@@ -26,6 +28,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
     void OnMouseEnter(){
         if(Abletoclick){
             effectOn();
+            Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 
@@ -33,12 +36,14 @@ public class MouseOnObjectForScene3 : MonoBehaviour
         if(Abletoclick){
             effectOff();
             interaction();
+            Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 
     void OnMouseExit(){
         if(Abletoclick){
             effectOff();
+            Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
         }
     }
 

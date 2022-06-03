@@ -500,6 +500,8 @@ MonoBehaviour:
   notify: {fileID: 1037562676}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &89099147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1174,6 +1176,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &177397163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3171,6 +3175,8 @@ MonoBehaviour:
   notify: {fileID: 1037562676}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!58 &525234858
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4021,6 +4027,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!60 &670527453
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4909,6 +4917,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &781432971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5067,6 +5077,8 @@ MonoBehaviour:
   notify: {fileID: 1037562676}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 991120101}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!1 &823857288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,6 +5560,8 @@ MonoBehaviour:
   notify: {fileID: 1037562676}
   calimg: {fileID: 693342212}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &888158855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6956,6 +6970,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!65 &1063307236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7545,6 +7561,8 @@ MonoBehaviour:
   notify: {fileID: 1037562676}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1125879770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8323,6 +8341,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 1385818645}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1205640427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10139,6 +10159,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!1 &1435130274
 GameObject:
   m_ObjectHideFlags: 0
@@ -10685,6 +10707,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 1385818645}
   LargeTicket: {fileID: 427832581}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!1 &1572514035
 GameObject:
   m_ObjectHideFlags: 0
@@ -11151,6 +11175,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!65 &1617861375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13469,6 +13495,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 1385818645}
   LargeTicket: {fileID: 427832581}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1986461797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14217,6 +14245,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!1 &2060439025
 GameObject:
   m_ObjectHideFlags: 0
@@ -14405,6 +14435,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!65 &2064034323
 BoxCollider:
   m_ObjectHideFlags: 0

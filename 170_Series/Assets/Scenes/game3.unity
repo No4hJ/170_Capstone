@@ -2008,6 +2008,8 @@ MonoBehaviour:
   laptop: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &328125313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2155,6 +2157,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &336525415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3632,6 +3636,8 @@ MonoBehaviour:
   laptop: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!58 &508244302
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3995,6 +4001,8 @@ MonoBehaviour:
   laptop: {fileID: 672715820}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!61 &542505651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6084,6 +6092,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &769155336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6192,6 +6202,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &781062292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6542,6 +6554,8 @@ MonoBehaviour:
   laptop: {fileID: 0}
   calimg: {fileID: 1651845086}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &835578382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8970,6 +8984,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1131309121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9424,6 +9440,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1205640426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10722,6 +10740,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1294087928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11756,6 +11776,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1497546218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12206,6 +12228,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!1 &1570195160
 GameObject:
   m_ObjectHideFlags: 0
@@ -13523,6 +13547,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1621940743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15872,6 +15898,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!212 &1857974080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17138,6 +17166,8 @@ MonoBehaviour:
   ticket: {fileID: 1569599901}
   filter: {fileID: 0}
   LargeTicket: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!61 &1986461797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17945,6 +17975,8 @@ MonoBehaviour:
   notify: {fileID: 0}
   calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
+  cursor1: {fileID: 0}
+  cursor2: {fileID: 0}
 --- !u!65 &2064034323
 BoxCollider:
   m_ObjectHideFlags: 0

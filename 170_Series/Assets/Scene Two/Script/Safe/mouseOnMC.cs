@@ -6,6 +6,8 @@ public class mouseOnMC : MonoBehaviour
 {
     // Start is called before the first frame update
     private float magnify = 1.13f;
+    public Texture2D cursor1;
+    public Texture2D cursor2;
     void Start()
     {
         
@@ -19,10 +21,12 @@ public class mouseOnMC : MonoBehaviour
 
     void OnMouseEnter(){
         effectOn();
+        Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void OnMouseExit(){
         effectOff();
+        Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void OnMouseDown ()
@@ -44,6 +48,7 @@ public class mouseOnMC : MonoBehaviour
                 Global.marriageCertificateState = 1;
             }
         }
+        Cursor.SetCursor(cursor1,Vector2.zero, CursorMode.ForceSoftware);
     }
 
     private void effectOn(){
