@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Music_script : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Music_script : MonoBehaviour
     public AudioSource music3;
     public AudioSource music4;
     public AudioSource music5;
+
+    [SerializeField] public Text title;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,8 @@ public class Music_script : MonoBehaviour
         music3.Stop();
         music4.Stop();
         music5.Stop();
+        title.text = "Yea";
+        
     }
 
     public void Music2(){
@@ -42,6 +47,7 @@ public class Music_script : MonoBehaviour
         music3.Stop();
         music4.Stop();
         music5.Stop();
+        title.text = "Sure";
     }
     public void Music3(){
         Debug.Log("music3 on");
@@ -50,6 +56,7 @@ public class Music_script : MonoBehaviour
         music2.Stop();
         music4.Stop();
         music5.Stop();
+        title.text = "Alright";
     }
     public void Music4(){
         Debug.Log("music4 on");
@@ -58,6 +65,7 @@ public class Music_script : MonoBehaviour
         music2.Stop();
         music3.Stop();
         music5.Stop();
+        title.text = "Mhm";
     }
     public void Music5(){
         Debug.Log("music5 on");
@@ -66,6 +74,7 @@ public class Music_script : MonoBehaviour
         music2.Stop();
         music3.Stop();
         music4.Stop();
+        title.text = "Whatever";
     }
     public void MusicStop(){
         Debug.Log("music Stop");
