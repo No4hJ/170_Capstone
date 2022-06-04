@@ -10,7 +10,7 @@ public class UI : MonoBehaviour
     public UnityEngine.UI.Text targetText;
     public UnityEngine.UI.Text scoreText;
     
-    private int starIdx = 0;
+    
     private bool isGameOver = false;
 
     // Start is called before the first frame update
