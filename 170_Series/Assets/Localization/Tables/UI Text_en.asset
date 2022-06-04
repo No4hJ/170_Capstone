@@ -200,5 +200,23 @@ MonoBehaviour:
     m_Localized: Resume
     m_Metadata:
       m_Items: []
+  - m_Id: 57165061102837760
+    m_Localized: Recycle Bin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57166913605279744
+    m_Localized: XiaoxiaoLe.exe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57169296775258112
+    m_Localized: 'Mailbox
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57169400361984000
+    m_Localized: My PC
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

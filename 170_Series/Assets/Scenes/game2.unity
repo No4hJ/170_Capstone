@@ -2000,8 +2000,8 @@ MonoBehaviour:
   FragmentsOnWall: {fileID: 0}
   PuzzleImgs: {fileID: 0}
   CalendarUI: {fileID: 0}
-  cursor1: {fileID: 0}
-  cursor2: {fileID: 0}
+  cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
+  cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &218480160
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -144,5 +144,21 @@ MonoBehaviour:
     m_Localized: "\u8FD4\u56DE\u6E38\u620F"
     m_Metadata:
       m_Items: []
+  - m_Id: 57165061102837760
+    m_Localized: "\u56DE\u6536\u7AD9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57166913605279744
+    m_Localized: "\u6D88\u6D88\u4E50.exe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57169296775258112
+    m_Localized: "\u90AE\u4EF6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57169400361984000
+    m_Localized: "\u6211\u6EF4\u7535\u8111"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
