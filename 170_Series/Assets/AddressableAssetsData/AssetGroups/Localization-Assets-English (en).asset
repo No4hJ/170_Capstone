@@ -42,6 +42,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+  - m_GUID: ac723047848c92b448b6fd11378c4f77
+    m_Address: CounterClockwise
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d4be9b1e29d41b8489eec8be276f25b0, type: 2}
   m_SchemaSet:

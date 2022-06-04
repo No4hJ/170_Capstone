@@ -42,6 +42,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans
+  - m_GUID: 9d2dc5f9cd8580b41bf9c96f653f96fb
+    m_Address: "\u9006\u65F6\u9488"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: d4be9b1e29d41b8489eec8be276f25b0, type: 2}
   m_SchemaSet:

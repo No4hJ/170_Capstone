@@ -23,7 +23,7 @@ public class StartSceneScript : MonoBehaviour
 
     public void Begin(){
         Debug.Log("Begin");
-        SceneManager.LoadScene("game1");
+        SceneManager.LoadScene("Sound_Notice");
     }
 
     public void Option(){

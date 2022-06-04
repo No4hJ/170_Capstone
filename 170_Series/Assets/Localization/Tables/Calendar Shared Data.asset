@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: Oct
     m_Metadata:
       m_Items: []
+  - m_Id: 30441946595532800
+    m_Key: Title
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - id: 0
@@ -47,6 +51,10 @@ MonoBehaviour:
           - en
           - zh-Hans
         - m_KeyId: 26469776215318528
+          m_TableCodes:
+          - en
+          - zh-Hans
+        - m_KeyId: 30441946595532800
           m_TableCodes:
           - en
           - zh-Hans
