@@ -7555,7 +7555,7 @@ MonoBehaviour:
   clock: {fileID: 865693396}
   Phone: {fileID: 1319821142}
   CamButtonUI: {fileID: 1060045200}
-  magnify: 1.5
+  magnify: 1.2
   Abletoclick: 0
   newspaperParent: {fileID: 1146658470}
   notify: {fileID: 1037562676}
@@ -9577,8 +9577,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385818645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -639.973, y: -359.983, z: 0}
-  m_LocalScale: {x: 0.67178005, y: 0.6702162, z: 0.39445913}
+  m_LocalPosition: {x: -640.0002, y: -359.993, z: 0}
+  m_LocalScale: {x: 0.6711165, y: 0.6706825, z: 0.39576188}
   m_Children: []
   m_Father: {fileID: 554223377}
   m_RootOrder: 0
