@@ -9,6 +9,7 @@ public class UI : MonoBehaviour
     public UnityEngine.UI.Text timeText;
     public UnityEngine.UI.Text targetText;
     public UnityEngine.UI.Text scoreText;
+    public UnityEngine.UI.Text finalscore;
     
     
     private bool isGameOver = false;
@@ -29,11 +30,15 @@ public class UI : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
     public void SetTarget(int target){
-        targetText.text = "Highest Score:" + target.ToString();
+        targetText.text = "Highest Score: " + target.ToString();
     }
 
     public void SetRemaining(string remaining){
         timeText.text = "Time: " + remaining;
+    }
+
+    public void SetFinalScore(int score){
+        finalscore.text = "Your Score: " + score.ToString();
     }
 
     public void OnGameWin(int score){
