@@ -42,7 +42,7 @@ public class level : MonoBehaviour
 
     public virtual void GameWin(){
         Debug.Log("win");
-        SceneManager.LoadScene("game1");
+        SceneManager.LoadScene("ENDScene");
         UI.OnGameWin(currentScore);
         grid.GameOver();
 
