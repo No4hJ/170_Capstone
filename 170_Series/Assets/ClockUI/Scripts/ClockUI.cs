@@ -63,9 +63,9 @@ public class ClockUI : MonoBehaviour {
             }else if(day > 0 && Input.GetKey(KeyCode.A) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
             }else{
-                if(clockstop!){
-                    GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
-                }
+                
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+                
             }
         }
         
