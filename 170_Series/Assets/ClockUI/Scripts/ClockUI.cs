@@ -55,7 +55,7 @@ public class ClockUI : MonoBehaviour {
         //timeText.text = "day " + daynumber/2 + "   " + hoursString + ":" + minutesString + " " + APM;
         timeText.text = " " + hoursString + ":" + minutesString + " " + APM;
 
-        if(autoclocktrigger == false && clockstop == false){
+        if(autoclocktrigger == false){
                 if(day <= 0){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
             }else if(day > 0 && Input.GetKey(KeyCode.D) && clockchange == true){
@@ -63,7 +63,9 @@ public class ClockUI : MonoBehaviour {
             }else if(day > 0 && Input.GetKey(KeyCode.A) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -60f;
             }else{
-                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+                if(clockstop!){
+                    GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
+                }
             }
         }
         
