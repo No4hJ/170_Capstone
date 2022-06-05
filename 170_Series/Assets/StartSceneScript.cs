@@ -9,6 +9,7 @@ public class StartSceneScript : MonoBehaviour
     public GameObject ButtonExitCredit;
 
     public GameObject optionMenu;
+    public GameObject Sound_notice;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class StartSceneScript : MonoBehaviour
 
     public void Begin(){
         Debug.Log("Begin");
-        SceneManager.LoadScene("Sound_Notice");
+        Sound_notice.SetActive(true);
     }
 
     public void Option(){
