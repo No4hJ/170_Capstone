@@ -5,7 +5,6 @@ using UnityEngine;
 public class clock_sound : MonoBehaviour
 {
     public GameObject clock;
-    public GameObject newspaper_big;
     public AudioSource clock_ticking;
     // Update is called once per frame
     void Update()

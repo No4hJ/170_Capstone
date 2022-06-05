@@ -23,7 +23,7 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        finalscore.text = "Your " +  scoreText.text;
     }
 
     public void SetScore(int score){
@@ -36,11 +36,6 @@ public class UI : MonoBehaviour
     public void SetRemaining(string remaining){
         timeText.text = "Time: " + remaining;
     }
-
-    public void SetFinalScore(int score){
-        finalscore.text = "Your Score: " + score.ToString();
-    }
-
     public void OnGameWin(int score){
         isGameOver = true;
     }
