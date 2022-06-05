@@ -1296,6 +1296,10 @@ PrefabInstance:
       propertyPath: music5
       value: 
       objectReference: {fileID: 687666578}
+    - target: {fileID: 9040740482044652835, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9040740482556723536, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1387,6 +1391,14 @@ PrefabInstance:
     - target: {fileID: 9040740482556723537, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040740483191708613, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040740483594625157, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
@@ -8864,6 +8876,7 @@ MonoBehaviour:
   day: 0
   autoclocktrigger: 0
   clockchange: 0
+  clockstop: 0
 --- !u!114 &865693399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18440,7 +18453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
-  newspaper_big: {fileID: 1146658470}
   clock_ticking: {fileID: 2016310524}
 --- !u!1 &1794967803
 GameObject:
