@@ -16,11 +16,18 @@ public class PlayMenuBGM : MonoBehaviour
     {
         
     }
+    
+    public void Crescendo(AudioSource audio, float finalVolume){
+        for (float v = 0; v <= finalVolume; v+= 0.05f){
+            audio.volume = v;
+        }
+    }
 
     IEnumerator PlayBGM()
     {
         yield return new WaitForSeconds(2);
         BGM.Play();
+        Crescendo(BGM, 0.4f);
         Debug.Log ("Play BGM");
     }
 }
