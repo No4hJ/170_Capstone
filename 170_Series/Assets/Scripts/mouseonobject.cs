@@ -17,6 +17,7 @@ public class mouseonobject : MonoBehaviour
     
 
     public AudioSource newspaper_open;
+    public AudioSource interaction_sound;
 
     public Texture2D cursor1;
     public Texture2D cursor2;

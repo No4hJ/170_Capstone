@@ -6,6 +6,7 @@ public class PlayMenuBGM : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioSource BGM;
+    public AudioSource button_click;
     void Start()
     {
         StartCoroutine(PlayBGM());
@@ -17,6 +18,9 @@ public class PlayMenuBGM : MonoBehaviour
         
     }
     
+    public void ButtonClickSound(){
+        button_click.Play();
+    }
     public static IEnumerator Crescendo(AudioSource audio, float duration, float finalVolume)
     {
         float currentTime = 0;

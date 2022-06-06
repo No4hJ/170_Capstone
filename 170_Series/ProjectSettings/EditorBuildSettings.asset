@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: a24b4bd4aff900b45b02e48702d942a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sound_Notice.unity
     guid: 86fd34ca2197bc74792fb272f147aef0
   - enabled: 1
