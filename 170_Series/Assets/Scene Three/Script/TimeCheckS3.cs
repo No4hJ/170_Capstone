@@ -24,7 +24,7 @@ public class TimeCheckS3 : MonoBehaviour
             if (waitTime <= 0){
                 Global.clockStateS3 = 1;
             }
-            Debug.Log(Global.clockStateS3);
+            //Debug.Log(Global.clockStateS3);
         }
     }
 }
