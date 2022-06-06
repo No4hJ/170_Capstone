@@ -71,4 +71,13 @@ public class PhoneQuit : MonoBehaviour
         GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
     }
 
+    public void CloseApp(){
+        Ms_floder.SetActive(true);
+        Music.SetActive(false);
+        Chat.SetActive(false);
+
+        GameObject.Find("Phone").GetComponent<PhoneReference>().Referenceobject();
+
+    }
+
 }
