@@ -8,6 +8,9 @@ public class clock_sound : MonoBehaviour
     public AudioSource clock_ticking;
     public AudioSource clock_stop;
     public bool isPlayed = false;
+    public bool isPlayed2 = false;
+    public bool isPlayed3 = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +32,14 @@ public class clock_sound : MonoBehaviour
             if(!isPlayed){
                 StartCoroutine(Stopsound());
                 isPlayed = true;
+            }
+        }
+
+        if (Global.person1ChatStateS2 == 1)
+        {
+            if(!isPlayed2){
+                StartCoroutine(Stopsound());
+                isPlayed2 = true;
             }
         }
     }

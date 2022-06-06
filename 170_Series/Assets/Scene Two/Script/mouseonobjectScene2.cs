@@ -15,6 +15,7 @@ public class mouseonobjectScene2 : MonoBehaviour
     public GameObject notify;
 
     public AudioSource newspaper_open;
+    public AudioSource interaction_sound;
 
     public GameObject safe;
     public GameObject FragmentsOnWall;
@@ -59,6 +60,7 @@ public class mouseonobjectScene2 : MonoBehaviour
 
             }else if(gameObject.name == "item 2"){
                 //Debug.Log(Global.marriageCertificateState);
+                interaction_sound.Play();
                 lock_item_click();
                 if (Global.marriageCertificateState == 1){
                     //Debug.Log("P2");
@@ -70,6 +72,7 @@ public class mouseonobjectScene2 : MonoBehaviour
                 }
             }else if(gameObject.name == "item 3"){
                 Debug.Log("Wardrobe");
+                interaction_sound.Play();
                 lock_item_click();
                 changecamera("Camera_wardrobe");
             }else if(gameObject.name == "item 4"){
@@ -78,6 +81,7 @@ public class mouseonobjectScene2 : MonoBehaviour
                 clock.SetActive(true);
             }else if(gameObject.name == "item 5"){
                 Debug.Log("Calendar");
+                interaction_sound.Play();
                 lock_item_click();
                 CalendarUI.SetActive(true);
                 changecamera("Camera_clendar");
@@ -99,17 +103,20 @@ public class mouseonobjectScene2 : MonoBehaviour
                 //newspaperBackground.SetActive(true);
             }else if(gameObject.name == "Drawer"){
                 Debug.Log("Drawer");
+                interaction_sound.Play();
                 lock_item_click();
                 changecamera("Camera_drawer");
                 safe.SetActive(true);
                 
             }else if(gameObject.name == "Puzzle"){
                 Debug.Log("Puzzle");
+                interaction_sound.Play();
                 lock_item_click();
                 changecamera("Camera_puzzle");
             }else if (gameObject.name == "trashcan")
             {
                 Debug.Log("trashcan");
+                interaction_sound.Play();
                 lock_item_click();
                 GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
                 GameObject i = SIO.transform.Find("Imgs").gameObject;
@@ -131,6 +138,7 @@ public class mouseonobjectScene2 : MonoBehaviour
             }else if (gameObject.name == "bottomboxes")
             {
                 Debug.Log("trashcan");
+                interaction_sound.Play();
                 lock_item_click();
                 GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
                 GameObject i = SIO.transform.Find("Imgs").gameObject;

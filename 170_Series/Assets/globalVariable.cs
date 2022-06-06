@@ -54,7 +54,8 @@ public class Global
     
     public static int person1ChatStateS3 = 0;
     // 0: nothing
-    // 1: person1 chat clicked
+    // 1: old person1 chat clicked
+    // 2: new person1 chat opened
 
     public static int clockStateS3 = 0;
     // 0: nothing

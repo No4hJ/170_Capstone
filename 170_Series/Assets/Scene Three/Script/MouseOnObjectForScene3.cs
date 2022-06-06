@@ -17,6 +17,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
     public GameObject calimg;
 
     public AudioSource newspaper_open;
+    public AudioSource interaction_sound;
     public Texture2D cursor1;
     public Texture2D cursor2;
 
@@ -50,11 +51,13 @@ public class MouseOnObjectForScene3 : MonoBehaviour
     private void interaction(){
         if(Abletoclick){
             if(gameObject.name == "item 1"){
+                interaction_sound.Play();
                 Debug.Log("Desk");
                 lock_item_click();
                 changecamera("Camera_table");
                 laptop.SetActive(true);
             }else if(gameObject.name == "item 2"){
+                interaction_sound.Play();
                 Debug.Log("Phone");
                 lock_item_click();
                 Phone.SetActive(true);
@@ -78,6 +81,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 lock_item_click();
                 changecamera("Camera_wardrobe");
             }else if(gameObject.name == "item 4"){
+                interaction_sound.Play();
                 Debug.Log("Time");
                 
                 if (Global.person1ChatState == 1 && Global.person2ChatState == 1 && Global.clockState == 0){
@@ -86,6 +90,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 lock_item_click();
                 clock.SetActive(true);
             }else if(gameObject.name == "item 5"){
+                interaction_sound.Play();
                 Debug.Log("Calendar");
                 lock_item_click();
                 changecamera("Camera_clendar");
@@ -106,6 +111,7 @@ public class MouseOnObjectForScene3 : MonoBehaviour
                 //NewsText.SetActive(true);
                 //newspaperBackground.SetActive(true);
             }else if (gameObject.name == "notes"){
+                interaction_sound.Play();
                 Debug.Log("notes");
                 lock_item_click();
                 GameObject SIO = GameObject.Find("SimpleInteractiveObjects");

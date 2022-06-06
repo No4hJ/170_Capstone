@@ -7,7 +7,7 @@ public class TimeCheckS3 : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject tt;
-    private static float waitTimeSet = 0.8f; // Set Wait Time Here!
+    private static float waitTimeSet = 0.2f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
 
     void Start()
@@ -24,7 +24,7 @@ public class TimeCheckS3 : MonoBehaviour
             if (waitTime <= 0){
                 Global.clockStateS3 = 1;
             }
-            //Debug.Log(Global.clockStateS3);
+            Debug.Log(Global.clockStateS3);
         }
     }
 }

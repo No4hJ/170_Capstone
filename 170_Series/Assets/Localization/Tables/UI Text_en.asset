@@ -226,5 +226,10 @@ MonoBehaviour:
     m_Localized: Jane
     m_Metadata:
       m_Items: []
+  - m_Id: 57993643752497152
+    m_Localized: "My husband's birthday is THIS SUNDAY! \n\t\t\t\t         \t\t3/9
+      Fri."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
