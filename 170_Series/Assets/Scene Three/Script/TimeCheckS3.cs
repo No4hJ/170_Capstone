@@ -19,12 +19,12 @@ public class TimeCheckS3 : MonoBehaviour
     void Update()
     {
         string ttt = tt.GetComponent<Text>().text;
-        if (ttt== " 3:23 PM"){ // here to change the time
-            //Debug.Log("AAAA!!!!");
+        if (ttt== " 03:23 PM"){ // here to change the time
             waitTime -= Time.deltaTime;
             if (waitTime <= 0){
                 Global.clockStateS3 = 1;
             }
+            //Debug.Log(Global.clockStateS3);
         }
     }
 }
