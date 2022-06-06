@@ -77,7 +77,6 @@ public class Music_script : MonoBehaviour
         title.text = "Whatever";
     }
     public void MusicStop(){
-        Debug.Log("music Stop");
         music1.Stop();
         music2.Stop();
         music3.Stop();

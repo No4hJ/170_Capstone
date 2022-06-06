@@ -11,15 +11,20 @@ public class phone_sound : MonoBehaviour
     void Update()
     {
         if (Global.newspaperState == 1){
-            phoneSound.Play();
+            StartCoroutine(playphone());
             Global.newspaperState = 2;
             Debug.Log("Play for news");
         }
 
         if (Global.ticketState == 1){
-            phoneSound.Play();
+            StartCoroutine(playphone());
             Global.ticketState = 2;
             Debug.Log("Play for ticket");
         }
+    }
+
+    public IEnumerator playphone(){
+        yield return new WaitForSeconds(0.5f);
+        phoneSound.Play();
     }
 }

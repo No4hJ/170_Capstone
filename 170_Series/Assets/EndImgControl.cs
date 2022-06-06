@@ -10,7 +10,7 @@ public class EndImgControl : MonoBehaviour
     public GameObject img2;
     public GameObject img3;
     public GameObject img4;
-    public GameObject img5;
+    //public GameObject img5;
     public GameObject imgText;
     //public GameObject filter;
     private int imgActive = 0;
@@ -19,7 +19,7 @@ public class EndImgControl : MonoBehaviour
     void Start()
     {
         imgActive = 1;
-        img5.SetActive(true);
+        //img5.SetActive(true);
         img4.SetActive(true);
         img3.SetActive(true);
         img2.SetActive(true);
@@ -56,13 +56,9 @@ public class EndImgControl : MonoBehaviour
              
             }else if (img4.activeSelf){
                img4.SetActive(false);
-               img5.GetComponent<spriteFade>().FadeImgIn();
-               waitTime = waitTimeSet;
-               
-            }else if (img5.activeSelf){
-               img5.SetActive(false);
                SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
-             }
+               
+            }
 		    }
         }
     }

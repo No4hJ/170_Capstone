@@ -16,6 +16,8 @@ public class jacketAndTicketScript : MonoBehaviour
 
     public Texture2D cursor1;
     public Texture2D cursor2;
+
+    public AudioSource ticket_open;
     
 
     private float magnify = 1.3f;
@@ -42,6 +44,7 @@ public class jacketAndTicketScript : MonoBehaviour
             LargeTicket.SetActive(true);
             blackCover.SetActive(true);
             Debug.Log("ticket");
+            ticket_open.Play();
             filter.SetActive(false);
             if (Global.ticketState == 0){
                 Global.ticketState = 1;
