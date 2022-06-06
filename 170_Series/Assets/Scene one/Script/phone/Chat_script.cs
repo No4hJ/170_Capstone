@@ -26,11 +26,11 @@ public class Chat_script : MonoBehaviour
         if(Global.ticketState == 3){
             Global.person1ChatState = 1;
         }
-        if (Global.person1ChatStateS2 ==0){
+        if (Global.marriageCertificateState == 2 & Global.person1ChatStateS2 ==0){
             Global.person1ChatStateS2 =1;
         }
 
-        if (Global.person1ChatStateS3 ==0){
+        if (Global.person1ChatStateS3 == 0){
             Global.person1ChatStateS3 =1;
         }
 

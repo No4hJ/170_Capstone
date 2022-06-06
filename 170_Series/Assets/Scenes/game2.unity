@@ -1312,23 +1312,23 @@ PrefabInstance:
     - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: music1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 713049561}
     - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: music2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 610477016}
     - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: music3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 330878485}
     - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: music4
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 978004891}
     - target: {fileID: 7992291059763963797, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: music5
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1439009376}
     - target: {fileID: 9040740482044652835, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_IsActive
       value: 0

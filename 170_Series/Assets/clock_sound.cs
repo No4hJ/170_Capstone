@@ -42,6 +42,14 @@ public class clock_sound : MonoBehaviour
                 isPlayed2 = true;
             }
         }
+
+        if (Global.person1ChatStateS3 == 1)
+        {
+            if(!isPlayed3){
+                StartCoroutine(Stopsound());
+                isPlayed3 = true;
+            }
+        }
     }
 
     IEnumerator Stopsound()

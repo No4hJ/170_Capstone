@@ -14,7 +14,7 @@ public class New_Message_Level3 : MonoBehaviour
     {
         if(Global.clockStateS3 == 1){
             red_dot1.SetActive(true);
-            Global.person1ChatStateS3 = 2;
+            //Global.person1ChatStateS3 = 2;
         }
         if(Global.person1ChatStateS3 == 2){
             red_dot1.SetActive(false);
