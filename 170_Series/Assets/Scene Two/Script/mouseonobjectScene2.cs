@@ -157,6 +157,19 @@ public class mouseonobjectScene2 : MonoBehaviour
                     t.transform.Find("BottomBoxesS1").gameObject.SetActive(true);
                 }
             
+
+            }else if(gameObject.name == "Ticket"){
+                Debug.Log("Ticket");
+                interaction_sound.Play();
+                lock_item_click();
+                GameObject SIO = GameObject.Find("SimpleInteractiveObjects");
+                GameObject i = SIO.transform.Find("Imgs").gameObject;
+                GameObject t = SIO.transform.Find("Texts").gameObject;
+                SIO.transform.Find("BlackCover").gameObject.SetActive(true);
+                SIO.transform.Find("SIOControl").gameObject.SetActive(true);
+                i.transform.Find("Ticket").gameObject.SetActive(true);
+                t.transform.Find("Ticket").gameObject.SetActive(true);
+        
             }else{
                 if (transform.parent.name == "imageFragments")
                 {
