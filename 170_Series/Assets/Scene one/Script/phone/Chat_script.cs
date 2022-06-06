@@ -31,7 +31,11 @@ public class Chat_script : MonoBehaviour
         }
 
         if (Global.person1ChatStateS3 == 0){
-            Global.person1ChatStateS3 =1;
+            Global.person1ChatStateS3 = 1;
+        }
+
+        if (Global.clockStateS3 == 3 & Global.person1ChatStateS3 == 1){
+            Global.person1ChatStateS3 = 2;
         }
 
         //Debug.Log("p1: " + Global.person1ChatState);

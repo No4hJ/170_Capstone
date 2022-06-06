@@ -43,7 +43,7 @@ public class spriteFade : MonoBehaviour
     }
 
     IEnumerator FadeOut2(){
-        for (float i = 1.5f; i>= 0;i -=Time.deltaTime){
+        for (float i = 1f; i>= 0;i -=Time.deltaTime){
             image.color = new Color(1, 1, 1, i);
             yield return null;
         }

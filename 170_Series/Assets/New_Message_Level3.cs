@@ -12,11 +12,12 @@ public class New_Message_Level3 : MonoBehaviour
     }
     void Update()
     {
-        if(Global.clockStateS3 == 1){
+        if(Global.clockStateS3 == 2){
+            Debug.Log("red_dot_show");
             red_dot1.SetActive(true);
-            //Global.person1ChatStateS3 = 2;
-        }
-        if(Global.person1ChatStateS3 == 2){
+            Global.clockStateS3 = 3;
+        } 
+        if (Global.person1ChatStateS3 == 2){
             red_dot1.SetActive(false);
         }
     }

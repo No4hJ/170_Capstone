@@ -59,13 +59,13 @@ public class ClockUI : MonoBehaviour {
                 if(day <= 0){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
             }else if(day > 0 && Input.GetKey(KeyCode.D) && clockchange == true){
-                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 10f;
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 5f;
             }else if(day > 0 && Input.GetKey(KeyCode.A) && clockchange == true){
-                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -10f;
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -5f;
             }else if(day > 0 && Input.GetKey(KeyCode.E) && clockchange == true){
-                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 30f;
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 50f;
             }else if(day > 0 && Input.GetKey(KeyCode.Q) && clockchange == true){
-                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -30f;
+                GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -50f;
             }else{
                 if(clockstop){
                     GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 999999f;
