@@ -11,7 +11,7 @@ public class UpdateChat_Wife3 : MonoBehaviour
     public GameObject after_en;
     public GameObject after_ch;
     void Update() {
-        if (Global.ticketState >= 1){
+        if (Global.clockStateS3 >= 1){
             if(LocalizationSettings.SelectedLocale == LocalizationSettings.AvailableLocales.Locales[0]){
                 before_en.SetActive(false);
                 before_chi.SetActive(false);
