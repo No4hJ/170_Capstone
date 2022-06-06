@@ -50,22 +50,22 @@ public class EndImgControl : MonoBehaviour
 
             }else if (img3.activeSelf){
                img3.SetActive(false);
-               img4.GetComponent<Sprite_Fade_end>().FadeImgIn();
+               img4.GetComponent<spriteFade>().FadeImgIn();
                waitTime = waitTimeSet;
                
              
             }else if (img4.activeSelf){
-              img4.GetComponent<Sprite_Fade_end>().FadeImgOut();
-              img4.SetActive(false);
-              StartCoroutine(BacktoMain());
+              img4.GetComponent<spriteFade>().FadeImgOut2();
+              Invoke("BacktoMain",1f);
             }
 		    }
         }
     }
 
-    IEnumerator BacktoMain()
+    private void BacktoMain()
     {
-      yield return new WaitForSeconds(2f);
+      img4.SetActive(false);
+      //yield return new WaitForSeconds(2f);
       SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
     }
 }

@@ -49,6 +49,7 @@ public class Global
     public static int person1ChatStateS2 = 0;
     // 0: nothing
     // 1: person1 chat clicked
+    // 2: person1 chat clicked after MC
 
     // For Scene 3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     

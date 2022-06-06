@@ -32,13 +32,25 @@ public class spriteFade : MonoBehaviour
         StartCoroutine(FadeOut());
     }
 
+    public void FadeImgOut2(){
+        //image.color = new Color(1, 1, 1, 1); 
+        StartCoroutine(FadeOut2());
+    }
+
     public void FadeImgIn(){
         //image.color = new Color(1, 1, 1, 0); 
         StartCoroutine(FadeIn());
     }
 
+    IEnumerator FadeOut2(){
+        for (float i = 1f; i>= 0;i -=Time.deltaTime){
+            image.color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+    }
+
     IEnumerator FadeOut(){
-        for (float i = 1; i>= 0;i -=Time.deltaTime){
+        for (float i = 1f; i>= 0;i -=Time.deltaTime){
             image.color = new Color(0, 0, 0, i);
             yield return null;
         }
