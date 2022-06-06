@@ -157,6 +157,10 @@ MonoBehaviour:
     m_Key: Sound_Notice
     m_Metadata:
       m_Items: []
+  - m_Id: 57889393378664448
+    m_Key: Wife_Name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

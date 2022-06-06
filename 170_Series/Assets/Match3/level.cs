@@ -70,4 +70,8 @@ public class level : MonoBehaviour
     public virtual void PlayAgain(){
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
+
+    public virtual void Quit(){
+        UnityEngine.SceneManagement.SceneManager.LoadScene("game3");
+    }
 }

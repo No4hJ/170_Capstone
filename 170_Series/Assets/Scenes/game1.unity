@@ -5337,6 +5337,7 @@ MonoBehaviour:
   day: 0
   autoclocktrigger: 0
   clockchange: 0
+  clockstop: 0
 --- !u!1 &883427431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,6 +9435,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+--- !u!1 &1316387147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740482119211668, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740483333027488, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740482588228308, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740482607510550, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740483567692742, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740483179178241, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316387153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040740482103558785, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+  m_PrefabInstance: {fileID: 1316387146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1316387154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316387153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b662f646c77384c9f1b30d3519d11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  before_en: {fileID: 1316387152}
+  before_chi: {fileID: 1316387151}
+  after_en: {fileID: 1316387150}
+  after_eng: {fileID: 1316387149}
+  after_ch: {fileID: 1316387148}
+  after_chi: {fileID: 1316387147}
 --- !u!1 &1316667601
 GameObject:
   m_ObjectHideFlags: 0
@@ -12128,7 +12182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
-  newspaper_big: {fileID: 1146658470}
   clock_ticking: {fileID: 2016310524}
 --- !u!114 &1792674959
 MonoBehaviour:
