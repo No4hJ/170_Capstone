@@ -53,8 +53,8 @@ public class level : MonoBehaviour
 
         Lose.SetActive(true);
 
-        //UI.OnGameLose();
-        //grid.GameOver();
+        UI.OnGameLose();
+        grid.GameOver();
     }
 
     public virtual void OnMove(){
