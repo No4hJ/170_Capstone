@@ -18,6 +18,8 @@ public class ClockUI : MonoBehaviour {
 
     public bool clockstop = false;
     
+    public AudioSource turning_sound;
+
     private void Awake() {
         clockHourHandTransform = transform.Find("hourHand");
         clockMinuteHandTransform = transform.Find("minuteHand");
@@ -60,12 +62,16 @@ public class ClockUI : MonoBehaviour {
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 1000f;
             }else if(day > 0 && Input.GetKey(KeyCode.D) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 5f;
+                turning_sound.Play();
             }else if(day > 0 && Input.GetKey(KeyCode.A) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -5f;
+                turning_sound.Play();
             }else if(day > 0 && Input.GetKey(KeyCode.E) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 50f;
+                turning_sound.Play();
             }else if(day > 0 && Input.GetKey(KeyCode.Q) && clockchange == true){
                 GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = -50f;
+                turning_sound.Play();
             }else{
                 if(clockstop){
                     GameObject.Find("Timescript").GetComponent<Timechanging>().REAL_SECONDS_PER_INGAME_DAY = 999999f;

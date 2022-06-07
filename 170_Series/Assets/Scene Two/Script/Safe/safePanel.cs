@@ -14,6 +14,10 @@ public class safePanel : MonoBehaviour
     private float waitTime = waitTimeSet;
     private bool editable = true;
     private string correctPassword = "0818"; // Set Password Here!
+    
+    public AudioSource error_sound;
+    public AudioSource door_open;
+    public bool isPlayed;
     void Start()
     {
         
@@ -34,6 +38,7 @@ public class safePanel : MonoBehaviour
             if (currentValue.Length >=4){
                 //currentValue = "WRONG";
                 editable = false;
+                isPlayed = false;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0))
@@ -63,6 +68,12 @@ public class safePanel : MonoBehaviour
             waitTime -= Time.deltaTime;
 
             if(currentValue != correctPassword && waitTime <= waitTimeSet/2f){
+                if(!isPlayed)
+                {
+                    error_sound.Play();
+                    isPlayed = true;
+                }
+                
                 currentValue = "Error";
             }
 
@@ -94,6 +105,7 @@ public class safePanel : MonoBehaviour
     }
 
     private void unlock(){
+        door_open.Play();
         safe.SetActive(false);
         inside.SetActive(true);
         gameObject.SetActive(false);
