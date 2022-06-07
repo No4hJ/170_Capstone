@@ -37,7 +37,7 @@ public class mouseonobjectScene2 : MonoBehaviour
         if(Abletoclick){
             effectOn();
             Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
-            Debug.Log(Global.marriageCertificateState);
+            //Debug.Log(Global.marriageCertificateState);
         }
     }
 

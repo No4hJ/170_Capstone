@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clock_sound : MonoBehaviour
+public class clock_sound_lvl2 : MonoBehaviour
 {
     public GameObject clock;
     public AudioSource clock_ticking;
     public AudioSource clock_stop;
-    public bool isPlayed = false;
+    public bool isPlayed2 = false;
 
     // Update is called once per frame
     void Update()
@@ -25,14 +25,16 @@ public class clock_sound : MonoBehaviour
             GameObject.Find("clock_ticking").GetComponent<AudioHighPassFilter>().cutoffFrequency = 2400f;
         }
 
-        if (Global.person1ChatState == 1 && Global.person2ChatState == 1)
-        {   
-            if(!isPlayed){
-                Debug.Log("Play clock_stop sound");
-                StartCoroutine(Stopsound());
-                isPlayed = true;
+        if(Global.marriageCertificateState == 3)
+        {
+        if(!isPlayed2)
+            {
+            Debug.Log("PLAY!!!!!!!!!!");
+            StartCoroutine(Stopsound());
+            isPlayed2 = true;
             }
         }
+
     }
 
     IEnumerator Stopsound()
