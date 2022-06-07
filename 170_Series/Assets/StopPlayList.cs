@@ -17,5 +17,12 @@ public class StopPlayList : MonoBehaviour
         if(Global.clockState >= 2){
             phone.GetComponent<Music_script>().MusicStop();
         }
+        else if(Global.clockStateS2 >= 1){
+            phone.GetComponent<Music_script>().MusicStop();
+        }
+        else if(Global.clockStateS3 > 2){
+            phone.GetComponent<Music_script>().MusicStop();
+        }
+
     }
 }

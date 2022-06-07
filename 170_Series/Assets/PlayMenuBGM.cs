@@ -21,6 +21,7 @@ public class PlayMenuBGM : MonoBehaviour
     public void ButtonClickSound(){
         button_click.Play();
     }
+    
     public static IEnumerator Crescendo(AudioSource audio, float duration, float finalVolume)
     {
         float currentTime = 0;

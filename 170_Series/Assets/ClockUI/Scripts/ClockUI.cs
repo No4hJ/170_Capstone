@@ -85,13 +85,13 @@ public class ClockUI : MonoBehaviour {
             
         }
 
-        if (Global.person1ChatStateS2 ==1 && !clockchange){
+        if (Global.person1ChatStateS2 == 1 && !clockchange){
             clockchange = true;
             clockstop = true;
 
         }
 
-        if (Global.person1ChatStateS3 ==1 && !clockchange){
+        if (Global.person1ChatStateS3 == 1 && !clockchange){
             clockchange = true;
             clockstop = true;
         }
