@@ -27,18 +27,18 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
-  - m_GUID: 89061d89806953448baad6682b7995df
-    m_Address: Calendar_Aug
+  - m_GUID: 10f92a1cbef467244969d3c21ab230b1
+    m_Address: Aug_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
-  - m_GUID: e8f2f8684ba3b81439dd3d571927ec92
-    m_Address: Calendar_Oct
+  - m_GUID: 60a70b42a115b254d9bb86b0c7dbc8cb
+    m_Address: Oct_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
-  - m_GUID: 0a615b90283d9a644b8edeb59195531d
-    m_Address: Calendar_Sep
+  - m_GUID: db803cbffdf616b48810f228374ea88a
+    m_Address: Sep_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
