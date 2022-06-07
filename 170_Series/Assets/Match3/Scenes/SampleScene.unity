@@ -1610,6 +1610,7 @@ MonoBehaviour:
   score2Star: 0
   score3Star: 0
   UI: {fileID: 1914504205}
+  xiaochu: {fileID: 0}
   Lose: {fileID: 37572071}
   currentScore: 0
   timeInseconds: 70
@@ -2422,7 +2423,7 @@ MonoBehaviour:
   scoreText: {fileID: 2123379689}
   finalscore: {fileID: 353380078}
   t1: 0
-  totalTime: 0
+  totalTime: 0.25
 --- !u!1 &2007155977
 GameObject:
   m_ObjectHideFlags: 0
