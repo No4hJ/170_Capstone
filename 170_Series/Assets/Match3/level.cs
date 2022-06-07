@@ -19,6 +19,8 @@ public class level : MonoBehaviour
     public UI UI;
     protected LevelType type;
 
+    public AudioSource xiaochu;
+
     public GameObject Lose;
 
     public LevelType Type{
@@ -63,6 +65,7 @@ public class level : MonoBehaviour
 
     public virtual void OnPieceCleared(GamePiece piece){
         currentScore += piece.score;
+        xiaochu.Play();
         UI.SetScore(currentScore);
         Debug.Log("Score: " + currentScore);
     }
