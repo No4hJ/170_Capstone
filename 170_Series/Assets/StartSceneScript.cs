@@ -10,6 +10,10 @@ public class StartSceneScript : MonoBehaviour
 
     public GameObject optionMenu;
     public GameObject Sound_notice;
+    public GameObject videoPlayer;
+    public GameObject bg;
+    public GameObject title;
+    public GameObject buttons;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,11 @@ public class StartSceneScript : MonoBehaviour
 
     public void Credit(){
         Debug.Log("Credit");
-        creditImg.SetActive(true);
+        //creditImg.SetActive(true);
+        videoPlayer.SetActive(true);
+        bg.SetActive(false);
+        title.SetActive(false);
+        buttons.SetActive(false);
         ButtonExitCredit.SetActive(true);
     }
 
@@ -45,7 +53,11 @@ public class StartSceneScript : MonoBehaviour
 
     public void exitCredit(){
         Debug.Log("Exit Credit");
-        creditImg.SetActive(false);
+        //creditImg.SetActive(false);
+        videoPlayer.SetActive(false);
+        bg.SetActive(true);
+        title.SetActive(true);
+        buttons.SetActive(true);
         ButtonExitCredit.SetActive(false);
     }
 }
