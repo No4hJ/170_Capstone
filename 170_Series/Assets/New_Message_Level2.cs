@@ -14,8 +14,7 @@ public class New_Message_Level2 : MonoBehaviour
     {
         if(Global.marriageCertificateState == 2){
             red_dot1.SetActive(true);
-        }
-        if(Global.person1ChatStateS2 == 1){
+        }else if(Global.marriageCertificateState >= 3){
             red_dot1.SetActive(false);
         }
     }

@@ -26,16 +26,20 @@ public class Chat_script : MonoBehaviour
         if(Global.ticketState == 3){
             Global.person1ChatState = 1;
         }
-        if (Global.marriageCertificateState == 2 & Global.person1ChatStateS2 ==0){
-            Global.person1ChatStateS2 =1;
+        if (Global.Scene == 2){
+            if (Global.marriageCertificateState == 2){
+                Global.marriageCertificateState = 3;
+            }
         }
 
-        if (Global.person1ChatStateS3 == 0){
-            Global.person1ChatStateS3 = 1;
-        }
+        if (Global.Scene == 3){
+            if (Global.person1ChatStateS3 == 0){
+                Global.person1ChatStateS3 = 1;
+            }
 
-        if (Global.clockStateS3 == 3 & Global.person1ChatStateS3 == 1){
-            Global.person1ChatStateS3 = 2;
+            if (Global.clockStateS3 == 3 & Global.person1ChatStateS3 == 1){
+                Global.person1ChatStateS3 = 2;
+            }
         }
 
         //Debug.Log("p1: " + Global.person1ChatState);

@@ -14059,6 +14059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1222956831}
+  - component: {fileID: 1222956832}
   m_Layer: 0
   m_Name: MainRoom
   m_TagString: Untagged
@@ -14106,6 +14107,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1222956832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222956830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0333150df7efb884fb59750e89ba35bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226526409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9040740483567692742, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
@@ -15689,8 +15702,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1322599673}
   - component: {fileID: 1322599676}
-  - component: {fileID: 1322599675}
   - component: {fileID: 1322599674}
+  - component: {fileID: 1322599675}
   m_Layer: 0
   m_Name: item 4
   m_TagString: Untagged
@@ -15739,19 +15752,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322599672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62474da6d5d261140a727e1c2faa0fe8, type: 3}
+  m_Script: {fileID: 11500000, guid: ee6940ebb486e9b4c86a0324fb61a8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   clock: {fileID: 865693396}
   Phone: {fileID: 0}
   CamButtonUI: {fileID: 1060045200}
-  magnify: 1.3
+  magnify: 1
   Abletoclick: 0
   newspaperParent: {fileID: 0}
   notify: {fileID: 0}
-  calimg: {fileID: 0}
   newspaper_open: {fileID: 0}
   interaction_sound: {fileID: 1839658616}
+  safe: {fileID: 0}
+  FragmentsOnWall: {fileID: 0}
+  PuzzleImgs: {fileID: 0}
+  CalendarUI: {fileID: 0}
   cursor1: {fileID: 2800000, guid: 756b39171a77bef499d8c57af8c3111d, type: 3}
   cursor2: {fileID: 2800000, guid: 3fcb14896a642b5408d7cfac610417d0, type: 3}
 --- !u!212 &1322599676

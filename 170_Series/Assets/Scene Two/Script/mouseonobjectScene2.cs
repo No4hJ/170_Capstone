@@ -25,6 +25,10 @@ public class mouseonobjectScene2 : MonoBehaviour
     public Texture2D cursor1;
     public Texture2D cursor2;
 
+
+    void Start(){
+    }
+
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }
@@ -33,6 +37,7 @@ public class mouseonobjectScene2 : MonoBehaviour
         if(Abletoclick){
             effectOn();
             Cursor.SetCursor(cursor2,Vector2.zero, CursorMode.ForceSoftware);
+            Debug.Log(Global.marriageCertificateState);
         }
     }
 
@@ -59,13 +64,8 @@ public class mouseonobjectScene2 : MonoBehaviour
                 changecamera("Camera_table");
 
             }else if(gameObject.name == "item 2"){
-                //Debug.Log(Global.marriageCertificateState);
                 interaction_sound.Play();
                 lock_item_click();
-                if (Global.marriageCertificateState == 1){
-                    //Debug.Log("P2");
-                    Global.marriageCertificateState =2; 
-                }
                 Phone.SetActive(true);
                 if (notify.GetComponent<Renderer>().enabled == true){
                     notify.GetComponent<Renderer>().enabled = false;

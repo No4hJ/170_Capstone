@@ -91,16 +91,21 @@ public class ClockUI : MonoBehaviour {
             
         }
 
-        if (Global.person1ChatStateS2 == 1 && !clockchange){
-            clockchange = true;
-            clockstop = true;
 
+        if (Global.Scene == 2){
+            if (!clockchange && Global.marriageCertificateState == 3){
+                clockchange = true;
+                clockstop = true;
+            }
         }
 
-        if (Global.person1ChatStateS3 == 1 && !clockchange){
-            clockchange = true;
-            clockstop = true;
+        if (Global.Scene == 3){
+            if (Global.person1ChatStateS3 == 1 && !clockchange){
+                clockchange = true;
+                clockstop = true;
+            }
         }
+
     }
 
     public void autoclock(){

@@ -11,7 +11,7 @@ public class Phone_sound_level2 : MonoBehaviour
     {
         if (Global.marriageCertificateState == 1){
             StartCoroutine(playphone());
-            Global.marriageCertificateState = 2;
+            Global.marriageCertificateState =2;
         }
     }
 

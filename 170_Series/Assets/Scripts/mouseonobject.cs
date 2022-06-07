@@ -22,7 +22,7 @@ public class mouseonobject : MonoBehaviour
     public Texture2D cursor1;
     public Texture2D cursor2;
 
-    
+
     void Update(){
         Abletoclick = GameObject.Find("Background").GetComponent<cameraswitch>().Camera_can_change;
     }

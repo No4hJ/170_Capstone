@@ -32,10 +32,13 @@ public class Global
 
     // For Scene 2 !!!!!!!
 
+
     public static int marriageCertificateState = 0;
     // 0: nothing
     // 1: opened
-    // 2: phone opened
+    // 2: phone played
+    // 3: phone chat opened, clock can change
+
 
     public static int clockStateS2 = 0;
     // 0: nothing
@@ -62,5 +65,7 @@ public class Global
     // 0: nothing
     // 1: after move to the right time
     // 2: phone opened
+
+    public static int Scene = 1;
 
 }
