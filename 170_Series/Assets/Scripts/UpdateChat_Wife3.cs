@@ -22,7 +22,7 @@ public class UpdateChat_Wife3 : MonoBehaviour
                 before_en.SetActive(false);
                 before_chi.SetActive(false);
                 after_ch.SetActive(true);
-                after_en.SetActive(false);               
+                after_en.SetActive(false);             
             }
         }
         else{

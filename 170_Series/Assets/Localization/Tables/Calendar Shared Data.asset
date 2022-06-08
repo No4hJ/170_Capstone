@@ -31,16 +31,6 @@ MonoBehaviour:
     m_Key: Title
     m_Metadata:
       m_Items: []
-  - m_Id: 31110589708836864
-    m_Key: Level2_Family
-    m_Metadata:
-      m_Items: []
-  - m_Id: 31124800728014848
-    m_Key: 'Level3_Family
-
-'
-    m_Metadata:
-      m_Items: []
   m_Metadata:
     m_Items:
     - id: 0
@@ -65,14 +55,6 @@ MonoBehaviour:
           - en
           - zh-Hans
         - m_KeyId: 30441946595532800
-          m_TableCodes:
-          - en
-          - zh-Hans
-        - m_KeyId: 31110589708836864
-          m_TableCodes:
-          - zh-Hans
-          - en
-        - m_KeyId: 31124800728014848
           m_TableCodes:
           - en
           - zh-Hans
