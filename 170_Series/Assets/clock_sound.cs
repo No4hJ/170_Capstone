@@ -19,7 +19,7 @@ public class clock_sound : MonoBehaviour
             GameObject.Find("clock_ticking").GetComponent<AudioHighPassFilter>().cutoffFrequency = 0f;
         }
         else{
-            clock_ticking.volume = 0.3f;
+            clock_ticking.volume = 0.6f;
             clock_ticking.spatialBlend = 0.8f;
             GameObject.Find("clock_ticking").GetComponent<AudioLowPassFilter>().cutoffFrequency = 1133f;
             GameObject.Find("clock_ticking").GetComponent<AudioHighPassFilter>().cutoffFrequency = 2400f;

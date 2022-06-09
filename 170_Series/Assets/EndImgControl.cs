@@ -14,6 +14,8 @@ public class EndImgControl : MonoBehaviour
     public GameObject imgText;
 
     public GameObject VideoPlayer;
+
+    public AudioSource bgm;
     //public GameObject filter;
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
@@ -31,6 +33,7 @@ public class EndImgControl : MonoBehaviour
                 
         waitTime = waitTimeSet;
         imgText.SetActive(true);
+        bgm.Play();
     }
 
     // Update is called once per frame
@@ -63,8 +66,9 @@ public class EndImgControl : MonoBehaviour
                img5.GetComponent<spriteFade>().FadeImgOut2();
                //waitTime = waitTimeset;
                imgText.SetActive(false);
-               //Invoke("PlayVideo",0.5f);
-               Invoke("BacktoS1",0.5f); // video length + 0.5s
+               bgm.Stop();
+               Invoke("PlayVideo",0.5f);
+               Invoke("BacktoMain",27.5f); // video length + 0.5s
             }
             //else if (img5.activeSelf){
             //  img5.GetComponent<spriteFade>().FadeImgOut2();
@@ -77,11 +81,11 @@ public class EndImgControl : MonoBehaviour
       VideoPlayer.SetActive(true);
       
     }
-    private void BacktoS1()
+    private void BacktoMain()
     {
       //img4.SetActive(false);
       //yield return new WaitForSeconds(2f);
-      SceneManager.LoadScene("gamef1", LoadSceneMode.Single);
+      SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
 
     }
 }
