@@ -64,7 +64,7 @@ public class EndImgControl : MonoBehaviour
                //waitTime = waitTimeset;
                imgText.SetActive(false);
                Invoke("PlayVideo",0.5f);
-               Invoke("BacktoMain",18.5f); // video length + 0.5s
+               Invoke("BacktoMain",27.5f); // video length + 0.5s
             }
             //else if (img5.activeSelf){
             //  img5.GetComponent<spriteFade>().FadeImgOut2();
