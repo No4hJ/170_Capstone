@@ -1221,7 +1221,7 @@ MonoBehaviour:
   clock: {fileID: 865693396}
   Phone: {fileID: 0}
   CamButtonUI: {fileID: 1060045200}
-  magnify: 1.2
+  magnify: 1
   Abletoclick: 0
   newspaperParent: {fileID: 1146658470}
   notify: {fileID: 1037562676}
@@ -5139,7 +5139,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 42e4f87d7671d204db6a6d620fea3055, type: 2}
+  - {fileID: 2100000, guid: 65912c048bebbfb47b7af9a14d9f50f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16223,7 +16223,7 @@ MonoBehaviour:
   clock: {fileID: 865693396}
   Phone: {fileID: 0}
   CamButtonUI: {fileID: 1060045200}
-  magnify: 1.2
+  magnify: 1
   Abletoclick: 0
   newspaperParent: {fileID: 1146658470}
   notify: {fileID: 1037562676}
