@@ -67,8 +67,8 @@ public class EndImgControl : MonoBehaviour
                //waitTime = waitTimeset;
                imgText.SetActive(false);
                bgm.Stop();
-               Invoke("PlayVideo",0.5f);
-               Invoke("BacktoMain",27.5f); // video length + 0.5s
+               //Invoke("PlayVideo",0.5f);
+               Invoke("BacktoMain",0.5f); // video length + 0.5s
             }
             //else if (img5.activeSelf){
             //  img5.GetComponent<spriteFade>().FadeImgOut2();
@@ -85,7 +85,7 @@ public class EndImgControl : MonoBehaviour
     {
       //img4.SetActive(false);
       //yield return new WaitForSeconds(2f);
-      SceneManager.LoadScene("StartScene", LoadSceneMode.Single);
+      SceneManager.LoadScene("gamef1", LoadSceneMode.Single);
 
     }
 }
