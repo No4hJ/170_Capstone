@@ -16,6 +16,8 @@ public class imgControlScriptS2 : MonoBehaviour
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
     private float waitTime = waitTimeSet;
+
+    public AudioSource bgm;
     void Start()
     {
 
@@ -26,8 +28,9 @@ public class imgControlScriptS2 : MonoBehaviour
     {
       waitTime -= Time.deltaTime;
       //Debug.Log(Time.deltaTime);
-        if ((Global.clockStateS2 == 1)||(Input.GetKeyDown("w"))){
+        if (Global.clockStateS2 == 1){
             //filter.SetActive(false);
+            bgm.Play();
             if (imgActive == 0){
                 imgActive = 1;
                 img3.SetActive(true);

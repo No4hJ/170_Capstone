@@ -14,6 +14,8 @@ public class EndImgControl : MonoBehaviour
     public GameObject imgText;
 
     public GameObject VideoPlayer;
+
+    public AudioSource bgm;
     //public GameObject filter;
     private int imgActive = 0;
     private static float waitTimeSet = 2.0f; // Set Wait Time Here!
@@ -31,6 +33,7 @@ public class EndImgControl : MonoBehaviour
                 
         waitTime = waitTimeSet;
         imgText.SetActive(true);
+        bgm.Play();
     }
 
     // Update is called once per frame
@@ -63,6 +66,7 @@ public class EndImgControl : MonoBehaviour
                img5.GetComponent<spriteFade>().FadeImgOut2();
                //waitTime = waitTimeset;
                imgText.SetActive(false);
+               bgm.Stop();
                Invoke("PlayVideo",0.5f);
                Invoke("BacktoMain",27.5f); // video length + 0.5s
             }
