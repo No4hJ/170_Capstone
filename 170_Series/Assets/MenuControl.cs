@@ -8,6 +8,10 @@ public class MenuControl : MonoBehaviour
 
     public GameObject OptionMenu;
     // Update is called once per frame
+    void Start(){
+        isPaused = false;
+    }
+    
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
