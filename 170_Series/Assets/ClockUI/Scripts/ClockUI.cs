@@ -17,6 +17,13 @@ public class ClockUI : MonoBehaviour {
     public bool clockchange = false;
 
     public bool clockstop = false;
+
+    public GameObject A;
+    public GameObject D;
+    public GameObject Q;
+    public GameObject E;
+
+    
     
     public AudioSource turning_sound;
 
@@ -104,6 +111,20 @@ public class ClockUI : MonoBehaviour {
                 clockchange = true;
                 clockstop = true;
             }
+        }
+
+        if(clockstop)
+        {
+            A.SetActive(true);
+            D.SetActive(true);
+            Q.SetActive(true);
+            E.SetActive(true);
+        }
+        else{
+            A.SetActive(false);
+            D.SetActive(false);
+            Q.SetActive(false);
+            E.SetActive(false);
         }
 
     }

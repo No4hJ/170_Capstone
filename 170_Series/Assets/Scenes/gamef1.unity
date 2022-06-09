@@ -3783,6 +3783,7 @@ MonoBehaviour:
   imgText: {fileID: 1809969128}
   filter: {fileID: 1385818645}
   clock: {fileID: 865693396}
+  bgm: {fileID: 0}
 --- !u!1 &575997246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,7 +3810,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575997246}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 79a50429aeae4e54db7b5ab8802a21e8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 4fff8eeb1f0863e4291b9c69498ea38e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 751722289}
@@ -9947,6 +9948,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9040740482306872533, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9040740482486701386, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: open_App
       value: 
@@ -10045,6 +10050,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9040740482556723537, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040740482556723542, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9040740482956304038, guid: 8d27d08fea83a4745b771f7ccae7eef5, type: 3}
@@ -10258,6 +10267,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b662f646c77384c9f1b30d3519d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  before_en: {fileID: 0}
+  before_chi: {fileID: 0}
+  after_en: {fileID: 0}
+  after_eng: {fileID: 0}
+  after_eng1: {fileID: 0}
+  after_ch: {fileID: 0}
+  after_chi: {fileID: 0}
+  after_chi1: {fileID: 0}
 --- !u!1 &1316667601
 GameObject:
   m_ObjectHideFlags: 0
@@ -10922,7 +10939,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66cf2d98bc485d54188cf7ba1820274b, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.436
   m_Pitch: 1
   Loop: 0

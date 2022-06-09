@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ENDScene.unity
     guid: 36bc5dd506b64c0409499b73f3160322
+  - enabled: 1
+    path: Assets/Scenes/gamef1.unity
+    guid: 774b133eca9292b41b8f43ffce463c88
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ee974ee8475c1f54f9ec3d2d90da7a45, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 92f80c3e21500ba46993d3dd1b2445f1, type: 2}
